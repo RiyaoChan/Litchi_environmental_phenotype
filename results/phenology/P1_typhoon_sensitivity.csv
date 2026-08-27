@@ -1,0 +1,3 @@
+﻿model_id,main_n,sensitivity_all_n,main_MAE_days,sensitivity_common_normal_MAE_days,sensitivity_all_MAE_days,scope
+P1-B0,12,13,4.833333333,6.333333333,6.769230769,calendar_baselines_only; not weather-model sensitivity or causal disaster analysis
+P1-B1,12,13,8.416666667,9.916666667,10.07692308,calendar_baselines_only; not weather-model sensitivity or causal disaster analysis

@@ -23,8 +23,16 @@ def write_reports(root,gate,events,master,coverage,fixed,weather_issues,doc_evid
                          '状态':v['status']} for task,v in gate['phenology'].items()])
     summary=markdown_table(tasks)
     baselines='本次仅运行阶段0；基线尚未执行。'
+    sensitivity_summary='本次仅运行阶段0；敏感性基线尚未执行。'
+    baseline_interpretation='尚未评估基线误差。'
     if comparison is not None:
         baselines=markdown_table(comparison[['model_id','n','MAE_days','RMSE_days','mean_bias_days','Spearman_r']])
+        sensitivity_summary=markdown_table(pd.read_csv(root/'results/phenology/P1_typhoon_sensitivity.csv')[
+            ['model_id','main_n','sensitivity_all_n','main_MAE_days','sensitivity_common_normal_MAE_days','sensitivity_all_MAE_days']])
+        scores=comparison.set_index('model_id').MAE_days
+        baseline_interpretation=(f'在同一保守主分析集合上，P1-B0 MAE={scores["P1-B0"]:.2f}天，'
+            f'P2-B0={scores["P2-B0"]:.2f}天，P3-B0={scores["P3-B0"]:.2f}天。'
+            'P2历史持续天数基线的误差较大；P1和P3误差相近。这里只能比较本次历史基线误差，不能据此判定气象预测稳定或可部署。')
     write=lambda name,text:(root/'reports'/name).write_text(text,encoding='utf-8')
     examples=events[events.source_cell.isin(['E2','F2','G2','E14','F13'])][['source_cell','harvest_year','event_name','decoded_candidate_date','event_date']]
     weather_short=coverage[['orchard_id','harvest_year','expected_days','observed_days','date_coverage_ratio','tmean_c_coverage_ratio']]
@@ -112,11 +120,19 @@ P1目标：从秋梢成熟开始预测抽穗日期；P2：抽穗至盛花；P3�
 
 {baselines}
 
+{baseline_interpretation}
+
 B0是训练年份内同果园的历史中位持续天数；P1-B1是训练年份内同果园的抽穗日期基线。中位数按半天向上取整到整天；缺少同园训练记录时回退到训练集总体中位数。实际起始事件是已观测输入。
 
 每折留出该产季所有果园，拟合只用其他年份；每条预测保存training_years和fit_season_ids。LOYO是回顾验证，训练可包含留出年之后的年份，不等于按时间滚动的生产预报。Spearman使用相对于收获年1月1日的日期偏移，避免把不同公历年份带来的相关误当性能。误差=预测−观测，正值为偏晚。
 
 样本只有5个产季，每折训练仅4个独立年份，未估计可靠预测区间，覆盖率NA，不能声称已验证区间性能。P1包含2025办内早期物候的敏感性仅限日历基线，并在相同正常样本集合比较MAE，避免样本变化造成误读。
+
+## 2025办内早期物候的包含/排除敏感性
+
+{sensitivity_summary}
+
+common_normal指标保留相同的12个主分析测试样本，只允许其他年份训练折中增加办内2025早期观测；all指标另含办内2025的留出预测。二者不能混为同一评价集合。此结果不识别台风的因果影响。
 
 **低温日数、非线性温度响应、水分模型及P2/P3 GDD均未运行：完整阶段日气象不足。** 因此不能据此检验H1/H2、认定某气象模型最佳，或判断某任务已被气象稳定预测。
 ''')
@@ -142,6 +158,8 @@ W1/W2/W3产量预测性能比较仍未执行。基于实际后续天气的模型
     write('04_TYPHOON_CASE_REPORT.md',f'''# 2025办内：模型外灾害案例
 
 最终亩产=0，未测单株产量、单果重、果数及代理NA。主分析排除；早期P1日期按A列归年后可用于“包含/排除”的日历基线敏感性，结果在 `results/phenology/P1_typhoon_sensitivity.csv`（仅all运行后生成）。P2/P3无后续观测，不能补齐。
+
+{sensitivity_summary}
 
 2025-03-01是放弃投产决定日，具体台风发生日NA。正常产量模型尚未建立，所以正常生产基线、区间、绝对与相对差均NA；没有输出因果台风损失。
 
@@ -174,7 +192,7 @@ W1/W2/W3产量预测性能比较仍未执行。基于实际后续天气的模型
 
 ## 5. P2/P3是否稳定可预测
 
-已执行或允许历史持续天数基线；没有可用完整天气去验证GDD模型，不能声称气象预测稳定。见逐模型、逐折表，不能只看汇总相关。
+{baseline_interpretation} 没有可用完整天气去验证GDD模型。见逐模型、逐折表，不能只看汇总相关。
 
 ## 6. 非线性温度是否优于低温日数
 

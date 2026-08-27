@@ -1,0 +1,13 @@
+﻿model_id,holdout_year,orchard_id,parameter_kind,parameter_value,fit_scope,n_fit_samples,training_years,fit_season_ids
+P2-B0,2022,bannei,median_duration_days,45,orchard,3,2023;2024;2025;2026,bannei_2023;bannei_2024;bannei_2026
+P2-B0,2022,hongming,median_duration_days,49.5,orchard,2,2023;2024;2025;2026,hongming_2023;hongming_2024
+P2-B0,2022,luhong,median_duration_days,36.5,orchard,4,2023;2024;2025;2026,luhong_2023;luhong_2024;luhong_2025;luhong_2026
+P2-B0,2023,bannei,median_duration_days,45,orchard,3,2022;2024;2025;2026,bannei_2022;bannei_2024;bannei_2026
+P2-B0,2023,hongming,median_duration_days,50.5,orchard,2,2022;2024;2025;2026,hongming_2022;hongming_2024
+P2-B0,2023,luhong,median_duration_days,36.5,orchard,4,2022;2024;2025;2026,luhong_2022;luhong_2024;luhong_2025;luhong_2026
+P2-B0,2024,bannei,median_duration_days,49,orchard,3,2022;2023;2025;2026,bannei_2022;bannei_2023;bannei_2026
+P2-B0,2024,hongming,median_duration_days,55,orchard,2,2022;2023;2025;2026,hongming_2022;hongming_2023
+P2-B0,2024,luhong,median_duration_days,43,orchard,4,2022;2023;2025;2026,luhong_2022;luhong_2023;luhong_2025;luhong_2026
+P2-B0,2025,luhong,median_duration_days,43,orchard,4,2022;2023;2024;2026,luhong_2022;luhong_2023;luhong_2024;luhong_2026
+P2-B0,2026,bannei,median_duration_days,49,orchard,3,2022;2023;2024;2025,bannei_2022;bannei_2023;bannei_2024
+P2-B0,2026,luhong,median_duration_days,36.5,orchard,4,2022;2023;2024;2025,luhong_2022;luhong_2023;luhong_2024;luhong_2025

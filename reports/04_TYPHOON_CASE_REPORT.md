@@ -2,6 +2,11 @@
 
 最终亩产=0，未测单株产量、单果重、果数及代理NA。主分析排除；早期P1日期按A列归年后可用于“包含/排除”的日历基线敏感性，结果在 `results/phenology/P1_typhoon_sensitivity.csv`（仅all运行后生成）。P2/P3无后续观测，不能补齐。
 
+| model_id | main_n | sensitivity_all_n | main_MAE_days | sensitivity_common_normal_MAE_days | sensitivity_all_MAE_days |
+| --- | --- | --- | --- | --- | --- |
+| P1-B0 | 12 | 13 | 4.833 | 6.333 | 6.769 |
+| P1-B1 | 12 | 13 | 8.417 | 9.917 | 10.08 |
+
 2025-03-01是放弃投产决定日，具体台风发生日NA。正常产量模型尚未建立，所以正常生产基线、区间、绝对与相对差均NA；没有输出因果台风损失。
 
 | source_file | text_line | text |

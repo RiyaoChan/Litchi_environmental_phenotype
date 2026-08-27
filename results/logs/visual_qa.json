@@ -1,12 +1,24 @@
 {
-  "method": "Poppler pdftoppm at 105 dpi; visually inspected every rendered PDF page",
+  "method": "Poppler pdftoppm at 115 dpi; visually inspected every rendered PDF page after seasonal normalization and baseline execution",
   "pdfs_reviewed": [
     "results/figures/Fig01_data_gate_counts.pdf",
     "results/figures/Fig02_phenology_input_status.pdf",
     "results/figures/Fig03_weather_availability.pdf",
-    "results/figures/Fig04_yield_by_orchard_year.pdf"
+    "results/figures/Fig04_yield_by_orchard_year.pdf",
+    "results/figures/Fig05_phenology_timeline.pdf",
+    "results/figures/Fig06_baseline_cv_predictions.pdf",
+    "results/figures/Fig07_weather_phenology_overlay.pdf"
   ],
-  "page_count": 4,
+  "page_count": 7,
   "result": "pass",
-  "checks": ["no clipped labels", "no overlaps", "missing data distinguishable from zero", "no simulated model results"]
+  "checks": ["no clipped labels", "no label overlaps", "missing data distinguishable from zero", "cross-year axes use actual calendar dates", "CV charts explicitly labelled historical baselines only"],
+  "reviewed_pdf_sha256": {
+    "Fig01_data_gate_counts.pdf": "83b5492a2fee4642f67892d0c542db1382da2a629a2f45d52cc0fa89d1722a61",
+    "Fig02_phenology_input_status.pdf": "9f2d2fe2734df83ecca5788e8a0b4877967b3d78e494b53f73efeee3bc09bff0",
+    "Fig03_weather_availability.pdf": "b5664fd14fa3010d7df19b6380edc7e7543a804a2cf6412c3b32aa51c1256d14",
+    "Fig04_yield_by_orchard_year.pdf": "75bfb6e69cafcc5c6c16ff4574182211a90dc05fda8387bf1b1b51429c9820fc",
+    "Fig05_phenology_timeline.pdf": "9ccca771267c2bf427e8c3a33c289494388161d755f3db65f6cf66f6c4f503ba",
+    "Fig06_baseline_cv_predictions.pdf": "896159d95ce5a99eece8445c9e08baaa97c8c479b0b03b6a8a41deec4bf44180",
+    "Fig07_weather_phenology_overlay.pdf": "91b493624d87dfb270cb40b4c4ee0f31d757be697636eec8bc81921a42f72c2c"
+  }
 }

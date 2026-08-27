@@ -1,0 +1,3 @@
+﻿task,model_id,cohort,n,MAE_days,RMSE_days,mean_bias_days,Spearman_r,prediction_interval_coverage,interval_note
+P1,P1-B0,main,12,4.833333333,6.110100927,-0.1666666667,0.7463370236,NA,not_estimated_insufficient_independent_calibration_years
+P1,P1-B1,main,12,8.416666667,10.04572878,-0.4166666667,0.2531311573,NA,not_estimated_insufficient_independent_calibration_years

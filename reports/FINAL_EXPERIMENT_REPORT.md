@@ -1,4 +1,4 @@
-# 实验继续执行结果：跨年日期已修复，阶段0重新审计完成
+# 实验继续执行结果：跨年日期已修复，完成日历基线
 
 ## 1. 完整P1/P2/P3样本
 
@@ -20,11 +20,16 @@
 
 目标是秋梢成熟之后的抽穗完整日期。气象最佳模型未产生；下面只报告天气独立的历史基线：
 
-本次仅运行阶段0；基线尚未执行。
+| model_id | n | MAE_days | RMSE_days | mean_bias_days | Spearman_r |
+| --- | --- | --- | --- | --- | --- |
+| P1-B0 | 12 | 4.833 | 6.11 | -0.1667 | 0.7463 |
+| P1-B1 | 12 | 8.417 | 10.05 | -0.4167 | 0.2531 |
+| P2-B0 | 12 | 6.75 | 7.544 | 0.5833 | 0.8787 |
+| P3-B0 | 12 | 4.917 | 6.238 | 1.25 | 0.6829 |
 
 ## 5. P2/P3是否稳定可预测
 
-已执行或允许历史持续天数基线；没有可用完整天气去验证GDD模型，不能声称气象预测稳定。见逐模型、逐折表，不能只看汇总相关。
+在同一保守主分析集合上，P1-B0 MAE=4.83天，P2-B0=6.75天，P3-B0=4.92天。P2历史持续天数基线的误差较大；P1和P3误差相近。这里只能比较本次历史基线误差，不能据此判定气象预测稳定或可部署。 没有可用完整天气去验证GDD模型。见逐模型、逐折表，不能只看汇总相关。
 
 ## 6. 非线性温度是否优于低温日数
 
@@ -78,11 +83,11 @@
 | W1-QC | executed | fixed_window_coverage_audit |
 | W2-QC | executed | normalized_observed_stage_boundaries_and_weather_coverage |
 | TYPHOON-DESC | executed | source_evidence_and_zero_vs_NA_coding |
-| P1-B0 | pending | weather_independent_LOYO_baselines_only |
-| P1-B1 | pending | weather_independent_LOYO_baselines_only |
-| P2-B0 | pending | weather_independent_LOYO_baselines_only |
-| P3-B0 | pending | weather_independent_LOYO_baselines_only |
-| PHENO-TYPHOON-SENSITIVITY | pending | weather_independent_LOYO_baselines_only |
+| P1-B0 | executed | weather_independent_LOYO_baselines_only |
+| P1-B1 | executed | weather_independent_LOYO_baselines_only |
+| P2-B0 | executed | weather_independent_LOYO_baselines_only |
+| P3-B0 | executed | weather_independent_LOYO_baselines_only |
+| PHENO-TYPHOON-SENSITIVITY | executed | weather_independent_LOYO_baselines_only |
 | W2 | partial | date_windows_available_but_stage_weather_incomplete |
 | P1-B2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
 | P1-M1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |

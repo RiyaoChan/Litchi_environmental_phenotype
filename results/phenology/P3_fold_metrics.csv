@@ -1,0 +1,6 @@
+﻿model_id,holdout_year,n,MAE_days,RMSE_days,mean_bias_days,Spearman_r,prediction_interval_coverage,interval_note
+P3-B0,2022,3,6,6.976149845,1.333333333,1,NA,not_estimated_insufficient_independent_calibration_years
+P3-B0,2023,3,3.333333333,3.915780041,-2.666666667,1,NA,not_estimated_insufficient_independent_calibration_years
+P3-B0,2024,3,7,8.812869378,6.333333333,1,NA,not_estimated_insufficient_independent_calibration_years
+P3-B0,2025,1,1,1,1,NA,NA,not_estimated_insufficient_independent_calibration_years
+P3-B0,2026,2,4.5,4.527692569,-0.5,-1,NA,not_estimated_insufficient_independent_calibration_years
