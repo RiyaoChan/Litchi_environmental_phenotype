@@ -95,6 +95,34 @@ def parse_full_date(value, epoch, accept_serials=False):
     return pd.NaT, pd.NaT, 'qualitative_not_date'
 
 
+def normalize_season_date(value, epoch, harvest_year, event_name, constraints):
+    """User-authorized month/day extraction with A-column harvest-year authority.
+
+    Original decoded years are retained for provenance, not treated as observed
+    phenology years. No month/day is shifted to enforce sequence.
+    """
+    parsed, candidate, flag = parse_full_date(value, epoch, accept_serials=True)
+    if not constraints.get('seasonal_year_normalization'):
+        return (*parse_full_date(value, epoch, constraints.get('accept_unformatted_excel_serials', False)), 'original_complete_date')
+    if constraints.get('date_year_authority') != 'harvest_year_column_A':
+        raise ValueError('Seasonal normalization requires explicit A-column authority')
+    if pd.isna(candidate):
+        match = re.fullmatch(r'(\d{1,2})[-/月.](\d{1,2})日?', str(value).strip())
+        if not match:
+            return pd.NaT, candidate, flag, 'not_a_date'
+        month, day = map(int, match.groups())
+    else:
+        month, day = candidate.month, candidate.day
+    target_year = int(harvest_year) - int(month >= constraints['season_start_month'])
+    if event_name == 'autumn_flush_mature' and target_year != int(harvest_year) - 1:
+        return pd.NaT, candidate, 'autumn_month_inconsistent_with_previous_year', 'user_authorized_season_rule'
+    try:
+        normalized = pd.Timestamp(date(target_year, month, day))
+    except ValueError:
+        return pd.NaT, candidate, 'invalid_rebased_calendar_date', 'user_authorized_season_rule'
+    return normalized, candidate, 'ok', 'A_column_harvest_year_plus_original_month_day'
+
+
 def read_phenology(root, cfg):
     path = root / cfg['inputs']['phenology']
     wb = openpyxl.load_workbook(path, data_only=True)
@@ -110,14 +138,13 @@ def read_phenology(root, cfg):
                 year = int(year_raw)
                 for column, event in EVENTS.items():
                     cell = sheet.cell(row, column)
-                    parsed, candidate, flag = parse_full_date(
-                        cell.value, wb.epoch,
-                        cfg['constraints']['accept_unformatted_excel_serials'])
+                    parsed, candidate, flag, derivation = normalize_season_date(
+                        cell.value, wb.epoch, year, event, cfg['constraints'])
                     flags = [] if flag == 'ok' else [flag]
-                    if pd.notna(candidate) and candidate.year not in (year - 1, year):
-                        flags.append('candidate_year_outside_harvest_season')
+                    if pd.notna(parsed) and parsed.year not in (year - 1, year):
+                        flags.append('normalized_year_outside_harvest_season')
                         parsed = pd.NaT
-                    if event == 'maturity' and pd.notna(candidate) and candidate.year != year:
+                    if event == 'maturity' and pd.notna(parsed) and parsed.year != year:
                         flags.append('maturity_year_disagrees_with_harvest_year')
                         parsed = pd.NaT
                     records.append({
@@ -128,6 +155,10 @@ def read_phenology(root, cfg):
                         'calendar_year': parsed.year if pd.notna(parsed) else np.nan,
                         'day_of_year': parsed.dayofyear if pd.notna(parsed) else np.nan,
                         'decoded_candidate_date': candidate,
+                        'date_derivation': derivation,
+                        'date_year_rebased': int(pd.notna(parsed) and pd.notna(candidate) and parsed.year != candidate.year),
+                        'date_authority': cfg['constraints'].get('date_year_authority','original_full_date'),
+                        'date_authority_source': cfg['constraints'].get('user_amendment',''),
                         'source_file': path.name, 'source_sheet': sheet.title,
                         'source_row': row, 'source_column': cell.column_letter,
                         'source_cell': cell.coordinate, 'harvest_year_source_cell': year_cell,

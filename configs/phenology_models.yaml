@@ -1,0 +1,9 @@
+# Weather-independent comparison baselines only, permitted after date correction.
+baseline:
+  orchard_specific: true
+  fallback: pooled_training_median
+  rounding: half_up_to_integer_day
+  interval_nominal_coverage: 0.90
+  interval_method: not_estimated_insufficient_independent_calibration_years
+  spearman_scale: day_offset_from_harvest_Jan01
+  split: leave_entire_harvest_year_out

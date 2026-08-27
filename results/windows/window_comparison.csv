@@ -1,4 +1,4 @@
 ﻿window_type,status,performance_comparison_available
 W1,coverage audit only; incomplete stages not summarized as complete,False
-W2,blocked: unvalidated dates,False
-W3,blocked: no valid LOYO phenology predictions,False
+W2,observed date boundaries and coverage audit; stage weather incomplete,False
+W3,blocked: no weather-driven phenology model and incomplete weather features,False

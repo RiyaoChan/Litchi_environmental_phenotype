@@ -1,28 +1,31 @@
 {
-  "overall_status": "blocked",
-  "stop_rule": "Stop 1",
+  "overall_status": "partial",
+  "has_blocked_experiments": true,
+  "stop_rule": "weather_coverage_gate",
   "raw_mutation": false,
-  "dates_ready": false,
+  "dates_ready": true,
   "a39": {
     "actual_a39": 2026,
-    "expected_a39": 2025,
-    "conflict": true
+    "expected_a39": 2026,
+    "conflict": false
   },
   "counts": {
     "phenology_orchard_seasons": 15,
     "phenology_event_slots": 180,
-    "validated_event_dates": 0,
-    "unformatted_excel_serials": 147,
+    "validated_event_dates": 147,
+    "unformatted_excel_serials": 0,
+    "dates_year_rebased": 123,
     "yield_class_rows": 45,
     "yield_source_blocks": 15,
     "yield_orchard_seasons": 15,
     "raw_nonzero_yield_seasons": 14,
-    "normal_yield_eligible_seasons_before_weather_gate": 10,
+    "normal_yield_eligible_seasons_before_weather_gate": 12,
     "normal_eligible_years": [
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "protocol_disaster_seasons": 1,
     "other_damage_review_seasons": 2
@@ -30,44 +33,53 @@
   "phenology": {
     "P1": {
       "raw_endpoint_pairs": 14,
-      "validated_date_pairs": 0,
-      "main_complete_pairs": 0,
+      "validated_date_pairs": 14,
+      "main_complete_pairs": 12,
       "weather_complete_model_samples": 0,
-      "status": "blocked",
-      "reason": "Stop 1: date encoding/year/sequence unresolved"
+      "baseline_allowed": true,
+      "weather_models_allowed": false,
+      "status": "baseline_only",
+      "reason": "insufficient_complete_daily_weather"
     },
     "P2": {
       "raw_endpoint_pairs": 13,
-      "validated_date_pairs": 0,
-      "main_complete_pairs": 0,
+      "validated_date_pairs": 13,
+      "main_complete_pairs": 12,
       "weather_complete_model_samples": 0,
-      "status": "blocked",
-      "reason": "Stop 1: date encoding/year/sequence unresolved"
+      "baseline_allowed": true,
+      "weather_models_allowed": false,
+      "status": "baseline_only",
+      "reason": "insufficient_complete_daily_weather"
     },
     "P3": {
       "raw_endpoint_pairs": 13,
-      "validated_date_pairs": 0,
-      "main_complete_pairs": 0,
+      "validated_date_pairs": 13,
+      "main_complete_pairs": 12,
       "weather_complete_model_samples": 0,
-      "status": "blocked",
-      "reason": "Stop 1: date encoding/year/sequence unresolved"
+      "baseline_allowed": true,
+      "weather_models_allowed": false,
+      "status": "baseline_only",
+      "reason": "insufficient_complete_daily_weather"
     }
   },
   "yield": {
     "status": "blocked",
     "formal_prediction_allowed": false,
     "reasons": [
-      "Stop 1: full phenology dates not validated",
-      "A39 expected 2025 but actual source is 2026; user confirmation required",
       "W1 contains missing daily weather",
-      "W2 unavailable: event dates not validated/absent"
+      "W2 stage weather incomplete even where event boundaries are available"
     ],
-    "note": "No regression is run while Stop 1 and chronology conflicts remain."
+    "note": "A39 and seasonal dates resolved. Yield features still lack continuous daily weather."
   },
   "windows": {
     "W1": "coverage audit only; incomplete stages not summarized as complete",
-    "W2": "blocked: unvalidated dates",
-    "W3": "blocked: no valid LOYO phenology predictions"
+    "W2": "observed date boundaries and coverage audit; stage weather incomplete",
+    "W3": "blocked: no weather-driven phenology model and incomplete weather features"
+  },
+  "dynamic_window_counts": {
+    "total": 75,
+    "valid_date_boundaries": 66,
+    "complete_weather_features": 0
   },
   "typhoon": {
     "orchard_id": "bannei",
@@ -86,6 +98,6 @@
     "S3": "blocked_no_validated_moisture_model",
     "S4": "blocked_no_validated_yield_model"
   },
-  "implemented_scope": "stage0_audit_plus_nonmodel_descriptive_outputs",
-  "downstream_model_implementation": "deferred_after_Stop1_resolution; no fitted models or simulated metrics"
+  "implemented_scope": "seasonal_date_normalization_stage0_LOYO_calendar_baselines_W2_coverage",
+  "downstream_model_implementation": "weather_driven_models_deferred_until_continuous_weather_available"
 }

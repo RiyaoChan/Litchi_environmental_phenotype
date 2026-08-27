@@ -1,8 +1,11 @@
 {
   "A39": {
     "actual_a39": 2026,
-    "expected_a39": 2025,
-    "conflict": true
+    "expected_a39": 2026,
+    "conflict": false
   },
-  "raw_file_changed_by_pipeline": false
+  "raw_file_changed_by_pipeline": false,
+  "resolution_authority": "experiments_guide/2026-08-27_USER_CLARIFICATION.md",
+  "seasonal_year_authority": "Excel column A",
+  "previous_A39_and_date_year_blocks_resolved": true
 }

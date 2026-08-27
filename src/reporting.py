@@ -1,229 +1,228 @@
+"""Current reports generated from audit/results; historical decisions live in git."""
 from __future__ import annotations
-
 import pandas as pd
 
 
-def markdown_table(df, columns=None, limit=None):
-    if columns:
-        df=df[columns]
-    if limit:
-        df=df.head(limit)
-    if df.empty:
-        return '无记录。'
-    def fmt(v):
-        if pd.isna(v): return 'NA'
-        return str(v).replace('|',' / ').replace('\n',' ')
-    lines=['| '+' | '.join(df.columns)+' |','| '+' | '.join(['---']*len(df.columns))+' |']
-    lines += ['| '+' | '.join(map(fmt,row))+' |' for row in df.itertuples(index=False,name=None)]
-    return '\n'.join(lines)
+def markdown_table(df,columns=None,limit=None):
+    if columns: df=df[columns]
+    if limit: df=df.head(limit)
+    if df.empty: return '无记录。'
+    def fmt(value):
+        if pd.isna(value): return 'NA'
+        if isinstance(value,float): return f'{value:.4g}'
+        return str(value).replace('|',' / ').replace('\n',' ')
+    return '\n'.join(['| '+' | '.join(df.columns)+' |','| '+' | '.join(['---']*len(df.columns))+' |']+
+                      ['| '+' | '.join(map(fmt,row))+' |' for row in df.itertuples(index=False,name=None)])
 
 
-def write_reports(root, gate, events, master, coverage, fixed, weather_issues, doc_evidence, transitions, status, numeric_matches):
+def write_reports(root,gate,events,master,coverage,fixed,weather_issues,doc_evidence,transitions,status,numeric_matches,
+                  dynamic,comparison=None):
     counts=gate['counts']
-    count_table=pd.DataFrame([{'任务':t,'原始端点成对记录':v['raw_endpoint_pairs'],
-                              '通过日期审计':v['validated_date_pairs'],
-                              '正常主分析完整转换':v['main_complete_pairs'],
-                              '气象完整可建模样本':v['weather_complete_model_samples'],
-                              '状态':v['status']} for t,v in gate['phenology'].items()])
-    pheno_count=markdown_table(count_table)
-    weather_short=coverage[['orchard_id','harvest_year','expected_days','observed_days','date_coverage_ratio','tmean_c_coverage_ratio']].copy()
-    weather_short[['date_coverage_ratio','tmean_c_coverage_ratio']]=weather_short[['date_coverage_ratio','tmean_c_coverage_ratio']].round(4)
-    blocks=master[['season_id','source_block_id','normal_production_year','typhoon_damage','yield_main_eligible','exclusion_reason']]
-    text=f'''# 阶段0：数据标准化与可行性审计
+    tasks=pd.DataFrame([{'任务':task,'全部完整日期对':v['validated_date_pairs'],
+                         '主分析完整日期对':v['main_complete_pairs'],'完整日温度样本':v['weather_complete_model_samples'],
+                         '状态':v['status']} for task,v in gate['phenology'].items()])
+    summary=markdown_table(tasks)
+    baselines='本次仅运行阶段0；基线尚未执行。'
+    if comparison is not None:
+        baselines=markdown_table(comparison[['model_id','n','MAE_days','RMSE_days','mean_bias_days','Spearman_r']])
+    write=lambda name,text:(root/'reports'/name).write_text(text,encoding='utf-8')
+    examples=events[events.source_cell.isin(['E2','F2','G2','E14','F13'])][['source_cell','harvest_year','event_name','decoded_candidate_date','event_date']]
+    weather_short=coverage[['orchard_id','harvest_year','expected_days','observed_days','date_coverage_ratio','tmean_c_coverage_ratio']]
+    stage_weather=transitions[transitions.complete_date_pair==1][['season_id','task','observed_start_date','observed_end_date','observed_duration_days','expected_days','observed_weather_days','missing_tmean_days']]
+    normal_n=counts['normal_yield_eligible_seasons_before_weather_gate']
+    weather_reasons='\n'.join('- '+reason for reason in gate['yield']['reasons'])
+    write('00_DATA_FEASIBILITY_REPORT.md',f'''# 阶段0：用户确认后的重新审计
 
-## 结论
+## 当前结论
 
-**执行状态：blocked（方案 Stop 1）。未拟合任何物候、产量或情景模型。**
+**A39与跨年日期阻塞已解除；当前状态为partial，后续气象模型仍受连续天气覆盖限制。**
 
-本报告是本次审计的阶段性成果，不表示实验方案全部完成。原始 Excel/Word 文件按当前工作区快照冻结；未修改任何原始数值。当前 `测产.xlsx` 是用户修改后的版本（A39=2026），不是把该单元格自动改为2025。方案与实际输入冲突必须由用户确认。
+用户确认 `测产.xlsx!A39=2026`，且物候A列是产季年份。秋梢老熟属于上一年，冬春生殖事件按跨年周期归入该产季。前次对序号自带年份的阻塞是归年规则未获确认，不应理解为跨年物候本身错误。本次按用户授权只重建派生日期，11个原始文件哈希保持不变。
 
-## 数据量与独立单位
+权威补充说明：`experiments_guide/2026-08-27_USER_CLARIFICATION.md`，优先于V2旧A39约束。
 
-- 11 个正式原始文件：4 个 Excel、7 个 Word；根目录与示范园目录的 2026 Word 完全相同，按哈希识别，不能算两套样本。
-- 物候：{counts['phenology_orchard_seasons']} 个果园—产季，2022—2026 共5个收获年份；{counts['phenology_event_slots']} 个事件槽位；{counts['unformatted_excel_serials']} 个未格式化日期序号。
-- 测产：{counts['yield_class_rows']} 个 A/B/C 类别行、{counts['yield_source_blocks']} 个区块、{counts['yield_orchard_seasons']} 个独立果园—产季。三棵测产树和类别不是独立天气样本。
-- 原始表中有 {counts['raw_nonzero_yield_seasons']} 个非零亩产记录；在排除固定灾害、年份冲突及其他结构损伤待核实记录后，{counts['normal_yield_eligible_seasons_before_weather_gate']} 个正常候选样本、年份 {counts['normal_eligible_years']}。这是**气象及全局闸门之前**的数量，不表示正式模型已获准。
-- {counts['protocol_disaster_seasons']} 个方案定义的绝收样本；另有 {counts['other_damage_review_seasons']} 个红明产季的正常生产资格待核实。
+## 归年方法与示例
 
-上述标准化样本数来自两份主Excel；年度Word用于来源、管理与灾害证据审计。未把Word中的历史回顾表重复计入样本，也未从只有月日的Word表格猜年份扩充2021产季。
+从原始序号/日期中提取月日，以A列产季Y归年：7—12月归Y−1，1—6月归Y；秋梢必须属于Y−1。7月1日是实现边界，当前无7月记录。原始解码日期仅作来源记录，不再当作实际物候年份。保留 `event_date`、`decoded_candidate_date`、`date_derivation`、`date_year_rebased` 和来源单元格。
 
-## 完整转换样本
+{markdown_table(examples)}
 
-{pheno_count}
+2022办内P1为2021-09-25至2022-01-20，持续117天；逐日累计窗口两端包含，共118天。12月露白点归上一年，1月露白点归当年，不能把所有露白点统一减一年。保留月日，未为消除重叠而改动阶段日期。
 
-“原始端点成对”仅表示两端有可解码数值，不表示年份、先后顺序或正常生理状态正确。未经日期确认的数值不会进入 `event_date`，仅保存到 `decoded_candidate_date`。
+## 标准化数量与独立单位
 
-## 阻塞1：日期未正确准备
+- 4个Excel、7个Word（2026根目录Word为同文件副本，共6个不同Word哈希）。
+- {counts['phenology_orchard_seasons']}个物候果园—产季，{counts['phenology_event_slots']}个事件槽位；{counts['validated_event_dates']}个完整日期，其中{counts['dates_year_rebased']}个按A列重建了年份；其余为缺测或定性“轻微”。
+- 测产{counts['yield_class_rows']}个类别行，{counts['yield_source_blocks']}个来源区块，{counts['yield_orchard_seasons']}个独立果园—产季。三棵树/类别/Word历史表不另算环境样本。
+- 原表非零亩产{counts['raw_nonzero_yield_seasons']}个；保守正常候选{normal_n}个，年份{counts['normal_eligible_years']}；固定灾害1个，红明2025/2026仍因损伤恢复资格待确认而排除。
 
-例如 `物候期.xlsx!Sheet1!E2=46290` 解码为 `2026-09-25`，但该行产季为2022；`G2=46042` 解码为 `2026-01-20`。2026办内的 `E14` 同样解码为 `2026-09-25`，晚于 `G14` 的 `2026-01-10`。代码没有推测正确年份，也没有用月日重新拼接。
+## 每个物候转换的完整样本
 
-日期规则：接受真实 Excel 日期类型或明确的 `YYYY-MM-DD` 完整日期文本。General 数值序号只做解码审计；即使用户确认序号表达日期，产季和阶段先后冲突仍需解决。正常允许跨年；谢花、坐果和生理落果的重叠只列入审计，不自动修正。
+{summary}
 
-详见 `results/qc/phenology_date_review.csv`、`results/qc/transition_review.csv`、`results/qc/phenology_overlap_review.csv`。
+日期完整与天气完整是不同条件。主分析排除2025办内及红明损伤待核实产季。P1/P2/P3可运行天气独立的历史基线；没有完整天气样本，不运行低温/GDD或非线性累积模型。
 
-## 阻塞2：A39 与预注册事实冲突
+## 真实阶段的天气缺口
 
-方案锁定 A39=2025，实际当前文件 A39={gate['a39']['actual_a39']}。保留真实输入和各自区块 ID，不合并、不删除、不把2026改回2025。当前标签下没有同果园—同年的重复区块；如果用户确认该组应归2025，则会形成三个重复果园—产季，必须进一步确认调查批次/小区或保守聚合。
+{markdown_table(stage_weather)}
 
-2026 年 Word 的测产表包含与最后三个区块相符的数值线索（见 `results/qc/annual_source_numeric_matches.csv`），这支持核对2026来源，但不能擅自推翻用户指定方案的锁定事实。
+原文件主要只有每年10月至次年1月。P1从实际8—9月秋梢成熟开始，缺少起始阶段天气；部分抽穗在2月1日还缺少末日。P2盛花在2—3月，P3成熟在4—5月，后段天气缺失。**不把P1起点强行截到10月1日，不补0、不插值、不拿别年天气替代。**
 
-## 阻塞3：日气象并非全年
+精确需要补齐的逐阶段区间：`results/qc/weather_missing_by_transition.csv`。注意缺测包含源表没有该日期，以及有该日期但对应变量无效两种情况。
 
-按源文件“年、月、日”解析，不能按工作表名替代日期。两地主要覆盖每个产季上一年10月至当年1月；2—9月缺失，盛花和果实发育天气无法构建。无降水不等于缺测；不存在的风速保持NA。海口与陵水的湿度/日照列顺序不同，且陵水2026年列顺序改变，读取按表头映射。
+## 固定参考窗口覆盖
 
-下表分母固定为上一年10月1日至当年6月30日（两端包含）；不是单个真实物候窗口的覆盖率。主表的 `weather_coverage_ratio` 明确沿用这一参考窗口。
+下表仅是上一年10月1日至产季6月30日的参考窗口，两端包含，不代替上述实际阶段覆盖。
 
 {markdown_table(weather_short)}
 
-另发现 {len(weather_issues)} 条气象数值 QC 记录。温度不满足 Tmin≤Tmean≤Tmax 的记录不交换列名，原始值保留在原始列/中间表；处理表对应温度置NA并记录原因。降水、湿度和日照等独立字段仍按自身有效性保留。
+气象数值QC记录{len(weather_issues)}条；温度顺序不一致不自动交换列，异常温度置NA，原值留存；其他变量独立核验。海口两个园共用一条区域气象序列；鲁宏用陵水序列。station_id为内部来源别名，官方站号、园站距离仍未知。红明白糖罂与果园效应混杂。
 
-## 地点、品种和共享天气
+## 测产与灾害
 
-办内与红明共用海口地区气象序列；鲁宏使用陵水地区序列。`station_id` 是内部来源别名，不是已核实的官方站号，`source_station_code=NA`。地点和站点距离/代表性待核实。同地区两果园不能当作两个独立气象实现；年份是交叉验证分组单位。白糖罂仅红明一园，品种与果园效应混杂。
+A39已确认2026，旧年份冲突不再排除2026办内与鲁宏。原表J列类别均值按株数加权；有正株数而均值缺测的类别不补0，不能只用其余类别冒充全园均值。亩产保留原表K列。J列与3棵测产树算术均值的不一致仍只列为核对项。
 
-## 台风与正常年资格
+2025办内最终亩产=0，未测产量构成NA，主物候/正常产量排除；只对可用早期P1运行日历基线包含/排除敏感性。2025-03-01是放弃投产决定日，不是台风日期，台风具体日期仍NA。
 
-2025办内：最终亩产按用户方案记0；未测单株产量、单果重、真实果数、果数代理全部NA；不进正常产量训练。年度资料明确描述受损枝梢、不整齐生长及弱树势，故早期物候不进主分析，仅保留敏感性资格。确切台风发生日期未给出，`typhoon_event_date=NA`；`2025-03-01` 是放弃投产决定日期，不能当作台风发生日期。
+## 下游闸门
 
-红明2025年度资料记载台风折枝，2026资料记载树冠仍在恢复。暂将两季正常状态设NA并排除候选主分析，而非新增已确认绝收样本；需用户定义其是否符合“正常生产条件”。
+{weather_reasons}
 
-{markdown_table(blocks)}
+本次允许范围：标准化、日期/天气审计、真实时间轴、历史基线LOYO、W2实际边界及天气覆盖。W3、正式产量与暖冬等情景仍未获准。基线表现不等于验证了气象驱动物候模型。
+''')
+    write('01_SOURCE_BLOCK_REVIEW.md',f'''# 来源区块：A39已按用户确认解除冲突
 
-## 测产核验
+当前A39=2026，与最新用户确认一致；V2写定2025的约束已被补充说明替代。未改Excel，也未删除/合并任何区块。目前每个果园—产季只有一个来源区块，不存在旧方案预期的2025多区块。2026 Word数值匹配是补充核对线索，不是擅自改年的依据。
 
-按类别株数对原表J列类别均值和单果重加权；有正株数但测量缺失的类别存在时，不把它填0，也不将剩余类别的均值冒充全园均值。报告 `weighted_mean_tree_coverage_ratio`。亩产使用原表K列，不擅自按种植密度重算。原始三棵树均值与J列不一致项列在 `results/qc/yield_class_mean_review.csv`，本轮不自动替换。
+{markdown_table(master[['season_id','source_block_id','year_source_cell','year_protocol_conflict','final_yield_kg_per_mu','yield_main_eligible']])}
 
-## 本次允许范围及停止规则
-
-完成只读抽取、标准化、原始哈希冻结、数值/来源冲突审计、覆盖率和非模型描述。P1/P2/P3基线也不得利用错误日期运行；W2/W3、正式产量模型、灾害正常基线和情景均阻塞。没有生成虚构LOYO误差或模型预测区间。
-
-先确认日期与 A39，再补充连续逐日气象，最后重新审计样本闸门。即使日期修好，P2/P3仍受2月以后气象缺失限制。
-'''
-    write=lambda name,value:(root/'reports'/name).write_text(value,encoding='utf-8')
-    write('00_DATA_FEASIBILITY_REPORT.md',text)
-    write('01_SOURCE_BLOCK_REVIEW.md',f'''# 测产区块与年份核对
-
-原始行、合并单元格锚点及 `source_block_id` 均保留。当前A39=2026与方案=2025冲突；不自动改年、不删除或合并最后三个区块。当前标签下每个果园—产季只有一个区块，方案中所述同年多区块尚无法与当前文件对齐。
-
-{markdown_table(master[['season_id','source_block_id','year_source_cell','year_protocol_conflict','final_yield_kg_per_mu']])}
-
-## 年度Word数值对照（证据线索，不自动判定年份）
-
-按同一Word表格行与Excel首个测产类别的三棵树数值匹配；不把文档副本视为独立证据。
+## Word同一行三棵测产树数值匹配
 
 {markdown_table(numeric_matches)}
 
-请确认 A39 是方案旧版本中的笔误，还是本地工作簿与计划所指版本不同；如果确为2025，请进一步提供区块用途。所有验证将按整个产季分组，绝不把类别/调查树随机分入训练和测试。
+树级类别与调查批次仍是嵌套观测，LOYO始终留出完整harvest_year。
 ''')
-    write('01_PHENOLOGY_MODEL_REPORT.md',f'''# 物候模型报告（阻塞）
+    write('01_PHENOLOGY_MODEL_REPORT.md',f'''# 物候历史基线及气象模型闸门
 
-{pheno_count}
+{summary}
 
-P1预测秋梢老熟后的抽穗完整日期；P2预测抽穗后的盛花日期；P3预测盛花后的成熟日期。由于Stop 1，所有拟合、历史中位数基线与LOYO均未执行。最佳模型、MAE、RMSE、bias、Spearman和区间覆盖均为NA（未运行），不是0。不能比较哪个任务最可预测、非线性响应或水分增益。包括/排除2025办内的物候敏感性也未运行。
+P1目标：从秋梢成熟开始预测抽穗日期；P2：抽穗至盛花；P3：盛花至成熟。
+
+## LOYO基线
+
+{baselines}
+
+B0是训练年份内同果园的历史中位持续天数；P1-B1是训练年份内同果园的抽穗日期基线。中位数按半天向上取整到整天；缺少同园训练记录时回退到训练集总体中位数。实际起始事件是已观测输入。
+
+每折留出该产季所有果园，拟合只用其他年份；每条预测保存training_years和fit_season_ids。LOYO是回顾验证，训练可包含留出年之后的年份，不等于按时间滚动的生产预报。Spearman使用相对于收获年1月1日的日期偏移，避免把不同公历年份带来的相关误当性能。误差=预测−观测，正值为偏晚。
+
+样本只有5个产季，每折训练仅4个独立年份，未估计可靠预测区间，覆盖率NA，不能声称已验证区间性能。P1包含2025办内早期物候的敏感性仅限日历基线，并在相同正常样本集合比较MAE，避免样本变化造成误读。
+
+**低温日数、非线性温度响应、水分模型及P2/P3 GDD均未运行：完整阶段日气象不足。** 因此不能据此检验H1/H2、认定某气象模型最佳，或判断某任务已被气象稳定预测。
 ''')
-    write('02_DYNAMIC_WINDOW_REPORT.md','''# 动态气象窗口报告（阻塞）
+    dc=gate['dynamic_window_counts']
+    write('02_DYNAMIC_WINDOW_REPORT.md',f'''# 固定与实测动态窗口
 
-W1只执行固定窗口覆盖审计；完整的诱导窗口可汇总，不完整窗口的阶段统计为NA。W2因真实完整物候日期未通过审计而阻塞；W3因无LOYO预测日期而阻塞。因此不存在W1/W2/W3的预测性能比较，也没有用全数据物候拟合构造W3。
+W1保留固定窗口覆盖审计。W2现已构建：共{dc['total']}个候选窗口，其中{dc['valid_date_boundaries']}个有完整有效边界；完整温度+降水特征窗口{dc['complete_weather_features']}个。窗口两端包含，邻接阶段会共享边界日，这是本次明确的统计约定。
 
-窗口统计本轮未进入任何产量模型。即使以后使用W3，基于完整阶段实际天气的结果仍属于“给定后续天气”的条件预测；未提供天气预报或明确预测时点时，不能宣称提前生产部署性能。
+缺失窗口不以部分观测的均值/和冒充完整阶段统计。表中日期边界可用不代表气象特征可用。
+
+W3尚未构建：本次只有天气独立日历基线，没有可验证的气象驱动物候模型，且预测阶段内的天气仍缺失。未在全数据拟合后冒充交叉拟合窗口；也未用真实下游物候补齐预测边界来声称部署性能。
+
+W1/W2/W3产量预测性能比较仍未执行。基于实际后续天气的模型即使以后建成，也需说明其条件预测性质，不能等同于提前天气预报。
 ''')
-    write('03_YIELD_MODEL_REPORT.md',f'''# 正常产量模型报告（阻塞）
+    write('03_YIELD_MODEL_REPORT.md',f'''# 正常产量模型：天气特征仍阻塞
 
-气象闸门前保守候选样本{counts['normal_yield_eligible_seasons_before_weather_gate']}个，覆盖{len(counts['normal_eligible_years'])}个收获年份。原表非零记录{counts['raw_nonzero_yield_seasons']}个不等于可训练样本数。A39和正常年定义存在待确认项；日期未通过，W2不可构建，2月后天气缺失。因此所有Y实验未运行，极简关联也暂不拟合，避免在未解决的年份基础上给出误导结果。
+当前有{normal_n}个保守正常候选果园—产季、{len(counts['normal_eligible_years'])}个年份；A39及产季归年问题已解决。数量达到方案最低门槛，但完整W1/W2气象特征没有达到要求，所有Y模型未执行。基线与动态窗口的产量预测优劣、LOYO误差和区间NA。
 
-预测判据：未能评估，不是已经证明模型失败。没有训练/测试拆分或回归预处理被执行；R²、LOYO误差和区间覆盖均NA。
+{weather_reasons}
+
+2025办内排除，红明2025/2026正常年资格待确认。原表均值与类别缺测核对项仍保留。不能用仅有秋冬天气解释为已覆盖全部产量形成阶段。
 ''')
-    write('04_TYPHOON_CASE_REPORT.md',f'''# 2025年办内灾害案例（仅事实与资格审计）
+    write('04_TYPHOON_CASE_REPORT.md',f'''# 2025办内：模型外灾害案例
 
-实际最终亩产=0（用户方案确认）。未测单株产量、单果重、果数及后续物候保持NA。台风具体日期NA；年度报告记载2025-03-01决定放弃投产，该日期不能替代台风日期。
+最终亩产=0，未测单株产量、单果重、果数及代理NA。主分析排除；早期P1日期按A列归年后可用于“包含/排除”的日历基线敏感性，结果在 `results/phenology/P1_typhoon_sensitivity.csv`（仅all运行后生成）。P2/P3无后续观测，不能补齐。
 
-主物候分析排除2025办内；保留早期物候敏感性资格但未执行。正常产量拟合排除该季。由于正常模型未建成，“正常生产基线预测”、预测区间、绝对差和相对差均NA；包含/排除灾害的稳健回归敏感性也未运行。一个绝收样本不能训练通用灾害预测模型，不能把差额认定为已识别的因果效应。
-
-## 年度资料原文线索
+2025-03-01是放弃投产决定日，具体台风发生日NA。正常产量模型尚未建立，所以正常生产基线、区间、绝对与相对差均NA；没有输出因果台风损失。
 
 {markdown_table(doc_evidence)}
 ''')
-    write('05_SCENARIO_REPORT.md','''# 情景推演报告（阻塞）
+    write('05_SCENARIO_REPORT.md','''# 情景推演仍未执行
 
-S1暖冬(+0.5/+1/+2℃)、S2秋梢推迟(+7/+14/+21天)、S3水分情景及S4产量情景全部未运行。没有通过验证的P1、水分模型或产量模型，故不输出抽穗偏移天数、产量变化或概率。也未执行模型重拟合式“情景”。
+日期规则已修复，但没有获得验证的气象P1、水分或产量模型。S1暖冬、S2秋梢推迟、S3水分、S4产量扰动全部未运行。不得用历史中位日期基线对温度扰动给出伪生理响应，也不能把未运行写为变化0天。
 ''')
-    write('FINAL_EXPERIMENT_REPORT.md',f'''# V2实验执行结果：完成阶段0，建模按闸门停止
+    execution_title='完成日历基线' if comparison is not None else '阶段0重新审计完成'
+    write('FINAL_EXPERIMENT_REPORT.md',f'''# 实验继续执行结果：跨年日期已修复，{execution_title}
 
-## 1. P1/P2/P3完整样本
+## 1. 完整P1/P2/P3样本
 
-{pheno_count}
+{summary}
 
-## 2. 正常产年独立产量样本
+## 2. 正常产量独立样本
 
-15个原始果园—产季，14个非零亩产记录；扣除年份冲突及其他损伤待核实记录后，{counts['normal_yield_eligible_seasons_before_weather_gate']}个保守正常候选样本。固定灾害样本1个。45个类别行不是45个独立样本。
+原始15个果园—产季，14个非零亩产，保守正常候选{normal_n}个（{len(counts['normal_eligible_years'])}年）；固定绝收1个，红明损伤待核实2个。45个类别行不是45个独立环境样本。
 
-## 3. 2025办内是否进主物候分析
+## 3. 2025办内物候处理
 
-不进入。年度资料记载受损枝梢及弱树势已影响诱导/抽穗过程。确切台风日期不明。仅保留敏感性资格，日期未通过故敏感性本轮也不运行。
+主分析排除，仅将其可用早期P1纳入日历基线敏感性。不是普通正常物候样本。具体台风日期未知，年度资料已记载诱导/抽穗受损状态。
 
-## 4. P1目标、最佳模型和LOYO误差
+## 4. P1预测目标、基线与LOYO
 
-目标是秋梢老熟之后的抽穗完整日期。最佳模型与LOYO误差NA：Stop 1，未拟合，不能把未运行写为性能差或误差0。
+目标是秋梢成熟之后的抽穗完整日期。气象最佳模型未产生；下面只报告天气独立的历史基线：
+
+{baselines}
 
 ## 5. P2/P3是否稳定可预测
 
-尚不可评估：日期及2月后气象不足。
+已执行或允许历史持续天数基线；没有可用完整天气去验证GDD模型，不能声称气象预测稳定。见逐模型、逐折表，不能只看汇总相关。
 
-## 6. 非线性是否优于低温日数
+## 6. 非线性温度是否优于低温日数
 
-未检验。
+未检验，缺少从真实秋梢起点开始的连续天气。
 
-## 7. 水分调节增益
+## 7. 水分增益
 
-未检验；降雨并不能替代未知灌溉/土壤水分。
+未检验；降水也不能代表未知灌溉/土壤水分。
 
 ## 8. W2是否优于W1
 
-未检验。W1仅完成覆盖审计，W2未构建。
+已得到{dc['valid_date_boundaries']}个W2日期边界，但完整天气特征{dc['complete_weather_features']}个，未进行预测优劣比较。
 
 ## 9. W3是否优于W1
 
-未检验。没有LOYO物候预测，未构建W3。
+未检验；W3尚未构建，不把日历基线当作已验证气象模型。
 
 ## 10. 正常产量是否优于历史均值
 
-未检验。样本数量是必要条件，不足以跨过日期、年份及完整天气闸门。
+尚不可评估；样本数量够最低门槛，天气特征仍不完整。
 
-## 11. 加入预测物候是否改善产量
+## 11. 预测物候能否改善产量
 
 未检验。
 
-## 12. 2025办内正常基线、区间和差额
+## 12. 2025办内基线和损失参照
 
-实际=0 kg/亩；正常基线、预测区间、绝对/相对差全部NA（无获准正常模型）。不得解释为已识别的台风因果损失。
+实际=0 kg/亩，正常生产基线及预测区间、差额全部NA，没有获准正常产量模型。
 
-## 13. 暖冬和秋梢推迟改变多少天
+## 13. 暖冬/秋梢推迟影响多少天
 
-NA；S1—S4未运行。
+未运行，不能给出0或其他模拟数值。
 
 ## 14. 当前证据等级
 
-**当前数据尚不支持可验证预测结论（数据闸门阻塞），不能据此否定研究假设。** 也未拟合关联模型。所有原始文件哈希与快照一致；`测产.xlsx!A39`原样为2026，方案锁定2025仍需确认。
+用户确认已解除A39与日期归年阻塞；当前支持报告**回顾性的历史日历基线**，尚不支持气象驱动物候/正常产量预测结论。核心H1—H3未检验，不能据此否定假设。LOYO仅5年，未提供可靠预测区间。
 
-## 15. 最应补充/确认的观测
+## 15. 下一步数据需求
 
-1. 先修订为真实完整日期，尤其秋梢老熟的前一年，以及每一历史产季的抽穗/盛花/成熟年份；不要只改显示格式。提供红明2026缺失物候及各事件定义。
-2. 确认A39到底对应2025还是2026；若是2025，确认各区块调查批次/小区。核对类别均值和缺测类别。
-3. 补齐至少2021年秋至2026年采收期连续逐日天气（尤其每年2—9月），核对陵水异常温度，不自动交换最高/最低列。
-4. 提供办内台风日期、损毁比例、管理放弃投产说明；确认红明2025/2026是否满足正常年定义。记录后续恢复年份和灌溉/药物调花管理。
-5. 下一年度持续记录秋梢成熟、露白点、抽穗、盛花、成熟的标准定义/重复观察；增加真正独立果园—年份、产量实际称重和果数，提供官方站号及园站距离。
+优先补齐每个P1实际秋梢日开始的8—9月逐日天气，以及2月至采收的连续天气。精确区间见 `results/qc/weather_missing_by_transition.csv`。再核对陵水31条温度顺序异常及其他天气QC项、红明损伤恢复资格、缺失物候与测产类别。A39和年度归年无需再次确认。
 
-## 执行状态清单
+## 执行记录
+
+147个完整日期均按A列产季授权重建，月日不改。2022办内2021-09-25至2022-01-20为117天；原始11文件哈希未变。补充规则见 `experiments_guide/2026-08-27_USER_CLARIFICATION.md`。
 
 {markdown_table(status)}
 
-## 重建与测试
+运行 `python -m src.cli all --config configs/base.yaml` 可重建当前允许阶段；尚有天气阻塞时返回退出码2。`python scripts/verify.py` 记录真实pytest与重复重建结果。阶段0先单独提交，然后执行允许的基线。
 
-`python -m src.cli all --config configs/base.yaml` 重建当前输入允许的审计和非模型描述；遇到数据闸门按约定退出码2，输出blocked报告，不运行后续模型。
-
-`python -m pytest -q -ra` 执行安全性和数据处理测试。A39=2025约束应显示明确的预期失败（xfail），不能冒充满足；尚未实现/运行的模型专属测试明确skip。实际运行结果见 `results/logs/verification.json`。
-
-代码范围为阶段0和非模型描述；阶段0已作为独立提交保存。数据修订并确认新输入快照后，须先重新审计，再实现允许的后续模型，不能仅通过改闸门数值强行运行。
-
-主要结果：`results/qc/analysis_gate.json`、`reports/00_DATA_FEASIBILITY_REPORT.md`、`results/qc/phenology_date_review.csv`、`results/qc/source_block_review.csv`、`results/qc/weather_coverage_by_orchard_season.csv`、`results/figures/`。
+主要产物：`data/processed/phenology_event_long.csv`、`results/qc/phenology_date_normalization.csv`、`results/phenology/P1_cv_predictions.csv`、`results/windows/observed_dynamic_features.csv`、`results/figures/`。
 ''')

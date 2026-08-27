@@ -3,35 +3,36 @@ QC-0,executed,standardization_and_data_gate
 DESC-Y,executed,raw_yield_description
 DESC-W,executed,weather_coverage_description
 W1-QC,executed,fixed_window_coverage_audit
+W2-QC,executed,normalized_observed_stage_boundaries_and_weather_coverage
 TYPHOON-DESC,executed,source_evidence_and_zero_vs_NA_coding
-P1-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-B1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-B2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-M3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-M4,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P2-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P2-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P2-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P3-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P3-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P3-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-P1-white-tip,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-W2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-W3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-B1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-W1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-W2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-W3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-W3P,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-PREV,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-Y-DEC,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-TYPHOON-BASELINE,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-TYPHOON-INCLUSION,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-PHENO-TYPHOON-SENSITIVITY,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-S1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-S2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-S3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
-S4,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-B0,pending,weather_independent_LOYO_baselines_only
+P1-B1,pending,weather_independent_LOYO_baselines_only
+P2-B0,pending,weather_independent_LOYO_baselines_only
+P3-B0,pending,weather_independent_LOYO_baselines_only
+PHENO-TYPHOON-SENSITIVITY,pending,weather_independent_LOYO_baselines_only
+W2,partial,date_windows_available_but_stage_weather_incomplete
+P1-B2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P1-M1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P1-M2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P1-M3,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P1-M4,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P2-M1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P2-M2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P3-M1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P3-M2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+P1-white-tip,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+W3,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-B0,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-B1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-W1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-W2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-W3,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-W3P,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-PREV,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+Y-DEC,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+TYPHOON-BASELINE,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+TYPHOON-INCLUSION,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+S1,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+S2,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+S3,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated
+S4,blocked,continuous_stage_weather_unavailable_or_required_weather_model_not_validated

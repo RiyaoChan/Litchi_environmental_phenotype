@@ -17,6 +17,7 @@ from .weather_features import clean_weather, coverage_tables
 from .build_master import build_master
 from .data_qc import transition_audit, overlap_audit, analysis_gate
 from .reporting import write_reports
+from .dynamic_windows import observed_dynamic_features, transition_weather_gaps
 
 
 def source_matches(yields, doc_cells):
@@ -38,16 +39,21 @@ def source_matches(yields, doc_cells):
     return pd.DataFrame(rows,columns=['source_block_id','excel_row','excel_harvest_year','word_source_file','word_table','word_row','word_report_year_from_filename','matched_tree_yields_kg','interpretation'])
 
 
-def experiment_status():
+def experiment_status(gate,baselines_run=False):
     executed=[('QC-0','standardization_and_data_gate'),('DESC-Y','raw_yield_description'),
               ('DESC-W','weather_coverage_description'),('W1-QC','fixed_window_coverage_audit'),
+              ('W2-QC','normalized_observed_stage_boundaries_and_weather_coverage'),
               ('TYPHOON-DESC','source_evidence_and_zero_vs_NA_coding')]
-    blocked=['P1-B0','P1-B1','P1-B2','P1-M1','P1-M2','P1-M3','P1-M4',
-             'P2-B0','P2-M1','P2-M2','P3-B0','P3-M1','P3-M2','P1-white-tip',
-             'W2','W3','Y-B0','Y-B1','Y-W1','Y-W2','Y-W3','Y-W3P','Y-PREV','Y-DEC',
-             'TYPHOON-BASELINE','TYPHOON-INCLUSION','PHENO-TYPHOON-SENSITIVITY','S1','S2','S3','S4']
+    baseline_ids=['P1-B0','P1-B1','P2-B0','P3-B0','PHENO-TYPHOON-SENSITIVITY']
+    baseline_rows=[{'experiment_id':k,'status':'executed' if baselines_run else 'pending' if gate['dates_ready'] else 'blocked',
+                    'reason':'weather_independent_LOYO_baselines_only' if gate['dates_ready'] else 'date_gate'} for k in baseline_ids]
+    blocked=['P1-B2','P1-M1','P1-M2','P1-M3','P1-M4',
+             'P2-M1','P2-M2','P3-M1','P3-M2','P1-white-tip',
+             'W3','Y-B0','Y-B1','Y-W1','Y-W2','Y-W3','Y-W3P','Y-PREV','Y-DEC',
+             'TYPHOON-BASELINE','TYPHOON-INCLUSION','S1','S2','S3','S4']
     return pd.DataFrame([{'experiment_id':k,'status':'executed','reason':r} for k,r in executed]+
-                        [{'experiment_id':k,'status':'blocked','reason':'Stop 1 / unresolved chronology / incomplete weather; not fitted'} for k in blocked])
+                        baseline_rows+[{'experiment_id':'W2','status':'partial','reason':'date_windows_available_but_stage_weather_incomplete'}]+
+                        [{'experiment_id':k,'status':'blocked','reason':'continuous_stage_weather_unavailable_or_required_weather_model_not_validated'} for k in blocked])
 
 
 def run(root: Path,cfg: dict,all_stages=False):
@@ -64,9 +70,11 @@ def run(root: Path,cfg: dict,all_stages=False):
     coverage,gaps,fixed=coverage_tables(weather,master,cfg,window_cfg)
     master['weather_coverage_ratio']=master.season_id.map(coverage.set_index('season_id').date_coverage_ratio)
     master['weather_coverage_window']='previous_Oct01_to_harvest_Jun30_inclusive'
-    transitions=transition_audit(events,master,weather)
-    gate=analysis_gate(events,yields,master,blocks,transitions,coverage,fixed,a39)
-    status=experiment_status()
+    transitions=transition_audit(events,master,weather,cfg)
+    dynamic=observed_dynamic_features(events,master,weather,window_cfg)
+    gate=analysis_gate(events,yields,master,blocks,transitions,coverage,fixed,a39,cfg,dynamic)
+    predictions,comparison=None,None
+    status=experiment_status(gate,False)
     matches=source_matches(yields,doc_cells)
     tables={
         'data/processed/phenology_event_long.csv':events,
@@ -78,6 +86,7 @@ def run(root: Path,cfg: dict,all_stages=False):
         'data/metadata/weather_column_mapping.csv':weather_mapping,
         'results/inventory/raw_file_inventory.csv':pd.DataFrame(inventory(root,cfg)),
         'results/qc/phenology_date_review.csv':events[events.qc_flag!='ok'],
+        'results/qc/phenology_date_normalization.csv':events[events.event_date.notna()],
         'results/qc/source_block_review.csv':blocks,
         'results/qc/transition_review.csv':transitions,
         'results/qc/phenology_overlap_review.csv':overlap_audit(events),
@@ -86,12 +95,15 @@ def run(root: Path,cfg: dict,all_stages=False):
         'results/qc/weather_rejected_rows.csv':rejected,
         'results/qc/weather_coverage_by_orchard_season.csv':coverage,
         'results/qc/weather_gap_ranges.csv':gaps,
+        'results/qc/weather_missing_by_transition.csv':transition_weather_gaps(transitions,weather),
         'results/qc/yield_class_mean_review.csv':yields[yields.class_mean_mismatch==1],
         'results/qc/annual_source_numeric_matches.csv':matches,
         'results/qc/experiment_status.csv':status,
         'results/descriptive/phenology_duration.csv':transitions,
+        'results/descriptive/weather_by_stage.csv':dynamic,
         'results/descriptive/yield_summary.csv':master,
         'results/windows/fixed_window_features.csv':fixed,
+        'results/windows/observed_dynamic_features.csv':dynamic,
         'results/windows/window_comparison.csv':pd.DataFrame([
             {'window_type':k,'status':v,'performance_comparison_available':False} for k,v in gate['windows'].items()]),
     }
@@ -104,7 +116,9 @@ def run(root: Path,cfg: dict,all_stages=False):
     tables['results/typhoon_case/bannei_2025_case.csv']=case
     for path,df in tables.items(): write_csv(root/path,df)
     write_json(root/'results/qc/analysis_gate.json',gate)
-    write_json(root/'results/qc/protocol_conflicts.json',{'A39':a39,'raw_file_changed_by_pipeline':False})
+    write_json(root/'results/qc/protocol_conflicts.json',{'A39':a39,'raw_file_changed_by_pipeline':False,
+        'resolution_authority':cfg['constraints']['user_amendment'],'seasonal_year_authority':'Excel column A',
+        'previous_A39_and_date_year_blocks_resolved':not a39['conflict'] and gate['dates_ready']})
     write_json(root/'results/logs/environment.json',{'python_version':platform.python_version(),
         'python_executable':sys.executable,'platform':platform.platform(),'seed':cfg['seed'],
         'packages':{p:importlib.metadata.version(p) for p in ['numpy','pandas','openpyxl','PyYAML','pytest','matplotlib']}})
@@ -121,12 +135,18 @@ def run(root: Path,cfg: dict,all_stages=False):
             schema.append({'table':file,'field':col,'unit_or_definition':units.get(col,'see source locator / report'),
                            'missing_representation':'NA; never replace missing measurement with 0'})
     write_csv(root/'data/metadata/data_dictionary.csv',schema)
-    write_reports(root,gate,events,master,coverage,fixed,weather_issues,evidence,transitions,status,matches)
+    if all_stages and gate['dates_ready']:
+        from .phenology_validation import run_baselines
+        predictions,comparison=run_baselines(root,transitions,gate,cfg)
+        status=experiment_status(gate,True)
+        write_csv(root/'results/qc/experiment_status.csv',status)
+    write_reports(root,gate,events,master,coverage,fixed,weather_issues,evidence,transitions,status,matches,
+                  dynamic=dynamic,comparison=comparison)
     if all_stages:
         from .plots import create_descriptive_figures
-        create_descriptive_figures(root,events,master,weather,transitions,cfg)
+        create_descriptive_figures(root,events,master,weather,transitions,cfg,predictions=predictions)
     assert_inputs_unchanged(root,cfg)
-    print(json.dumps({'status':gate['overall_status'],'stage':'stage0_completed',
+    print(json.dumps({'status':gate['overall_status'],'stage':'allowed_stages_completed' if all_stages else 'stage0_completed',
                       'counts':gate['counts'],'phenology':gate['phenology'],
                       'report':'reports/FINAL_EXPERIMENT_REPORT.md'},ensure_ascii=False,indent=2))
-    return 2 if gate['overall_status']=='blocked' else 0
+    return 2 if gate.get('has_blocked_experiments',False) else 0

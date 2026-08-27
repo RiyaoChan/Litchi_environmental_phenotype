@@ -10,6 +10,10 @@ data/processed/phenology_event_long.csv,event_date,YYYY-MM-DD; validated only,NA
 data/processed/phenology_event_long.csv,calendar_year,see source locator / report,NA; never replace missing measurement with 0
 data/processed/phenology_event_long.csv,day_of_year,see source locator / report,NA; never replace missing measurement with 0
 data/processed/phenology_event_long.csv,decoded_candidate_date,AUDIT ONLY; not analysis-ready,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,date_derivation,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,date_year_rebased,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,date_authority,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,date_authority_source,see source locator / report,NA; never replace missing measurement with 0
 data/processed/phenology_event_long.csv,source_file,see source locator / report,NA; never replace missing measurement with 0
 data/processed/phenology_event_long.csv,source_sheet,see source locator / report,NA; never replace missing measurement with 0
 data/processed/phenology_event_long.csv,source_row,see source locator / report,NA; never replace missing measurement with 0

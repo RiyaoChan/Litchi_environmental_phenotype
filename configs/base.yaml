@@ -24,9 +24,13 @@ orchards:
     station_id: lingshui_region_proxy
     cultivar: 妃子笑
 constraints:
-  a39_expected: 2025
+  a39_expected: 2026
   accept_unformatted_excel_serials: false
-  # Do not change this switch to bypass a year/sequence conflict.
+  # Generic serials remain untrusted without the explicit seasonal rule below.
+  date_year_authority: harvest_year_column_A
+  seasonal_year_normalization: true
+  season_start_month: 7
+  user_amendment: experiments_guide/2026-08-27_USER_CLARIFICATION.md
   typhoon_orchard: bannei
   typhoon_harvest_year: 2025
   typhoon_event_date: null
@@ -49,6 +53,7 @@ coverage:
   end: '{Y}-06-30'
   interval: closed_both
 weather_windows_config: configs/weather_windows.yaml
+phenology_models_config: configs/phenology_models.yaml
 damage_review:
   - orchard_id: hongming
     harvest_year: 2025

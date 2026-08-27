@@ -1,74 +1,74 @@
-# V2实验执行结果：完成阶段0，建模按闸门停止
+# 实验继续执行结果：跨年日期已修复，阶段0重新审计完成
 
-## 1. P1/P2/P3完整样本
+## 1. 完整P1/P2/P3样本
 
-| 任务 | 原始端点成对记录 | 通过日期审计 | 正常主分析完整转换 | 气象完整可建模样本 | 状态 |
-| --- | --- | --- | --- | --- | --- |
-| P1 | 14 | 0 | 0 | 0 | blocked |
-| P2 | 13 | 0 | 0 | 0 | blocked |
-| P3 | 13 | 0 | 0 | 0 | blocked |
+| 任务 | 全部完整日期对 | 主分析完整日期对 | 完整日温度样本 | 状态 |
+| --- | --- | --- | --- | --- |
+| P1 | 14 | 12 | 0 | baseline_only |
+| P2 | 13 | 12 | 0 | baseline_only |
+| P3 | 13 | 12 | 0 | baseline_only |
 
-## 2. 正常产年独立产量样本
+## 2. 正常产量独立样本
 
-15个原始果园—产季，14个非零亩产记录；扣除年份冲突及其他损伤待核实记录后，10个保守正常候选样本。固定灾害样本1个。45个类别行不是45个独立样本。
+原始15个果园—产季，14个非零亩产，保守正常候选12个（5年）；固定绝收1个，红明损伤待核实2个。45个类别行不是45个独立环境样本。
 
-## 3. 2025办内是否进主物候分析
+## 3. 2025办内物候处理
 
-不进入。年度资料记载受损枝梢及弱树势已影响诱导/抽穗过程。确切台风日期不明。仅保留敏感性资格，日期未通过故敏感性本轮也不运行。
+主分析排除，仅将其可用早期P1纳入日历基线敏感性。不是普通正常物候样本。具体台风日期未知，年度资料已记载诱导/抽穗受损状态。
 
-## 4. P1目标、最佳模型和LOYO误差
+## 4. P1预测目标、基线与LOYO
 
-目标是秋梢老熟之后的抽穗完整日期。最佳模型与LOYO误差NA：Stop 1，未拟合，不能把未运行写为性能差或误差0。
+目标是秋梢成熟之后的抽穗完整日期。气象最佳模型未产生；下面只报告天气独立的历史基线：
+
+本次仅运行阶段0；基线尚未执行。
 
 ## 5. P2/P3是否稳定可预测
 
-尚不可评估：日期及2月后气象不足。
+已执行或允许历史持续天数基线；没有可用完整天气去验证GDD模型，不能声称气象预测稳定。见逐模型、逐折表，不能只看汇总相关。
 
-## 6. 非线性是否优于低温日数
+## 6. 非线性温度是否优于低温日数
 
-未检验。
+未检验，缺少从真实秋梢起点开始的连续天气。
 
-## 7. 水分调节增益
+## 7. 水分增益
 
-未检验；降雨并不能替代未知灌溉/土壤水分。
+未检验；降水也不能代表未知灌溉/土壤水分。
 
 ## 8. W2是否优于W1
 
-未检验。W1仅完成覆盖审计，W2未构建。
+已得到66个W2日期边界，但完整天气特征0个，未进行预测优劣比较。
 
 ## 9. W3是否优于W1
 
-未检验。没有LOYO物候预测，未构建W3。
+未检验；W3尚未构建，不把日历基线当作已验证气象模型。
 
 ## 10. 正常产量是否优于历史均值
 
-未检验。样本数量是必要条件，不足以跨过日期、年份及完整天气闸门。
+尚不可评估；样本数量够最低门槛，天气特征仍不完整。
 
-## 11. 加入预测物候是否改善产量
+## 11. 预测物候能否改善产量
 
 未检验。
 
-## 12. 2025办内正常基线、区间和差额
+## 12. 2025办内基线和损失参照
 
-实际=0 kg/亩；正常基线、预测区间、绝对/相对差全部NA（无获准正常模型）。不得解释为已识别的台风因果损失。
+实际=0 kg/亩，正常生产基线及预测区间、差额全部NA，没有获准正常产量模型。
 
-## 13. 暖冬和秋梢推迟改变多少天
+## 13. 暖冬/秋梢推迟影响多少天
 
-NA；S1—S4未运行。
+未运行，不能给出0或其他模拟数值。
 
 ## 14. 当前证据等级
 
-**当前数据尚不支持可验证预测结论（数据闸门阻塞），不能据此否定研究假设。** 也未拟合关联模型。所有原始文件哈希与快照一致；`测产.xlsx!A39`原样为2026，方案锁定2025仍需确认。
+用户确认已解除A39与日期归年阻塞；当前支持报告**回顾性的历史日历基线**，尚不支持气象驱动物候/正常产量预测结论。核心H1—H3未检验，不能据此否定假设。LOYO仅5年，未提供可靠预测区间。
 
-## 15. 最应补充/确认的观测
+## 15. 下一步数据需求
 
-1. 先修订为真实完整日期，尤其秋梢老熟的前一年，以及每一历史产季的抽穗/盛花/成熟年份；不要只改显示格式。提供红明2026缺失物候及各事件定义。
-2. 确认A39到底对应2025还是2026；若是2025，确认各区块调查批次/小区。核对类别均值和缺测类别。
-3. 补齐至少2021年秋至2026年采收期连续逐日天气（尤其每年2—9月），核对陵水异常温度，不自动交换最高/最低列。
-4. 提供办内台风日期、损毁比例、管理放弃投产说明；确认红明2025/2026是否满足正常年定义。记录后续恢复年份和灌溉/药物调花管理。
-5. 下一年度持续记录秋梢成熟、露白点、抽穗、盛花、成熟的标准定义/重复观察；增加真正独立果园—年份、产量实际称重和果数，提供官方站号及园站距离。
+优先补齐每个P1实际秋梢日开始的8—9月逐日天气，以及2月至采收的连续天气。精确区间见 `results/qc/weather_missing_by_transition.csv`。再核对陵水31条温度顺序异常及其他天气QC项、红明损伤恢复资格、缺失物候与测产类别。A39和年度归年无需再次确认。
 
-## 执行状态清单
+## 执行记录
+
+147个完整日期均按A列产季授权重建，月日不改。2022办内2021-09-25至2022-01-20为117天；原始11文件哈希未变。补充规则见 `experiments_guide/2026-08-27_USER_CLARIFICATION.md`。
 
 | experiment_id | status | reason |
 | --- | --- | --- |
@@ -76,45 +76,40 @@ NA；S1—S4未运行。
 | DESC-Y | executed | raw_yield_description |
 | DESC-W | executed | weather_coverage_description |
 | W1-QC | executed | fixed_window_coverage_audit |
+| W2-QC | executed | normalized_observed_stage_boundaries_and_weather_coverage |
 | TYPHOON-DESC | executed | source_evidence_and_zero_vs_NA_coding |
-| P1-B0 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-B1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-B2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-M1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-M2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-M3 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-M4 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P2-B0 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P2-M1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P2-M2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P3-B0 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P3-M1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P3-M2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| P1-white-tip | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| W2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| W3 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-B0 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-B1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-W1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-W2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-W3 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-W3P | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-PREV | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| Y-DEC | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| TYPHOON-BASELINE | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| TYPHOON-INCLUSION | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| PHENO-TYPHOON-SENSITIVITY | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| S1 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| S2 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| S3 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
-| S4 | blocked | Stop 1 / unresolved chronology / incomplete weather; not fitted |
+| P1-B0 | pending | weather_independent_LOYO_baselines_only |
+| P1-B1 | pending | weather_independent_LOYO_baselines_only |
+| P2-B0 | pending | weather_independent_LOYO_baselines_only |
+| P3-B0 | pending | weather_independent_LOYO_baselines_only |
+| PHENO-TYPHOON-SENSITIVITY | pending | weather_independent_LOYO_baselines_only |
+| W2 | partial | date_windows_available_but_stage_weather_incomplete |
+| P1-B2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P1-M1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P1-M2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P1-M3 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P1-M4 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P2-M1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P2-M2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P3-M1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P3-M2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| P1-white-tip | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| W3 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-B0 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-B1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-W1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-W2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-W3 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-W3P | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-PREV | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| Y-DEC | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| TYPHOON-BASELINE | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| TYPHOON-INCLUSION | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| S1 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| S2 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| S3 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
+| S4 | blocked | continuous_stage_weather_unavailable_or_required_weather_model_not_validated |
 
-## 重建与测试
+运行 `python -m src.cli all --config configs/base.yaml` 可重建当前允许阶段；尚有天气阻塞时返回退出码2。`python scripts/verify.py` 记录真实pytest与重复重建结果。阶段0先单独提交，然后执行允许的基线。
 
-`python -m src.cli all --config configs/base.yaml` 重建当前输入允许的审计和非模型描述；遇到数据闸门按约定退出码2，输出blocked报告，不运行后续模型。
-
-`python -m pytest -q -ra` 执行安全性和数据处理测试。A39=2025约束应显示明确的预期失败（xfail），不能冒充满足；尚未实现/运行的模型专属测试明确skip。实际运行结果见 `results/logs/verification.json`。
-
-代码范围为阶段0和非模型描述；阶段0已作为独立提交保存。数据修订并确认新输入快照后，须先重新审计，再实现允许的后续模型，不能仅通过改闸门数值强行运行。
-
-主要结果：`results/qc/analysis_gate.json`、`reports/00_DATA_FEASIBILITY_REPORT.md`、`results/qc/phenology_date_review.csv`、`results/qc/source_block_review.csv`、`results/qc/weather_coverage_by_orchard_season.csv`、`results/figures/`。
+主要产物：`data/processed/phenology_event_long.csv`、`results/qc/phenology_date_normalization.csv`、`results/phenology/P1_cv_predictions.csv`、`results/windows/observed_dynamic_features.csv`、`results/figures/`。
