@@ -7,3 +7,10 @@
 Thumbs.db
 desktop.ini
 
+# Reproducible experiment runtime; keep data and reports versioned
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+results/logs/*.log

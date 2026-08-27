@@ -1,0 +1,8 @@
+# Research pipeline, not workbook authoring. openpyxl is read-only.
+numpy
+pandas
+openpyxl
+PyYAML
+matplotlib
+pytest
+pywin32; sys_platform == 'win32'

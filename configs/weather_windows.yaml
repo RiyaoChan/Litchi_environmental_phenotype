@@ -1,0 +1,12 @@
+# Pre-registered calendar windows from the V2 protocol. Endpoints inclusive.
+fixed:
+  floral_induction: {start: '{Y-1}-10-01', end: '{Y}-01-31'}
+  flowering: {start: '{Y}-02-01', end: '{Y}-03-31'}
+  fruit_set_drop: {start: '{Y}-03-01', end: '{Y}-04-30'}
+  fruit_growth: {start: '{Y}-04-01', end: '{Y}-06-30'}
+dynamic:
+  induction: [autumn_flush_mature, inflorescence_emergence]
+  pre_bloom: [inflorescence_emergence, full_bloom]
+  flowering: [full_bloom, end_bloom]
+  fruit_set_drop: [end_bloom, fruit_drop_2]
+  fruit_growth: [fruit_drop_2, maturity]

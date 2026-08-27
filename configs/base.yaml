@@ -1,0 +1,51 @@
+project: litchi_weather_phenology_yield
+seed: 20260827
+protocol: experiments_guide/LITCHI_WEATHER_PHENOLOGY_YIELD_EXPERIMENT_PLAN_FOR_CODEX_V2.md
+inputs:
+  phenology: 物候期.xlsx
+  yield: 测产.xlsx
+  weather_dir: 气象数据原
+  documents_dir: 示范园
+  root_documents: true
+orchards:
+  bannei:
+    name: 办内果园
+    region_id: haikou
+    station_id: haikou_region_proxy
+    cultivar: 妃子笑
+  hongming:
+    name: 红明农场
+    region_id: haikou
+    station_id: haikou_region_proxy
+    cultivar: 白糖罂
+  luhong:
+    name: 鲁宏果园
+    region_id: lingshui
+    station_id: lingshui_region_proxy
+    cultivar: 妃子笑
+constraints:
+  a39_expected: 2025
+  accept_unformatted_excel_serials: false
+  # Do not change this switch to bypass a year/sequence conflict.
+  typhoon_orchard: bannei
+  typhoon_harvest_year: 2025
+  typhoon_event_date: null
+  typhoon_structural_damage_stage: unresolved
+  typhoon_main_eligible: false
+gates:
+  simple_phenology_min_n: 8
+  nonlinear_phenology_min_n: 12
+  yield_min_n: 10
+  yield_min_years: 4
+  required_weather_coverage: 1.0
+  # No interpolation; full daily sequences required for accumulation models.
+qc:
+  temperature_bounds_c: [-20, 55]
+  sunshine_bounds_h: [0, 24]
+  relative_humidity_bounds_pct: [0, 100]
+  class_mean_tolerance_kg: 0.05
+coverage:
+  start: '{Y-1}-10-01'
+  end: '{Y}-06-30'
+  interval: closed_both
+weather_windows_config: configs/weather_windows.yaml
