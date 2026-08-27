@@ -1,0 +1,18 @@
+{
+  "pipeline_command": "python -m src.cli all --config configs/base.yaml",
+  "pipeline_exit_codes": [
+    2,
+    2
+  ],
+  "blocked_exit_is_expected": true,
+  "pytest_exit_code": 0,
+  "pytest_passed": 23,
+  "pytest_failed": 0,
+  "pytest_skipped": 3,
+  "pytest_expected_failed": 1,
+  "expected_failure_reason": "A39 protocol=2025 but source=2026; preserved and blocked",
+  "skipped_scope": "train-only preprocessing, W3 cross-fitting, scenario no-refit: not implemented because Stop 1",
+  "reproducible_outputs_identical": true,
+  "compared_file_count": 36,
+  "changed_files": []
+}

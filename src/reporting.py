@@ -45,6 +45,8 @@ def write_reports(root, gate, events, master, coverage, fixed, weather_issues, d
 - 原始表中有 {counts['raw_nonzero_yield_seasons']} 个非零亩产记录；在排除固定灾害、年份冲突及其他结构损伤待核实记录后，{counts['normal_yield_eligible_seasons_before_weather_gate']} 个正常候选样本、年份 {counts['normal_eligible_years']}。这是**气象及全局闸门之前**的数量，不表示正式模型已获准。
 - {counts['protocol_disaster_seasons']} 个方案定义的绝收样本；另有 {counts['other_damage_review_seasons']} 个红明产季的正常生产资格待核实。
 
+上述标准化样本数来自两份主Excel；年度Word用于来源、管理与灾害证据审计。未把Word中的历史回顾表重复计入样本，也未从只有月日的Word表格猜年份扩充2021产季。
+
 ## 完整转换样本
 
 {pheno_count}

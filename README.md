@@ -22,3 +22,34 @@
 4. 气象通过物候影响产量的路径/机制分析。
 
 后续建模前需进一步核对各数据表的字段定义、时间尺度、地点、品种、样本量、缺失值及不同文件之间可用于关联的键。
+
+## V2 实验执行状态（2026-08-27）
+
+工作分支：`codex/litchi-phenology-yield-r2`。
+
+已执行用户提供方案的阶段0，并完成非模型描述、标准表、来源追踪和自动测试。**当前按 Stop 1 阻塞，不代表全部实验完成。** 原始文件未被代码改写。
+
+主要发现：
+
+- `物候期.xlsx` 有147个未格式化日期序号，解码后的年份/先后顺序存在明显冲突；未猜测修正。
+- 本地 `测产.xlsx!A39=2026`，与V2方案锁定的2025冲突。2026年Word中的测产数值可供核对，仍待用户确认。
+- 两地区天气主要为上一年10月至当年1月；每年2—9月缺失，不能用于完整盛花/果实发育窗口。
+- 2025办内最终产量记0，其未测构成保留NA；红明2025/2026的正常年资格需结合台风恢复情况确认。
+
+先读 [阶段0可行性报告](reports/00_DATA_FEASIBILITY_REPORT.md)、[最终执行报告](reports/FINAL_EXPERIMENT_REPORT.md) 和 [数据闸门](results/qc/analysis_gate.json)。具体需修订的单元格在 `results/qc/phenology_date_review.csv`；年份/区块在 `results/qc/source_block_review.csv`。
+
+### 重建当前允许范围
+
+```bash
+python -m src.cli all --config configs/base.yaml
+python -m pytest -q -ra
+python scripts/verify.py
+```
+
+`all` 在数据闸门阻塞时按约定返回 **退出码2**，报告和标准表仍完整生成。模型训练模块尚未实现/运行；修订输入后需先重新审计，不能靠修改状态字段绕过闸门。
+
+当前实际使用 Python 3.11 和 `requirements.txt` 中固定版本；运行环境见 `results/logs/environment.json`。依赖已具备，未自动安装。Word原文按SHA-256缓存，常规重建不需要再次打开Word；需要重新抽取时使用 `python scripts/extract_word_sources.py`（Windows + Word + pywin32，独立隐藏实例，只读打开，不保存原文）。
+
+`data/metadata/input_hashes.json` 是本轮当前原始输入的不可自动更新快照。若之后修订输入，程序会拒绝使用旧快照；应先确认修订内容、保留旧提交，再明确建立新版本快照。不要删除哈希校验来绕过审计。
+
+`results/logs/verification.json` 记录真实测试结果。A39锁定值与实际不符的测试明确xfail；未运行模型的3个专属测试明确skip，不将这些测试包装为已通过模型验证。

@@ -1,0 +1,12 @@
+{
+  "method": "Poppler pdftoppm at 105 dpi; visually inspected every rendered PDF page",
+  "pdfs_reviewed": [
+    "results/figures/Fig01_data_gate_counts.pdf",
+    "results/figures/Fig02_phenology_input_status.pdf",
+    "results/figures/Fig03_weather_availability.pdf",
+    "results/figures/Fig04_yield_by_orchard_year.pdf"
+  ],
+  "page_count": 4,
+  "result": "pass",
+  "checks": ["no clipped labels", "no overlaps", "missing data distinguishable from zero", "no simulated model results"]
+}
