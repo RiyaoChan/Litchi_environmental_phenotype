@@ -1,0 +1,16 @@
+﻿season_id,station_id,missing_start,missing_end,n_days
+bannei_2022,haikou_region_proxy,2022-02-01,2022-06-30,150
+bannei_2023,haikou_region_proxy,2023-02-01,2023-06-30,150
+bannei_2024,haikou_region_proxy,2024-02-01,2024-06-30,151
+bannei_2025,haikou_region_proxy,2025-02-01,2025-06-30,150
+bannei_2026,haikou_region_proxy,2026-02-01,2026-06-30,150
+hongming_2022,haikou_region_proxy,2022-02-01,2022-06-30,150
+hongming_2023,haikou_region_proxy,2023-02-01,2023-06-30,150
+hongming_2024,haikou_region_proxy,2024-02-01,2024-06-30,151
+hongming_2025,haikou_region_proxy,2025-02-01,2025-06-30,150
+hongming_2026,haikou_region_proxy,2026-02-01,2026-06-30,150
+luhong_2022,lingshui_region_proxy,2022-02-01,2022-06-30,150
+luhong_2023,lingshui_region_proxy,2023-02-01,2023-06-30,150
+luhong_2024,lingshui_region_proxy,2024-02-01,2024-06-30,151
+luhong_2025,lingshui_region_proxy,2025-02-01,2025-06-30,150
+luhong_2026,lingshui_region_proxy,2026-02-01,2026-06-30,150

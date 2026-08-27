@@ -1,0 +1,91 @@
+{
+  "overall_status": "blocked",
+  "stop_rule": "Stop 1",
+  "raw_mutation": false,
+  "dates_ready": false,
+  "a39": {
+    "actual_a39": 2026,
+    "expected_a39": 2025,
+    "conflict": true
+  },
+  "counts": {
+    "phenology_orchard_seasons": 15,
+    "phenology_event_slots": 180,
+    "validated_event_dates": 0,
+    "unformatted_excel_serials": 147,
+    "yield_class_rows": 45,
+    "yield_source_blocks": 15,
+    "yield_orchard_seasons": 15,
+    "raw_nonzero_yield_seasons": 14,
+    "normal_yield_eligible_seasons_before_weather_gate": 10,
+    "normal_eligible_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "protocol_disaster_seasons": 1,
+    "other_damage_review_seasons": 2
+  },
+  "phenology": {
+    "P1": {
+      "raw_endpoint_pairs": 14,
+      "validated_date_pairs": 0,
+      "main_complete_pairs": 0,
+      "weather_complete_model_samples": 0,
+      "status": "blocked",
+      "reason": "Stop 1: date encoding/year/sequence unresolved"
+    },
+    "P2": {
+      "raw_endpoint_pairs": 13,
+      "validated_date_pairs": 0,
+      "main_complete_pairs": 0,
+      "weather_complete_model_samples": 0,
+      "status": "blocked",
+      "reason": "Stop 1: date encoding/year/sequence unresolved"
+    },
+    "P3": {
+      "raw_endpoint_pairs": 13,
+      "validated_date_pairs": 0,
+      "main_complete_pairs": 0,
+      "weather_complete_model_samples": 0,
+      "status": "blocked",
+      "reason": "Stop 1: date encoding/year/sequence unresolved"
+    }
+  },
+  "yield": {
+    "status": "blocked",
+    "formal_prediction_allowed": false,
+    "reasons": [
+      "Stop 1: full phenology dates not validated",
+      "A39 expected 2025 but actual source is 2026; user confirmation required",
+      "W1 contains missing daily weather",
+      "W2 unavailable: event dates not validated/absent"
+    ],
+    "note": "No regression is run while Stop 1 and chronology conflicts remain."
+  },
+  "windows": {
+    "W1": "coverage audit only; incomplete stages not summarized as complete",
+    "W2": "blocked: unvalidated dates",
+    "W3": "blocked: no valid LOYO phenology predictions"
+  },
+  "typhoon": {
+    "orchard_id": "bannei",
+    "harvest_year": 2025,
+    "final_yield_kg_per_mu": 0,
+    "phenology_main_eligible": false,
+    "phenology_sensitivity_eligible": true,
+    "typhoon_event_date": null,
+    "abandon_production_decision_date": "2025-03-01",
+    "normal_model_baseline_available": false,
+    "reason": "Annual report documents weak/damaged shoots during floral induction; exact typhoon date unconfirmed. Decision date is NOT typhoon event date."
+  },
+  "scenarios": {
+    "S1": "blocked_no_validated_P1",
+    "S2": "blocked_no_validated_P1",
+    "S3": "blocked_no_validated_moisture_model",
+    "S4": "blocked_no_validated_yield_model"
+  },
+  "implemented_scope": "stage0_audit_plus_nonmodel_descriptive_outputs",
+  "downstream_model_implementation": "deferred_after_Stop1_resolution; no fitted models or simulated metrics"
+}

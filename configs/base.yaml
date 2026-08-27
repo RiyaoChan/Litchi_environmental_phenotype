@@ -49,3 +49,10 @@ coverage:
   end: '{Y}-06-30'
   interval: closed_both
 weather_windows_config: configs/weather_windows.yaml
+damage_review:
+  - orchard_id: hongming
+    harvest_year: 2025
+    reason: 2025年度资料记载树枝折断、新梢不整齐；正常产年资格待确认
+  - orchard_id: hongming
+    harvest_year: 2026
+    reason: 2026年度资料记载树冠仍在恢复；正常产年资格待确认

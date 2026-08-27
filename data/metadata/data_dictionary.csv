@@ -1,0 +1,132 @@
+﻿table,field,unit_or_definition,missing_representation
+data/processed/phenology_event_long.csv,orchard_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,region_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,station_id,"internal regional source alias, not verified official station number",NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,cultivar,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,harvest_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_block_id,"immutable source block, not independent environmental sample",NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,event_name,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,event_date,YYYY-MM-DD; validated only,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,calendar_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,day_of_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,decoded_candidate_date,AUDIT ONLY; not analysis-ready,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_file,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_sheet,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_row,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_column,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,harvest_year_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,raw_value,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,cell_data_type,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,number_format,see source locator / report,NA; never replace missing measurement with 0
+data/processed/phenology_event_long.csv,qc_flag,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,orchard_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,region_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,station_id,"internal regional source alias, not verified official station number",NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,cultivar,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,harvest_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,source_block_id,"immutable source block, not independent environmental sample",NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,plot_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,tree_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,tree_class,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,source_file,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,source_sheet,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,source_row,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,year_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,year_protocol_conflict,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,tree_count,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,tree_count_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,tree_count_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_1_yield_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_1_yield_kg_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_1_yield_kg_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_2_yield_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_2_yield_kg_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_2_yield_kg_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_3_yield_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_3_yield_kg_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_3_yield_kg_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,single_fruit_weight_g,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,single_fruit_weight_g_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,single_fruit_weight_g_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,diseased_pest_fruit_pct,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,diseased_pest_fruit_pct_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,diseased_pest_fruit_pct_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_class_mean_yield_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_class_mean_yield_kg_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_class_mean_yield_kg_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_yield_kg_per_mu,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_yield_kg_per_mu_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,reported_yield_kg_per_mu_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,sample_tree_mean_yield_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,class_mean_difference_kg,see source locator / report,NA; never replace missing measurement with 0
+data/processed/yield_observation_long.csv,class_mean_mismatch,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,orchard_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,region_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,station_id,"internal regional source alias, not verified official station number",NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,cultivar,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,source_file,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,source_sheet,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,season_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,harvest_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,source_block_id,"immutable source block, not independent environmental sample",NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,source_row_start,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,source_row_end,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,year_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,raw_final_yield_kg_per_mu,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,final_yield_kg_per_mu,kg/mu,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,mean_yield_per_tree_kg,kg/tree,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,mean_single_fruit_weight_g,g/fruit,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,fruit_number_proxy,estimated fruits/tree; not actual count,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,observed_fruit_number,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,known_tree_count,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,weighted_mean_tree_coverage_ratio,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,class_mean_mismatch_count,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,normal_production_year,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,typhoon_damage,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,typhoon_event_date,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,structural_damage_stage,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,abandon_production_decision_date,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,phenology_main_eligible,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,phenology_sensitivity_eligible,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,yield_main_eligible,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,year_protocol_conflict,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,damage_review_reason,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,exclusion_reason,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,yield_value_origin,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,blocks_in_same_season,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,block_review_status,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,n_source_blocks,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,weather_coverage_ratio,see source locator / report,NA; never replace missing measurement with 0
+data/processed/orchard_season_master.csv,weather_coverage_window,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,station_id,"internal regional source alias, not verified official station number",NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,region_id,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,source_station_code,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,date,YYYY-MM-DD,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,source_file,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,source_sheet,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,source_row,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmean_c,degC,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmean_c_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmean_c_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmin_c,degC,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmin_c_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmin_c_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmax_c,degC,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmax_c_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,tmax_c_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,precip_mm,mm,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,precip_mm_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,precip_mm_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,relative_humidity_pct,percent,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,relative_humidity_pct_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,relative_humidity_pct_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,sunshine_h,hours/day,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,sunshine_h_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,sunshine_h_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,wind_speed,not available,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,wind_speed_raw,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,wind_speed_source_cell,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,qc_flag,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,n_source_rows,see source locator / report,NA; never replace missing measurement with 0
+data/processed/weather_daily.csv,source_references,see source locator / report,NA; never replace missing measurement with 0

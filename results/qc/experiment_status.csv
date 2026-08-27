@@ -1,0 +1,37 @@
+﻿experiment_id,status,reason
+QC-0,executed,standardization_and_data_gate
+DESC-Y,executed,raw_yield_description
+DESC-W,executed,weather_coverage_description
+W1-QC,executed,fixed_window_coverage_audit
+TYPHOON-DESC,executed,source_evidence_and_zero_vs_NA_coding
+P1-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-B1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-B2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-M3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-M4,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P2-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P2-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P2-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P3-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P3-M1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P3-M2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+P1-white-tip,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+W2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+W3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-B0,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-B1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-W1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-W2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-W3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-W3P,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-PREV,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+Y-DEC,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+TYPHOON-BASELINE,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+TYPHOON-INCLUSION,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+PHENO-TYPHOON-SENSITIVITY,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+S1,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+S2,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+S3,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted
+S4,blocked,Stop 1 / unresolved chronology / incomplete weather; not fitted

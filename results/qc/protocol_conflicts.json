@@ -1,0 +1,8 @@
+{
+  "A39": {
+    "actual_a39": 2026,
+    "expected_a39": 2025,
+    "conflict": true
+  },
+  "raw_file_changed_by_pipeline": false
+}

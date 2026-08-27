@@ -1,0 +1,2 @@
+﻿orchard_id,harvest_year,observed_yield,normal_production_baseline_prediction,prediction_interval_lower,prediction_interval_upper,absolute_gap,relative_gap_to_prediction,status,typhoon_event_date,abandon_production_decision_date
+bannei,2025,0,NA,NA,NA,NA,NA,blocked_no_normal_model,NA,2025-03-01
