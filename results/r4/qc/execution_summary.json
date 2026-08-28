@@ -1,0 +1,20 @@
+{
+  "workflow_status": "completed_with_scientific_stop_rules",
+  "data_gate_pass": true,
+  "P1_stable_weather_models": [],
+  "P2_stable_weather_models": [
+    "P2-M1",
+    "P2-M2"
+  ],
+  "P3_stable_weather_models": [],
+  "normal_yield_sample_gate_pass": true,
+  "formal_yield_comparison_complete": false,
+  "Y_W3P_success": false,
+  "scenario_model_refits": 0,
+  "paper_position": "C",
+  "figure_pdf_pages": 11,
+  "forecast_scope": "conditional_on_realized_ERA5; not operational future-weather forecast",
+  "raw_data_changed": false,
+  "reproducibility_record": "results/r4/logs/verification.json",
+  "visual_review_record": "results/r4/logs/visual_qa.json"
+}

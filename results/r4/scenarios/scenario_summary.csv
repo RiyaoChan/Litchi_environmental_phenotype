@@ -1,0 +1,3 @@
+﻿experiment_id,task,temperature_shift_c,flush_start_delay_days,count,mean,median,min,max
+S4-P2,P2,1,0,12,-3.666666667,-3.5,-7,-2
+S4-P2,P2,2,0,12,-7.25,-6,-15,-4

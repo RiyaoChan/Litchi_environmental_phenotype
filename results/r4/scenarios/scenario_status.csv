@@ -1,0 +1,7 @@
+﻿experiment_id,status,reason
+S1,blocked,P1_no_stable_weather_superiority
+S2,blocked,P1_no_stable_weather_superiority
+S3,blocked,P1_no_stable_weather_superiority
+S4-P2,executed,stable_P2-M1_fixed_LOYO_fit
+S4-P3,blocked,P3_no_stable_weather_superiority
+S5,blocked,normal_Y-W3P_not_validated

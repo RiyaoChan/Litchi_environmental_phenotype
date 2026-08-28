@@ -1,0 +1,37 @@
+﻿experiment_id,status,reason
+R4-QC,pass,daily_hourly_continuity_grid_and_source_hash_checks
+P1-B0,executed,nested_LOYO_and_forward_rolling
+P1-B1,executed,nested_LOYO_and_forward_rolling
+P1-D1,executed,nested_LOYO_and_forward_rolling
+P1-D2,executed,nested_LOYO_and_forward_rolling
+P1-H1,executed,nested_LOYO_and_forward_rolling
+P1-H2,executed,nested_LOYO_and_forward_rolling
+P1-H3,executed,nested_LOYO_and_forward_rolling
+P1-W1,blocked,temperature_only_pooled_MAE_gate; no_posthoc_expansion
+P2-B0,executed,nested_LOYO_and_forward_rolling
+P2-M1,executed,nested_LOYO_and_forward_rolling
+P2-M2,executed,temperature_only_pooled_MAE_gate; no_posthoc_expansion
+P3-B0,executed,nested_LOYO_and_forward_rolling
+P3-M1,executed,nested_LOYO_and_forward_rolling
+P3-M2,executed,temperature_only_pooled_MAE_gate; no_posthoc_expansion
+P1A,executed_exploratory,duration_baseline_only; no_validated_P1_weather_form
+P1B,executed_exploratory,duration_baseline_only; no_validated_P1_weather_form
+R3-regional-daily,executed_sensitivity,auxiliary_only_never_replaces_R4
+P1-bannei2025-early,executed_sensitivity,13_total_and_common_12_reported_separately
+W1-CALENDAR,executed,outer_boundaries_12/12; inner_features_rechecked_separately
+W1-MEDIAN,executed,outer_boundaries_12/12; inner_features_rechecked_separately
+W2-OBS,executed,outer_boundaries_12/12; inner_features_rechecked_separately
+W3-PRED,limited,outer_boundaries_12/12; inner_features_rechecked_separately
+Y-B0,complete,main_LOYO_predictions_12/12
+Y-W1C,complete,main_LOYO_predictions_12/12
+Y-W1M,complete,main_LOYO_predictions_12/12
+Y-W2O,complete,main_LOYO_predictions_12/12
+Y-W3P,partial_not_matched_main,main_LOYO_predictions_8/12
+Y-W3P+PHENO,partial_not_matched_main,main_LOYO_predictions_8/12
+S1,blocked,P1_no_stable_weather_superiority
+S2,blocked,P1_no_stable_weather_superiority
+S3,blocked,P1_no_stable_weather_superiority
+S4-P2,executed,stable_P2-M1_fixed_LOYO_fit
+S4-P3,blocked,P3_no_stable_weather_superiority
+S5,blocked,normal_Y-W3P_not_validated
+bannei2025-normal-reference,blocked,no_validated_normal_W3_yield_model; actual_zero_retained

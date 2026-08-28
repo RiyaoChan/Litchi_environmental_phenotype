@@ -1,0 +1,19 @@
+# Preserve frozen R4 input bytes across core.autocrlf settings and fresh clones.
+# These explicit EOLs match the existing source SHA-256 snapshot; no values change.
+data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv text eol=crlf
+data/external/open_meteo_era5_orchards/download_metadata.json text eol=crlf
+data/external/open_meteo_era5_orchards/variable_dictionary.csv text eol=crlf
+data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz -text
+data/external/open_meteo_era5/weather_daily_era5.csv text eol=crlf
+experiments_guide/LITCHI_R4_PHENOLOGY_YIELD_EXPERIMENT_PLAN_FOR_CODEX_V3.md text eol=crlf
+data/processed/phenology_event_long.csv text eol=lf
+data/processed/orchard_season_master.csv text eol=lf
+
+# Stable V3 implementation hashes on checkout.
+configs/r4_*.yaml text eol=lf
+src/r4_*.py text eol=lf
+src/phenology_models.py text eol=lf
+src/phenology_cv.py text eol=lf
+src/yield_models.py text eol=lf
+src/yield_cv.py text eol=lf
+src/scenario_simulation.py text eol=lf

@@ -25,7 +25,10 @@
   "independent_environment_unit": "orchard x harvest_year; not daily/hourly rows",
   "failed_checks": [],
   "raw_sources_mutated": false,
-  "yield_gate": "pending_nested_feature_completeness",
+  "yield_gate": "blocked_incomplete_nested_W3_partitions",
   "source_manifest_files": 8,
-  "distinct_returned_grids": 3
+  "distinct_returned_grids": 3,
+  "normal_yield_sample_gate_pass": true,
+  "formal_yield_comparison_complete": false,
+  "workflow_status": "completed_with_scientific_stop_rules"
 }

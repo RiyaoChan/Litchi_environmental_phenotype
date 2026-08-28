@@ -2,6 +2,27 @@
 
 本仓库汇总了用于探索荔枝气象、物候与产量关系的原始资料。
 
+## 当前版本：R4 V3（2026-08-28）
+
+工作分支：`codex/litchi-r4-phenology-yield-v3`。先读[最终中文报告](reports/r4/FINAL_R4_EXPERIMENT_REPORT_ZH.md)和[图集](results/r4/figures/R4_FIGURE_ATLAS.pdf)。以下V2章节为历史记录，其天气不足/未实现状态不适用于R4。
+
+V3已按“数据→P1→P2/P3→窗口→正常产量→受门槛约束情景”执行，保留失败结果和停止规则：
+
+- R4三园5385日、129240小时通过连续性与变量审计，为果园定位ERA5再分析，不是果园实测。
+- P1历史持续时间基线MAE 4.83天，最佳日模型6.25天、最佳小时模型6.75天；没有稳定增益，P1水分扩展及暖冬/秋梢情景停止。
+- P2 GDD由6.75降至5.08天，只有初步支持；P3改善脆弱。仅P2固定模型温度敏感性获准。
+- 正常产量12样本、5年：历史基线/固定窗口/典型窗口/实测窗口LOYO MAE分别493.44/465.84/471.01/515.75 kg/亩。W3严格嵌套边界失败，仅8/12条预测，不与完整12样本直接比较、不运行产量情景。
+- 当前论文定位C：阶段性气象—物候响应研究，产量仅探索性；不是整链业务预测或因果台风损失估计。
+
+```bash
+python -m src.cli r4-all --config configs/r4_experiment_v3.yaml
+python scripts/verify_r4.py --stage r4-all --repeat
+```
+
+`r4-all`返回0表示已完成允许流程并记录科学停止项；`r4-yield`返回2表示完整嵌套产量比较未通过。真实通过/skip数量与两次重建一致性见[验证日志](results/r4/logs/verification.json)。原始数据、A39=2026和A列跨年规则未变，R2/R3输出保留。
+
+`.gitattributes`为冻结输入显式保留原有CRLF/LF换行，避免不同Git自动换行设置导致克隆后哈希不符；测试同时检查`core.autocrlf=true/false`的实际checkout过滤结果，不放宽SHA-256校验。
+
 ## 数据内容
 
 - `物候期.xlsx`：物候期数据

@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "pdf_path": "results/r4/figures/R4_FIGURE_ATLAS.pdf",
+  "pdf_sha256": "2161a81db6df0d44c379abf9c44205ec84c6f686e7faa19535aeb2511eaa297d",
+  "page_count": 11,
+  "reviewed_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "renderer": "Poppler pdftoppm",
+  "render_dpi": 110,
+  "review_method": "Visual inspection of all rendered pages; revised pages 6, 7, 8, 10, 11 reinspected after layout corrections",
+  "checks": [
+    "No clipped titles, axes, legends, or yield status labels",
+    "P1 orchard-year labels legible; no overlapping Luhong labels",
+    "Missing 2026 Hongming phenology remains absent on weather timeline",
+    "365-day non-crossing penalty explicit on P1 comparison",
+    "Only complete 12-season yield scores receive bars; 8-season W3 clearly not comparable",
+    "P2-only temperature sensitivity labelled conditional, with orchard legend",
+    "No unsupported P1 warming or causal typhoon-loss figure"
+  ]
+}

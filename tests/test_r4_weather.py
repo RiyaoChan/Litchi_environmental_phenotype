@@ -1,4 +1,6 @@
 import json
+import hashlib
+import subprocess
 import pandas as pd
 import pytest
 from src.io_utils import load_config
@@ -71,3 +73,14 @@ def test_r4_grids_not_copied(r4):
     a=d[d.orchard_id=='bannei'].set_index('date')
     b=d[d.orchard_id=='hongming'].set_index('date')
     assert not a.tmean_c.equals(b.tmean_c) and not a.precip_mm.equals(b.precip_mm)
+
+
+def test_git_checkout_filters_preserve_all_frozen_r4_input_bytes(r4):
+    root=r4[0]
+    snapshot=json.loads((root/'data/metadata/r4_input_hashes.json').read_text(encoding='utf-8'))
+    for item in snapshot:
+        # Apply the repository's actual checkout filters without writing any file.
+        for autocrlf in ['true','false']:
+            blob=subprocess.check_output(['git','-c','core.autocrlf='+autocrlf,
+                                          'cat-file','--filters','HEAD:'+item['path']],cwd=root)
+            assert hashlib.sha256(blob).hexdigest()==item['sha256'],(item['path'],autocrlf)

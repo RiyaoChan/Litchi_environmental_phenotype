@@ -1,0 +1,35 @@
+{
+  "statuses": [
+    {
+      "experiment_id": "S1",
+      "status": "blocked",
+      "reason": "P1_no_stable_weather_superiority"
+    },
+    {
+      "experiment_id": "S2",
+      "status": "blocked",
+      "reason": "P1_no_stable_weather_superiority"
+    },
+    {
+      "experiment_id": "S3",
+      "status": "blocked",
+      "reason": "P1_no_stable_weather_superiority"
+    },
+    {
+      "experiment_id": "S4-P2",
+      "status": "executed",
+      "reason": "stable_P2-M1_fixed_LOYO_fit"
+    },
+    {
+      "experiment_id": "S4-P3",
+      "status": "blocked",
+      "reason": "P3_no_stable_weather_superiority"
+    },
+    {
+      "experiment_id": "S5",
+      "status": "blocked",
+      "reason": "normal_Y-W3P_not_validated"
+    }
+  ],
+  "model_refits": 0
+}

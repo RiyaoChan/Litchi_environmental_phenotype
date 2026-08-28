@@ -19,3 +19,4 @@ results/logs/pytest.xml
 results/r4/logs/*.log
 results/r4/logs/*.png
 results/r4/logs/pytest.xml
+results/r4/logs/qa_atlas/

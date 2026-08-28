@@ -35,5 +35,13 @@ def run_r4(root,cfg,stage):
     scenario_status,scenario_summary=run_scenarios(root,cfg,master,engine,yield_gate)
     typhoon_reference(root,cfg,master,builder,yield_gate)
     if stage=='r4-scenarios': return 0
-    if stage=='r4-all': return 2
+    if stage=='r4-all':
+        from .r4_plots import make_figures
+        from .r4_reporting import final_report
+        from .r4_weather_loader import freeze_r4
+        figures=make_figures(root,cfg,master,weather)
+        result=final_report(root,cfg,gate,window_gate,yield_gate,scenario_status,scenario_summary,figures)
+        freeze_r4(root,cfg)
+        print('R4 FINAL: '+json.dumps(result,ensure_ascii=False),flush=True)
+        return 0
     raise ValueError('Unknown R4 stage: '+stage)

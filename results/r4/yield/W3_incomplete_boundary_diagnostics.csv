@@ -1,0 +1,8 @@
+﻿context,season_id,role,boundary_training_years,first_failed_task,model_id,temperature_c,fitted_threshold,prediction_status
+MAIN_LOYO_outer_2022_inner_2025,bannei_2026,training,2023;2024,P1,P1-H2,18,522.5,threshold_not_reached
+MAIN_LOYO_outer_2022_inner_2025,luhong_2026,training,2023;2024,P1,P1-H2,18,153.3,threshold_not_reached
+MAIN_LOYO_outer_2025_inner_2022,bannei_2026,training,2023;2024,P1,P1-H2,18,522.5,threshold_not_reached
+MAIN_LOYO_outer_2025_inner_2022,luhong_2026,training,2023;2024,P1,P1-H2,18,153.3,threshold_not_reached
+MAIN_rolling_outer_2024_inner_2022,bannei_2023,training,,P1,no_fit,NA,NA,missing_predicted_start_or_training_history
+MAIN_rolling_outer_2024_inner_2022,hongming_2023,training,,P1,no_fit,NA,NA,missing_predicted_start_or_training_history
+MAIN_rolling_outer_2024_inner_2022,luhong_2023,training,,P1,no_fit,NA,NA,missing_predicted_start_or_training_history
