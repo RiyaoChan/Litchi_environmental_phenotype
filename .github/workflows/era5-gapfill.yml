@@ -1,0 +1,64 @@
+name: ERA5 weather gap fill R3
+
+on:
+  push:
+    branches:
+      - codex/litchi-weather-gapfill-r3
+    paths:
+      - '.github/workflows/era5-gapfill.yml'
+      - 'configs/external_weather.yaml'
+      - 'scripts/download_era5_gapfill.py'
+      - 'scripts/validate_and_merge_era5.py'
+      - 'data/processed/weather_daily.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  download-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pandas requests pyyaml scipy tabulate
+
+      - name: Download complete ERA5 daily series
+        run: python scripts/download_era5_gapfill.py --config configs/external_weather.yaml
+
+      - name: Validate overlap and build sensitivity series
+        run: python scripts/validate_and_merge_era5.py --config configs/external_weather.yaml
+
+      - name: Verify row counts and coverage
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          era5 = pd.read_csv('data/external/open_meteo_era5/weather_daily_era5.csv')
+          assert len(era5) == 3590, len(era5)
+          assert era5['station_id'].nunique() == 2
+          assert era5.groupby('station_id')['date'].nunique().eq(1795).all()
+          assert not era5[['tmean_c','tmin_c','tmax_c','precip_mm','relative_humidity_pct','sunshine_h']].isna().any().any()
+          print(era5.groupby('station_id')['date'].agg(['min','max','count']))
+          PY
+
+      - name: Upload generated weather package
+        uses: actions/upload-artifact@v4
+        with:
+          name: era5-weather-gapfill-r3
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            data/external/open_meteo_era5/
+            data/processed/weather_daily_hybrid_raw.csv
+            data/processed/weather_daily_hybrid_bias_adjusted.csv
+            results/qc/era5_overlap_validation.csv
+            results/qc/era5_bias_coefficients.csv
+            reports/06_ERA5_GAPFILL_REPORT.md
