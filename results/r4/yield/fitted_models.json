@@ -1,0 +1,5046 @@
+{
+  "MAIN_LOYO_outer_2022_Y-B0": {
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_LOYO_outer_2023_Y-B0": {
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_LOYO_outer_2024_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_LOYO_outer_2025_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_LOYO_outer_2026_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_LOYO_outer_2022_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 0.1,
+    "mean": [
+      65.0,
+      239.32333333333332,
+      308.55555555555554,
+      1463.1444444444444,
+      9.555555555555555,
+      15.26396621896622
+    ],
+    "scale": [
+      7.423685817106696,
+      101.35786358793834,
+      112.27556488005662,
+      41.74382485566278,
+      12.22121207946896,
+      1.0356336172085603
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -190.95776120335918,
+      -54.36046240904271,
+      247.13062147685073,
+      -286.50378277590283,
+      221.41378439449772,
+      482.3896862938167,
+      -71.69462747566696,
+      -100.55132588613417
+    ],
+    "intercept": 1027.1571731662084,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2023_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      67.0,
+      269.06111111111113,
+      377.8888888888889,
+      1436.6888888888889,
+      7.0,
+      14.826632885632884
+    ],
+    "scale": [
+      8.894442709417556,
+      66.99991566237554,
+      159.4841994573231,
+      68.15742308059818,
+      10.306416555826871,
+      1.3767915253317644
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      1.1387312089791481,
+      -0.34587469825313394,
+      0.9092337327706399,
+      -2.468334401099507,
+      -2.1111675375620576,
+      0.3160060158185213,
+      -0.3173865956632814,
+      0.658546578088919
+    ],
+    "intercept": 1117.3011763198856,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2024_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      69.33333333333333,
+      222.0466666666667,
+      368.77777777777777,
+      1414.3444444444442,
+      7.111111111111111,
+      14.93898765432099
+    ],
+    "scale": [
+      7.788880963698615,
+      100.83354082623282,
+      165.36275126573346,
+      49.99084607563692,
+      10.038198648102428,
+      1.3696269980188693
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.5140083303591996,
+      0.5762203676524057,
+      1.216975855986692,
+      -0.9376421663070306,
+      -0.38337286704101664,
+      -0.6188308037571895,
+      0.037950651293778254,
+      -0.14491040804162855
+    ],
+    "intercept": 1259.075971147731,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2025_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      68.0,
+      227.06272727272727,
+      384.54545454545456,
+      1441.1363636363637,
+      9.272727272727273,
+      14.78813397713398
+    ],
+    "scale": [
+      8.707363654871767,
+      91.53930830681026,
+      147.8373575843422,
+      61.44189084340771,
+      11.584401024974833,
+      1.2711309693208022
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.7518635256627771,
+      -0.12502214609825676,
+      1.8450639691817599,
+      -3.092138172164922,
+      -2.2609831151050037,
+      0.07835271001208724,
+      -0.5911182254162497,
+      0.35208767133883845
+    ],
+    "intercept": 1089.031363999172,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2026_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      67.6,
+      206.471,
+      408.9,
+      1430.9900000000002,
+      9.3,
+      14.409725152625152
+    ],
+    "scale": [
+      9.14549069213894,
+      66.73323406669275,
+      132.41333014466483,
+      64.09538906972955,
+      12.149485585818026,
+      0.8514584023432181
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      5.283160068309471,
+      -5.836168938077883,
+      20.835775881589,
+      -27.434112446184812,
+      -18.704635329913636,
+      -4.834967405289831,
+      -4.344567768902926,
+      4.66924215449234
+    ],
+    "intercept": 1066.710673468874,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_LOYO_outer_2022_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1.0,
+    "mean": [
+      49.666666666666664,
+      245.99333333333334,
+      139.33333333333334,
+      1110.9333333333334,
+      6.111111111111111,
+      14.405591756462346
+    ],
+    "scale": [
+      10.98483803552272,
+      118.31348011861448,
+      85.54401076508967,
+      76.07509447907377,
+      9.12194477856613,
+      1.1273781586523133
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -96.74194404592427,
+      15.077111535046596,
+      -27.51331119666982,
+      -154.37423953598383,
+      -152.70986923145807,
+      162.35462431860472,
+      -86.94085213199621,
+      -62.88851952874044
+    ],
+    "intercept": 1013.806198042106,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2023_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      51.111111111111114,
+      256.9111111111111,
+      204.22222222222223,
+      1086.8777777777777,
+      5.111111111111111,
+      13.546801617001618
+    ],
+    "scale": [
+      10.887755043007866,
+      108.79073831540019,
+      133.81394859844087,
+      93.63311116358805,
+      8.399000528428559,
+      1.4462397445227648
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.7334947199364651,
+      0.9570939685968896,
+      0.45186138863294345,
+      -1.1308651384485429,
+      -2.5517615525419366,
+      -0.2883288120785397,
+      -0.31587406890227065,
+      0.6578265129939197
+    ],
+    "intercept": 1117.3011602317588,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2024_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      49.111111111111114,
+      259.96333333333337,
+      195.66666666666666,
+      1093.5777777777778,
+      3.888888888888889,
+      13.79159126984127
+    ],
+    "scale": [
+      11.967032904743343,
+      134.11053343335035,
+      128.07289590958217,
+      50.26982257506384,
+      5.1735318785879185,
+      1.5757161606540506
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.6844820814242831,
+      0.0369503170898799,
+      0.8495845956633759,
+      -0.6249161530348635,
+      0.0007801697010491759,
+      -0.1776953749235381,
+      0.03574074953818745,
+      -0.14224589739111348
+    ],
+    "intercept": 1259.0752780100543,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2025_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      50.0,
+      238.0845454545455,
+      208.45454545454547,
+      1091.7909090909093,
+      5.909090909090909,
+      13.699327272727276
+    ],
+    "scale": [
+      13.017470777940908,
+      129.16500295525006,
+      115.83559166992096,
+      84.61304922512574,
+      8.39322828187912,
+      1.3695421751050376
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      40.28197256878937,
+      57.252606365901805,
+      36.357404429111035,
+      -92.94410244973093,
+      -138.9671006416533,
+      44.749445832290135,
+      -13.693531495669856,
+      26.411159701999573
+    ],
+    "intercept": 1083.1287232435463,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2026_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.7,
+      204.921,
+      214.1,
+      1091.6,
+      6.4,
+      13.43594457002457
+    ],
+    "scale": [
+      10.53612832116238,
+      72.36044395248003,
+      118.51957644203763,
+      75.25019601303377,
+      8.720091742636656,
+      1.0502849724254986
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      50.35242772107911,
+      71.72159837545807,
+      49.04072112406714,
+      -96.61980414694598,
+      -122.26248571082252,
+      32.54073219870394,
+      -21.636855526460334,
+      20.260987618841337
+    ],
+    "intercept": 1065.6616616104018,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_LOYO_outer_2022_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      49.333333333333336,
+      277.7511111111111,
+      121.77777777777777,
+      1118.488888888889,
+      7.0,
+      14.497626499213737
+    ],
+    "scale": [
+      11.69045194450012,
+      191.52596884811695,
+      75.4096630674784,
+      88.52701338442083,
+      9.26162932629987,
+      1.0176511060153324
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -35.37894430951061,
+      -1.8151083292486665,
+      -17.788612323034556,
+      7.436832091089892,
+      -87.72028144330984,
+      119.93024201690982,
+      -44.489368239445845,
+      -7.627897808414144
+    ],
+    "intercept": 979.8122586347276,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2023_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.77777777777778,
+      285.2555555555556,
+      188.44444444444446,
+      1070.377777777778,
+      5.0,
+      13.726396674652332
+    ],
+    "scale": [
+      10.870733163231119,
+      188.33849350518457,
+      142.89087608778877,
+      109.25094230743147,
+      8.589399151150083,
+      1.5892726938334953
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.8443631311999813,
+      1.1240194220409796,
+      0.7902044685066157,
+      -1.1834517980112373,
+      -2.756935504787528,
+      -0.6337604410103832,
+      -0.3107582464676444,
+      0.6481768951912619
+    ],
+    "intercept": 1117.3043121013523,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2024_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      49.22222222222222,
+      281.9411111111111,
+      183.0,
+      1077.388888888889,
+      4.222222222222222,
+      13.889304457955209
+    ],
+    "scale": [
+      10.411294911219981,
+      184.9724288430542,
+      137.1106609032767,
+      93.92663146714796,
+      5.845753972429292,
+      1.6836220699601705
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.18679676334635675,
+      -0.0018210529955170018,
+      0.8947495184723534,
+      -1.2969082293960286,
+      -0.3236767303028867,
+      -0.4684168638035114,
+      0.03772945303493139,
+      -0.14524841468837169
+    ],
+    "intercept": 1259.0761705280759,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2025_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      51.09090909090909,
+      252.0309090909091,
+      193.27272727272728,
+      1084.8636363636367,
+      6.454545454545454,
+      13.81256046241216
+    ],
+    "scale": [
+      11.453102362198996,
+      176.63030304485977,
+      122.32378116301231,
+      102.56444778973473,
+      8.627267937540582,
+      1.5286484704837686
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.53459405781163,
+      1.1721077863724614,
+      1.2885575283384567,
+      -1.207836669174136,
+      -2.81932060850936,
+      -0.20638582757435586,
+      -0.5840222215324401,
+      0.337705104663242
+    ],
+    "intercept": 1089.0346587496313,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2026_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.6,
+      204.377,
+      205.5,
+      1073.94,
+      6.7,
+      13.435067560546784
+    ],
+    "scale": [
+      10.394229168149026,
+      71.89268044105741,
+      122.03790394791284,
+      87.19587375558552,
+      9.011659114724658,
+      1.2292284705179506
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.4798191712360151,
+      1.9361869566433072,
+      1.5364460367997397,
+      -1.4941216920523472,
+      -2.6264596346820377,
+      -0.8320055927670503,
+      -0.5180577263592941,
+      0.42157052664004924
+    ],
+    "intercept": 1067.2617891072518,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_LOYO_outer_2023_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      49.666666666666664,
+      284.09222222222223,
+      191.88888888888889,
+      1090.2444444444445,
+      4.888888888888889,
+      13.442207284557714
+    ],
+    "scale": [
+      12.560962454277847,
+      176.92094912560856,
+      120.49660617115087,
+      85.93037376738492,
+      7.823674107681754,
+      1.6384048744756472
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.646988092484525,
+      0.9373553672192926,
+      0.35857249259228696,
+      2.353793838955995,
+      -2.474697509620462,
+      -0.593930464329415,
+      -0.313569580723935,
+      0.6461098157096441
+    ],
+    "intercept": 1117.30585554429,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2024_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      48.77777777777778,
+      280.8588888888888,
+      210.22222222222223,
+      1078.5111111111112,
+      3.4444444444444446,
+      13.727658989120838
+    ],
+    "scale": [
+      10.747379812749998,
+      185.7204433457534,
+      133.82474258669458,
+      66.81993123220451,
+      5.1448164012401,
+      1.4444329376838656
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.22526070677652116,
+      -0.022282553299266625,
+      1.0099776369403017,
+      -0.08415870184323047,
+      -0.25044452178320875,
+      -0.688685812478857,
+      0.03799237796289469,
+      -0.14481004197330022
+    ],
+    "intercept": 1259.0759172679964,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2026_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.4,
+      209.073,
+      208.2,
+      1128.13,
+      6.3,
+      13.485111443990021
+    ],
+    "scale": [
+      10.584894897919394,
+      75.53962351640362,
+      125.75356853783514,
+      72.86362672829297,
+      8.729833904490967,
+      1.4704660985546067
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.02156351702325395,
+      1.705135876490966,
+      0.1407669166956626,
+      -1.881379861261549,
+      -2.6318745588287085,
+      -0.06347404039012461,
+      -0.5212869488895645,
+      0.4273414841312409
+    ],
+    "intercept": 1067.2604494910145,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_LOYO_outer_2023_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      49.666666666666664,
+      191.88888888888889,
+      1090.2444444444445,
+      4.888888888888889,
+      12.11111111111111,
+      54.55555555555556
+    ],
+    "scale": [
+      12.560962454277847,
+      120.49660617115087,
+      85.93037376738492,
+      7.823674107681754,
+      6.208317797643997,
+      9.650689222492652
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.6603282947020479,
+      0.36984865399428285,
+      2.334971310632241,
+      -2.4672556474860694,
+      -0.7922877790715586,
+      -1.9639870882016912,
+      -0.310810200108499,
+      0.6375175735820654
+    ],
+    "intercept": 1117.3090611228765,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2024_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      48.77777777777778,
+      210.22222222222223,
+      1078.5111111111112,
+      3.4444444444444446,
+      8.88888888888889,
+      57.55555555555556
+    ],
+    "scale": [
+      10.747379812749998,
+      133.82474258669458,
+      66.81993123220451,
+      5.1448164012401,
+      6.4367770479823285,
+      10.361371757222015
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.23348342073940298,
+      1.0175322321419333,
+      -0.09075852947719056,
+      -0.246874821163664,
+      -0.5758433755738582,
+      -0.3391068824475735,
+      0.039311202275280364,
+      -0.14878417947698053
+    ],
+    "intercept": 1259.077390479262,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "MAIN_LOYO_outer_2026_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.4,
+      208.2,
+      1128.13,
+      6.3,
+      12.3,
+      58.2
+    ],
+    "scale": [
+      10.584894897919394,
+      125.75356853783514,
+      72.86362672829297,
+      8.729833904490967,
+      7.114070564732964,
+      13.869390758068647
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.023215470993730804,
+      0.14294462307120623,
+      -1.8810977178551345,
+      -2.6329104784697055,
+      -1.218614687138015,
+      -1.4471020599722797,
+      -0.5228211850854956,
+      0.4249071837516246
+    ],
+    "intercept": 1067.261883482025,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_rolling_outer_2024_Y-B0": {
+    "training_years": [
+      2022,
+      2023
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_rolling_outer_2025_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_rolling_outer_2026_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "MAIN_rolling_outer_2024_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      55.666666666666664,
+      165.4466666666667,
+      455.0,
+      1399.4166666666667,
+      9.166666666666666,
+      14.200185185185184
+    ],
+    "scale": [
+      8.768630958643937,
+      55.55223687865524,
+      134.07584917998219,
+      49.72794039124841,
+      11.378586125798858,
+      0.9412250678014735
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.4669617778806668,
+      1.2934773359896075,
+      1.4347241663821424,
+      -0.9351176818018626,
+      -0.41340948018713036,
+      -0.8321781205975961,
+      0.02244173828242174,
+      -0.06111200468501676
+    ],
+    "intercept": 1268.8778900888008,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_years": [
+      2022,
+      2023
+    ]
+  },
+  "MAIN_rolling_outer_2025_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      68.33333333333333,
+      197.5922222222222,
+      429.44444444444446,
+      1434.988888888889,
+      10.333333333333334,
+      14.306497083163748
+    ],
+    "scale": [
+      9.3571125650788,
+      64.49660004437405,
+      123.53417081125649,
+      66.36849059011274,
+      12.382783747337808,
+      0.8360469829955142
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      6.037382728499015,
+      -7.94455628597372,
+      24.52745412214484,
+      -25.369252184956373,
+      -17.32083742315502,
+      -6.376701654816822,
+      -3.948733613627148,
+      3.859109904931342
+    ],
+    "intercept": 1051.9043190140096,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "MAIN_rolling_outer_2026_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      67.6,
+      206.471,
+      408.9,
+      1430.9900000000002,
+      9.3,
+      14.409725152625152
+    ],
+    "scale": [
+      9.14549069213894,
+      66.73323406669275,
+      132.41333014466483,
+      64.09538906972955,
+      12.149485585818026,
+      0.8514584023432181
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      5.283160068309471,
+      -5.836168938077883,
+      20.835775881589,
+      -27.434112446184812,
+      -18.704635329913636,
+      -4.834967405289831,
+      -4.344567768902926,
+      4.66924215449234
+    ],
+    "intercept": 1066.710673468874,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_rolling_outer_2024_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      40.833333333333336,
+      187.71500000000003,
+      257.0,
+      1053.2833333333335,
+      5.333333333333333,
+      13.018827813852814
+    ],
+    "scale": [
+      9.598900399987954,
+      45.52855944349657,
+      112.10857832179184,
+      37.49192876103105,
+      5.821416398857661,
+      1.2997436397916915
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.1323448622121125,
+      0.6724922268273477,
+      0.8404260171007436,
+      -0.3968868347901083,
+      -0.017963652479519587,
+      -0.1251253389173243,
+      0.02035830566501401,
+      -0.06316917869328581
+    ],
+    "intercept": 1268.8792702910093,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_years": [
+      2022,
+      2023
+    ]
+  },
+  "MAIN_rolling_outer_2025_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.666666666666664,
+      197.64000000000001,
+      236.44444444444446,
+      1092.4666666666667,
+      7.111111111111111,
+      13.237941414141414
+    ],
+    "scale": [
+      12.927146286443545,
+      73.43735894549103,
+      107.93836833130605,
+      79.27331062708168,
+      8.912468724513545,
+      1.0428119974395567
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.49996848978303604,
+      1.2432658231752785,
+      1.356621822402181,
+      -1.7435867596285368,
+      -2.422567662555105,
+      0.16642426094467555,
+      -0.48324001423955354,
+      0.3440679341471537
+    ],
+    "intercept": 1051.9208351378086,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "MAIN_rolling_outer_2026_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.7,
+      204.921,
+      214.1,
+      1091.6,
+      6.4,
+      13.43594457002457
+    ],
+    "scale": [
+      10.53612832116238,
+      72.36044395248003,
+      118.51957644203763,
+      75.25019601303377,
+      8.720091742636656,
+      1.0502849724254986
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      50.35242772107911,
+      71.72159837545807,
+      49.04072112406714,
+      -96.61980414694598,
+      -122.26248571082252,
+      32.54073219870394,
+      -21.636855526460334,
+      20.260987618841337
+    ],
+    "intercept": 1065.6616616104018,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_rolling_outer_2024_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      40.333333333333336,
+      190.54333333333332,
+      253.0,
+      1055.8000000000002,
+      5.666666666666667,
+      13.106364354066985
+    ],
+    "scale": [
+      9.428090415820632,
+      43.70414231575259,
+      115.90369565577565,
+      77.82743732129443,
+      6.574360974438673,
+      1.4570487719035476
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.2521618465316112,
+      0.7041353408862547,
+      0.9495650297253955,
+      -1.3816649612084222,
+      -0.35729352149532323,
+      -0.48085151263251186,
+      0.021169652025845698,
+      -0.06521844996837572
+    ],
+    "intercept": 1268.8796829326475,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_years": [
+      2022,
+      2023
+    ]
+  },
+  "MAIN_rolling_outer_2025_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      53.333333333333336,
+      190.10555555555558,
+      225.11111111111111,
+      1072.8444444444447,
+      7.444444444444445,
+      13.329071483044814
+    ],
+    "scale": [
+      10.708252269472673,
+      60.87774965017297,
+      112.70358807700887,
+      91.84720537829376,
+      9.202790773710515,
+      1.2516150085743294
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.3464268218942672,
+      1.9714991921990723,
+      1.894921433346692,
+      -1.4325839875494761,
+      -2.4630201380102457,
+      -0.9284175385532648,
+      -0.47387259257393066,
+      0.3326689347288268
+    ],
+    "intercept": 1051.9215123303927,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "MAIN_rolling_outer_2026_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.6,
+      204.377,
+      205.5,
+      1073.94,
+      6.7,
+      13.435067560546784
+    ],
+    "scale": [
+      10.394229168149026,
+      71.89268044105741,
+      122.03790394791284,
+      87.19587375558552,
+      9.011659114724658,
+      1.2292284705179506
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.4798191712360151,
+      1.9361869566433072,
+      1.5364460367997397,
+      -1.4941216920523472,
+      -2.6264596346820377,
+      -0.8320055927670503,
+      -0.5180577263592941,
+      0.42157052664004924
+    ],
+    "intercept": 1067.2617891072518,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_rolling_outer_2025_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      59.22222222222222,
+      200.04555555555555,
+      209.77777777777777,
+      1114.3333333333333,
+      7.777777777777778,
+      14.093580521561057
+    ],
+    "scale": [
+      27.373051540105717,
+      59.871422623097736,
+      87.38901250256143,
+      78.22812793362758,
+      10.464519713752091,
+      2.1587383760768217
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      18.359622777734682,
+      6.7892873231304405,
+      7.678258157374161,
+      -11.511665100211935,
+      -10.970741958006005,
+      20.79592208940013,
+      -4.211847039413717,
+      3.26367093523444
+    ],
+    "intercept": 1052.1905031458375,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "MAIN_rolling_outer_2026_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.4,
+      209.073,
+      208.2,
+      1128.13,
+      6.3,
+      13.485111443990021
+    ],
+    "scale": [
+      10.584894897919394,
+      75.53962351640362,
+      125.75356853783514,
+      72.86362672829297,
+      8.729833904490967,
+      1.4704660985546067
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.02156351702325395,
+      1.705135876490966,
+      0.1407669166956626,
+      -1.881379861261549,
+      -2.6318745588287085,
+      -0.06347404039012461,
+      -0.5212869488895645,
+      0.4273414841312409
+    ],
+    "intercept": 1067.2604494910145,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "MAIN_rolling_outer_2025_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      59.22222222222222,
+      209.77777777777777,
+      1114.3333333333333,
+      7.777777777777778,
+      21.22222222222222,
+      67.22222222222223
+    ],
+    "scale": [
+      27.373051540105717,
+      87.38901250256143,
+      78.22812793362758,
+      10.464519713752091,
+      22.870542809366416,
+      20.858133387124113
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      17.08881786157967,
+      6.642688234568262,
+      -11.657182775832368,
+      -11.965263681469422,
+      18.89716288676831,
+      13.843685855444694,
+      -4.611360439669911,
+      3.948329026144061
+    ],
+    "intercept": 1052.0954549156197,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "MAIN_rolling_outer_2026_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.4,
+      208.2,
+      1128.13,
+      6.3,
+      12.3,
+      58.2
+    ],
+    "scale": [
+      10.584894897919394,
+      125.75356853783514,
+      72.86362672829297,
+      8.729833904490967,
+      7.114070564732964,
+      13.869390758068647
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.023215470993730804,
+      0.14294462307120623,
+      -1.8810977178551345,
+      -2.6329104784697055,
+      -1.218614687138015,
+      -1.4471020599722797,
+      -0.5228211850854956,
+      0.4249071837516246
+    ],
+    "intercept": 1067.261883482025,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2022_Y-B0": {
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-B0": {
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25_LOYO_outer_2025_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25_LOYO_outer_2022_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 0.1,
+    "mean": [
+      66.6,
+      240.10699999999997,
+      303.9,
+      1455.19,
+      11.1,
+      15.156125152625155
+    ],
+    "scale": [
+      8.522910301065007,
+      96.18524866631059,
+      107.42574179404116,
+      46.23581836628399,
+      12.48559169603107,
+      1.0343841406795848
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -350.5192311701389,
+      -105.3036329246852,
+      217.3120514085004,
+      -303.6067979083279,
+      351.88732662629513,
+      543.6892530142682,
+      -153.36700064472353,
+      -100.65659969331588
+    ],
+    "intercept": 1001.1687400707443,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      68.4,
+      266.871,
+      366.3,
+      1431.3799999999999,
+      8.8,
+      14.762525152625154
+    ],
+    "scale": [
+      9.425497334358543,
+      63.90038426332038,
+      155.24306747806807,
+      66.59241398237494,
+      11.169601604354563,
+      1.320222567101982
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.20351604564009124,
+      -0.16457626475179585,
+      1.3819736127759537,
+      -2.0553224624821955,
+      -2.8973667396212384,
+      0.6105752428835078,
+      -0.7754190366973625,
+      0.917816417161925
+    ],
+    "intercept": 1050.6504991441443,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      70.5,
+      224.55800000000005,
+      358.1,
+      1411.27,
+      8.9,
+      14.863644444444446
+    ],
+    "scale": [
+      8.17618492941543,
+      95.9553219785125,
+      160.11399064416574,
+      48.31403626276735,
+      10.931148155614762,
+      1.3188554491688882
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.5256086570971636,
+      0.40685755608522933,
+      1.7455954092318475,
+      -0.5121595864262456,
+      -1.5208115859501905,
+      -0.23943543991641922,
+      -0.517528872539175,
+      0.1698070466079073
+    ],
+    "intercept": 1178.2193358431186,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2025_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      68.0,
+      227.06272727272727,
+      384.54545454545456,
+      1441.1363636363637,
+      9.272727272727273,
+      14.78813397713398
+    ],
+    "scale": [
+      8.707363654871767,
+      91.53930830681026,
+      147.8373575843422,
+      61.44189084340771,
+      11.584401024974833,
+      1.2711309693208022
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.7518635256627771,
+      -0.12502214609825676,
+      1.8450639691817599,
+      -3.092138172164922,
+      -2.2609831151050037,
+      0.07835271001208724,
+      -0.5911182254162497,
+      0.35208767133883845
+    ],
+    "intercept": 1089.031363999172,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      68.81818181818181,
+      210.17,
+      395.54545454545456,
+      1426.6818181818182,
+      10.727272727272727,
+      14.389346098346097
+    ],
+    "scale": [
+      9.532892166486057,
+      64.69391667340489,
+      133.12698219530762,
+      62.6126884930729,
+      12.432295985499797,
+      0.8143875419363596
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      13.213116552854403,
+      -40.94526388485225,
+      113.96342161455148,
+      -94.22287963991002,
+      -96.52185615655306,
+      16.36858176993666,
+      -17.60298490446246,
+      48.86793285628408
+    ],
+    "intercept": 999.8027461993374,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2022_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1.0,
+    "mean": [
+      51.7,
+      225.421,
+      142.5,
+      1098.46,
+      7.3,
+      14.272797286698466
+    ],
+    "scale": [
+      12.075181158061357,
+      128.0908260141998,
+      81.70832270950126,
+      81.29535288071516,
+      9.360021367496977,
+      1.1413118338756005
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -109.48059727450406,
+      13.701150605152542,
+      -16.879738338098388,
+      -141.90438188124463,
+      -154.80636370232037,
+      181.70361723161344,
+      -105.37059469944482,
+      -74.04317570776213
+    ],
+    "intercept": 976.1244486929385,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.5,
+      241.464,
+      199.8,
+      1073.62,
+      6.4,
+      13.520775301455302
+    ],
+    "scale": [
+      11.13777356566383,
+      113.13443969013152,
+      127.63839547722309,
+      97.32605817559859,
+      8.856635930193812,
+      1.3742433484218843
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.0035620205796516335,
+      1.7132839585388635,
+      0.6939962370667908,
+      -0.29574324389687945,
+      -3.271208742618491,
+      -0.20536612024474502,
+      -0.771467288959846,
+      0.9122892352326731
+    ],
+    "intercept": 1050.6515244925947,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      50.2,
+      244.66,
+      193.4,
+      1083.77,
+      5.3,
+      13.759039285714286
+    ],
+    "scale": [
+      11.813551540497887,
+      135.25827057891877,
+      121.69075560616756,
+      56.03643546836294,
+      6.481512169239521,
+      1.4980420428302865
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      1.4360750154289306,
+      7.137363601819861,
+      10.443456529276814,
+      5.830178044431498,
+      -13.689427513453518,
+      -0.6332844955627643,
+      -4.442489366012899,
+      1.1603018527627513
+    ],
+    "intercept": 1179.000626068699,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2025_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      50.0,
+      238.0845454545455,
+      208.45454545454547,
+      1091.7909090909093,
+      5.909090909090909,
+      13.699327272727276
+    ],
+    "scale": [
+      13.017470777940908,
+      129.16500295525006,
+      115.83559166992096,
+      84.61304922512574,
+      8.39322828187912,
+      1.3695421751050376
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      40.28197256878937,
+      57.252606365901805,
+      36.357404429111035,
+      -92.94410244973093,
+      -138.9671006416533,
+      44.749445832290135,
+      -13.693531495669856,
+      26.411159701999573
+    ],
+    "intercept": 1083.1287232435463,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.90909090909091,
+      191.4618181818182,
+      210.63636363636363,
+      1078.4272727272728,
+      7.454545454545454,
+      13.413833906633908
+    ],
+    "scale": [
+      10.748822730078146,
+      81.06495250086158,
+      113.53355349232685,
+      82.96395812102654,
+      8.958121113509101,
+      1.003845433182799
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.00016223875467584334,
+      2.2654549284210193,
+      1.2333011987610722,
+      -0.7309294905675712,
+      -3.216795950574761,
+      0.09812029406851601,
+      -0.9062756528727726,
+      0.6457170333671902
+    ],
+    "intercept": 1011.2665667707292,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2022_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.9,
+      252.856,
+      124.3,
+      1123.68,
+      8.8,
+      14.332752738181252
+    ],
+    "scale": [
+      13.50148140020198,
+      196.4481511340842,
+      71.93893243578195,
+      85.41579245081083,
+      10.313098467482991,
+      1.0847592405274904
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -40.52204548262217,
+      4.336882080929109,
+      -19.04401996028836,
+      4.593125893079914,
+      -89.50843723469208,
+      122.2428889207717,
+      -49.42391867231029,
+      -5.8518331107897374
+    ],
+    "intercept": 932.0639088460089,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      53.2,
+      259.61,
+      184.3,
+      1080.38,
+      7.0,
+      13.638645896075989
+    ],
+    "scale": [
+      12.615863030328127,
+      194.53405871466308,
+      136.12718317808535,
+      107.90084151664429,
+      10.119288512538814,
+      1.5305262879464334
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -95.36193853121209,
+      62.26145170543145,
+      39.82351520979691,
+      -89.1516370066224,
+      -119.38421295959444,
+      -48.7273706000576,
+      3.985463501479508,
+      29.212618609738225
+    ],
+    "intercept": 1037.9043135056606,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      51.8,
+      256.62700000000007,
+      179.4,
+      1086.69,
+      6.3,
+      13.785262901048577
+    ],
+    "scale": [
+      12.544321424453376,
+      191.2081522346785,
+      130.52218202282705,
+      93.37337361368064,
+      8.34326075344646,
+      1.6274356383842883
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -10.853852204908344,
+      8.02333344301704,
+      10.529614174144232,
+      -18.23226162886641,
+      -16.792956193597927,
+      0.188025279059006,
+      -4.090560448973478,
+      0.8573105362000977
+    ],
+    "intercept": 1179.016243920212,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2025_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      51.09090909090909,
+      252.0309090909091,
+      193.27272727272728,
+      1084.8636363636367,
+      6.454545454545454,
+      13.81256046241216
+    ],
+    "scale": [
+      11.453102362198996,
+      176.63030304485977,
+      122.32378116301231,
+      102.56444778973473,
+      8.627267937540582,
+      1.5286484704837686
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.53459405781163,
+      1.1721077863724614,
+      1.2885575283384567,
+      -1.207836669174136,
+      -2.81932060850936,
+      -0.20638582757435586,
+      -0.5840222215324401,
+      0.337705104663242
+    ],
+    "intercept": 1089.0346587496313,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-W2O": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      54.63636363636363,
+      188.41545454545457,
+      200.1818181818182,
+      1082.709090909091,
+      8.363636363636363,
+      13.381778590396067
+    ],
+    "scale": [
+      11.818881098192973,
+      85.1257773547351,
+      117.5676348334463,
+      87.64072791848916,
+      10.074925916918941,
+      1.1840759690265827
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -2.3217100229896817,
+      2.746351488453194,
+      1.8637211550090564,
+      -2.0791097828533,
+      -3.3236949753584955,
+      -0.5932869722782469,
+      -0.8931560562909878,
+      0.6341700367142035
+    ],
+    "intercept": 1011.2659949162097,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      50.4,
+      262.659,
+      189.7,
+      1084.0,
+      6.2,
+      13.454039187680888
+    ],
+    "scale": [
+      12.117755567760886,
+      179.73693874382082,
+      114.50157204160998,
+      83.64546610546209,
+      8.4,
+      1.5547325894888326
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      5.426747862717492,
+      13.245226893708763,
+      5.384326168237623,
+      24.79763389939009,
+      -27.932032361293988,
+      -7.070939465387352,
+      -6.176945871596461,
+      7.244677825926267
+    ],
+    "intercept": 1049.7402126311083,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      50.4,
+      258.4599999999999,
+      207.6,
+      1074.99,
+      5.1,
+      13.67392880449447
+    ],
+    "scale": [
+      11.297787393998881,
+      188.56899739883008,
+      127.20078616109258,
+      64.26505193337978,
+      6.963476143421475,
+      1.379757317421905
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -6.231310708191113,
+      6.918820391671753,
+      11.7674450168155,
+      2.2562178409096676,
+      -16.50015453573171,
+      -4.252946414235878,
+      -4.2474540710106785,
+      1.0068984451789416
+    ],
+    "intercept": 1179.0034768432317,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-W3P": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      51.54545454545455,
+      194.6936363636364,
+      205.9090909090909,
+      1122.4818181818182,
+      7.545454545454546,
+      13.438104559471448
+    ],
+    "scale": [
+      10.722649234753986,
+      85.17715125471014,
+      120.11998134097163,
+      71.73201159596262,
+      9.20833255425498,
+      1.4098925381718648
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.6091831292098571,
+      2.5217929817619145,
+      0.2699505093262944,
+      -1.4431123996531756,
+      -3.302868106153258,
+      0.1317327995622239,
+      -0.9009934173317333,
+      0.6400230686297677
+    ],
+    "intercept": 1011.266716490437,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2023_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1.0,
+    "mean": [
+      50.4,
+      189.7,
+      1084.0,
+      6.2,
+      11.5,
+      55.3
+    ],
+    "scale": [
+      12.117755567760886,
+      114.50157204160998,
+      83.64546610546209,
+      8.4,
+      6.168468205316454,
+      9.423905772024677
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      258.46784256499166,
+      -10.812768769237413,
+      310.87000307396886,
+      -298.6309515268414,
+      64.42364830531398,
+      -14.682438531284184,
+      67.74045854831814,
+      -25.077601102511014
+    ],
+    "intercept": 1040.4939028765089,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2024_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      50.4,
+      207.6,
+      1074.99,
+      5.1,
+      9.4,
+      58.7
+    ],
+    "scale": [
+      11.297787393998881,
+      127.20078616109258,
+      64.26505193337978,
+      6.963476143421475,
+      6.2960304954788775,
+      10.412012293500235
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -5.374230956053551,
+      12.129652410211518,
+      1.9832652337158285,
+      -16.09651321231504,
+      -9.316351218895527,
+      -8.595999793035684,
+      -4.142126847860044,
+      0.528104209550972
+    ],
+    "intercept": 1179.1633963705376,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25_LOYO_outer_2026_Y-W3P+PHENO": {
+    "columns": [
+      "induction_temperature_metric",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "predicted_inflorescence_date_offset",
+      "predicted_full_bloom_date_offset"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      51.54545454545455,
+      205.9090909090909,
+      1122.4818181818182,
+      7.545454545454546,
+      12.272727272727273,
+      59.0
+    ],
+    "scale": [
+      10.722649234753986,
+      120.11998134097163,
+      71.73201159596262,
+      9.20833255425498,
+      6.783548402246411,
+      13.46375606109704
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.6127279608326264,
+      0.2711434247965022,
+      -1.4392618975268443,
+      -3.309797483431807,
+      -1.2419843935683148,
+      -1.8395028567525729,
+      -0.9055729168136922,
+      0.639367647439358
+    ],
+    "intercept": 1011.2686200979542,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2022_Y-B0": {
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM26_LOYO_outer_2023_Y-B0": {
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM26_LOYO_outer_2024_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM26_LOYO_outer_2025_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM26_LOYO_outer_2026_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM26_LOYO_outer_2022_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      66.6,
+      238.773,
+      294.3,
+      1467.9299999999998,
+      12.0,
+      15.426514041514043
+    ],
+    "scale": [
+      8.522910301065007,
+      96.1706850396731,
+      114.77896148685089,
+      42.123699979940085,
+      13.718600511714014,
+      1.096849780835363
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -10.089061548634971,
+      -0.021127065694039812,
+      3.5815364073838896,
+      -24.292909563261848,
+      -18.787168329655884,
+      12.464103159221155,
+      -10.066041580428696,
+      2.8912957895224154
+    ],
+    "intercept": 946.7702941583198,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2023_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      68.4,
+      265.53700000000003,
+      356.7,
+      1444.12,
+      9.7,
+      15.032914041514042
+    ],
+    "scale": [
+      9.425497334358543,
+      64.43495992859778,
+      164.11096855481657,
+      68.39505537683266,
+      12.696850003051937,
+      1.445325794154322
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      65.3772095667155,
+      6.295500143146839,
+      31.096134052998003,
+      -111.94080338945453,
+      -101.08479123084705,
+      40.52045722222594,
+      -12.344251435675096,
+      50.632354902700605
+    ],
+    "intercept": 1064.2463334696224,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2024_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      70.5,
+      223.22400000000002,
+      348.5,
+      1424.0099999999998,
+      9.8,
+      15.134033333333335
+    ],
+    "scale": [
+      8.17618492941543,
+      95.72427949062873,
+      168.25887792327632,
+      55.58761462772083,
+      12.480384609458156,
+      1.4250177733784393
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      6.184816785569053,
+      45.328305467756735,
+      65.01027460342671,
+      -39.070652953948866,
+      -40.66152977712077,
+      -25.248649799647918,
+      -7.214908429693866,
+      -2.294763029043931
+    ],
+    "intercept": 1211.2253777405258,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2025_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      69.08333333333333,
+      227.62583333333336,
+      366.3333333333333,
+      1446.9583333333333,
+      11.333333333333334,
+      14.963243182743184
+    ],
+    "scale": [
+      9.07798007390533,
+      87.66211187074433,
+      153.89300034620013,
+      61.91415371751085,
+      13.027748163908534,
+      1.3484886671811012
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      3.8782993791497375,
+      -0.3558223256349103,
+      16.99928753468957,
+      -28.51164479979502,
+      -21.456730773075268,
+      -0.486603904199693,
+      -6.5683603373722015,
+      4.185476732140823
+    ],
+    "intercept": 1061.5634612017438,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2026_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      67.6,
+      206.471,
+      408.9,
+      1430.9900000000002,
+      9.3,
+      14.409725152625152
+    ],
+    "scale": [
+      9.14549069213894,
+      66.73323406669275,
+      132.41333014466483,
+      64.09538906972955,
+      12.149485585818026,
+      0.8514584023432181
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      5.283160068309471,
+      -5.836168938077883,
+      20.835775881589,
+      -27.434112446184812,
+      -18.704635329913636,
+      -4.834967405289831,
+      -4.344567768902926,
+      4.66924215449234
+    ],
+    "intercept": 1066.710673468874,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2022_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1.0,
+    "mean": [
+      51.7,
+      243.064,
+      138.7,
+      1109.28,
+      7.8,
+      14.493463953365131
+    ],
+    "scale": [
+      12.075181158061357,
+      112.58552555279921,
+      81.17641283032899,
+      72.34140999455292,
+      10.02796090937734,
+      1.1015339614566355
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -96.1506440147288,
+      28.17909264553382,
+      -18.222919520757333,
+      -149.46806108694645,
+      -143.0314524167282,
+      166.54061473519056,
+      -89.98465995222355,
+      -49.261072188150656
+    ],
+    "intercept": 991.6068268609273,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2023_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.5,
+      256.566,
+      196.5,
+      1084.59,
+      6.6,
+      13.745948378378381
+    ],
+    "scale": [
+      11.13777356566383,
+      103.2131492785682,
+      129.04359728401872,
+      89.0929228390224,
+      9.134549797335389,
+      1.49645693285013
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.31430997779783193,
+      1.019458315368611,
+      0.6613271001462845,
+      -1.1055673039545335,
+      -2.872873854372347,
+      -0.7092334364447946,
+      -0.567467521025803,
+      0.8011463809739894
+    ],
+    "intercept": 1080.645781703918,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2024_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      50.2,
+      260.952,
+      188.6,
+      1095.68,
+      5.7,
+      13.979057142857144
+    ],
+    "scale": [
+      11.813551540497887,
+      127.26299075536454,
+      123.33628825289011,
+      48.10533858107646,
+      7.321885003194191,
+      1.597148821795307
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.2789657722897655,
+      0.0027263203484439,
+      1.1385127790091527,
+      -0.8478766882915452,
+      -1.11564894270568,
+      -0.7020697281494463,
+      -0.31490939425699815,
+      0.056643920770451224
+    ],
+    "intercept": 1208.214815249969,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2025_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.25,
+      237.5825,
+      202.33333333333334,
+      1088.1583333333335,
+      7.166666666666667,
+      13.84083787878788
+    ],
+    "scale": [
+      13.134718624063986,
+      123.67728450319136,
+      112.74701277146498,
+      81.90180562044334,
+      9.053851237027379,
+      1.392702309605152
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      30.38265559341827,
+      58.466058108398286,
+      40.58349563109285,
+      -92.404287549514,
+      -147.30484417663467,
+      35.83160534185635,
+      -21.74770682461094,
+      28.257194289875816
+    ],
+    "intercept": 1058.5993375115781,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM26_LOYO_outer_2026_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.7,
+      204.921,
+      214.1,
+      1091.6,
+      6.4,
+      13.43594457002457
+    ],
+    "scale": [
+      10.53612832116238,
+      72.36044395248003,
+      118.51957644203763,
+      75.25019601303377,
+      8.720091742636656,
+      1.0502849724254986
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      50.35242772107911,
+      71.72159837545807,
+      49.04072112406714,
+      -96.61980414694598,
+      -122.26248571082252,
+      32.54073219870394,
+      -21.636855526460334,
+      20.260987618841337
+    ],
+    "intercept": 1065.6616616104018,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2022_Y-B0": {
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25-26_LOYO_outer_2023_Y-B0": {
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25-26_LOYO_outer_2024_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25-26_LOYO_outer_2025_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25-26_LOYO_outer_2026_Y-B0": {
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "kind": "training_orchard_median"
+  },
+  "SENS-HM25-26_LOYO_outer_2022_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      67.9090909090909,
+      239.53545454545454,
+      291.3636363636364,
+      1460.2636363636364,
+      13.181818181818182,
+      15.313699633699635
+    ],
+    "scale": [
+      9.119953602897784,
+      91.7268443273175,
+      109.83067358212884,
+      46.912980811232266,
+      13.603596996370829,
+      1.1049794068152068
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -15.28312295881738,
+      -1.0929468372115023,
+      4.95529232596896,
+      -15.134916194260322,
+      -22.378727156904006,
+      16.59667289648798,
+      -12.728581604532021,
+      4.27613168453115
+    ],
+    "intercept": 903.0017999709094,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2023_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      69.54545454545455,
+      263.86636363636364,
+      348.09090909090907,
+      1438.6181818181817,
+      11.090909090909092,
+      14.955881451881453
+    ],
+    "scale": [
+      9.689390977799437,
+      61.663053218531175,
+      158.8243481136284,
+      67.49312177995112,
+      12.880249471430318,
+      1.3994287372704992
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.14379125851226102,
+      -0.025910173535551577,
+      1.6767298177139451,
+      -2.3345890521495534,
+      -3.0255543718384548,
+      0.181965991829359,
+      -0.9593808726701378,
+      1.0232396272456517
+    ],
+    "intercept": 1023.4404149983361,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2024_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      71.45454545454545,
+      225.40000000000006,
+      340.6363636363636,
+      1420.3363636363636,
+      11.181818181818182,
+      15.047808080808084
+    ],
+    "scale": [
+      8.359682860052835,
+      91.52854706195622,
+      162.34434375860843,
+      54.25892926476416,
+      12.67652219167517,
+      1.3857910082325229
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -16.747911761494862,
+      26.377687305285416,
+      100.56946636119275,
+      -2.6518286321143147,
+      -69.04210628017981,
+      -3.3954480471836357,
+      -25.007848217000014,
+      3.6647613539094666
+    ],
+    "intercept": 1146.9947588593056,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2025_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      69.08333333333333,
+      227.62583333333336,
+      366.3333333333333,
+      1446.9583333333333,
+      11.333333333333334,
+      14.963243182743184
+    ],
+    "scale": [
+      9.07798007390533,
+      87.66211187074433,
+      153.89300034620013,
+      61.91415371751085,
+      13.027748163908534,
+      1.3484886671811012
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      3.8782993791497375,
+      -0.3558223256349103,
+      16.99928753468957,
+      -28.51164479979502,
+      -21.456730773075268,
+      -0.486603904199693,
+      -6.5683603373722015,
+      4.185476732140823
+    ],
+    "intercept": 1061.5634612017438,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2026_Y-W1C": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      68.81818181818181,
+      210.17,
+      395.54545454545456,
+      1426.6818181818182,
+      10.727272727272727,
+      14.389346098346097
+    ],
+    "scale": [
+      9.532892166486057,
+      64.69391667340489,
+      133.12698219530762,
+      62.6126884930729,
+      12.432295985499797,
+      0.8143875419363596
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      13.213116552854403,
+      -40.94526388485225,
+      113.96342161455148,
+      -94.22287963991002,
+      -96.52185615655306,
+      16.36858176993666,
+      -17.60298490446246,
+      48.86793285628408
+    ],
+    "intercept": 999.8027461993374,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2022_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1.0,
+    "mean": [
+      53.36363636363637,
+      224.62818181818182,
+      141.63636363636363,
+      1098.090909090909,
+      8.727272727272727,
+      14.364753326588623
+    ],
+    "scale": [
+      12.658254419890513,
+      122.15554122199974,
+      77.95368406627189,
+      77.5208646933838,
+      10.000826412133142,
+      1.1263810707262962
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -107.02204109170746,
+      27.236442853165943,
+      -6.788741366158824,
+      -135.12396542792115,
+      -140.05977542274042,
+      191.3953484539486,
+      -107.36852365364041,
+      -63.500584226734055
+    ],
+    "intercept": 962.0624028655909,
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2023_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      53.63636363636363,
+      242.55454545454543,
+      193.1818181818182,
+      1072.7454545454545,
+      7.636363636363637,
+      13.704183840483841
+    ],
+    "scale": [
+      11.21097455234036,
+      107.92456804838162,
+      123.48486707566323,
+      92.83795622320906,
+      9.305645669286685,
+      1.4329151452248432
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -0.2980538614280959,
+      1.7656429901366895,
+      0.8720679307885889,
+      -0.283456981066501,
+      -3.4993533157946546,
+      -0.5699044332088681,
+      -0.956549230591612,
+      1.0178062328125128
+    ],
+    "intercept": 1023.4413610901014,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2024_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 100.0,
+    "mean": [
+      51.09090909090909,
+      246.95,
+      187.1818181818182,
+      1086.5727272727274,
+      6.818181818181818,
+      13.932422077922077
+    ],
+    "scale": [
+      11.61076730261062,
+      129.1668577672096,
+      117.68202008480169,
+      54.158774843620556,
+      7.825577896966307,
+      1.5299457747546639
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      -1.3130139018956934,
+      6.870345137959341,
+      12.409432128649424,
+      4.319603515318357,
+      -18.331293044607197,
+      -4.393620475410564,
+      -6.758541315577258,
+      2.4204172646982167
+    ],
+    "intercept": 1140.8111360185014,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2025",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2025_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 10.0,
+    "mean": [
+      51.25,
+      237.5825,
+      202.33333333333334,
+      1088.1583333333335,
+      7.166666666666667,
+      13.84083787878788
+    ],
+    "scale": [
+      13.134718624063986,
+      123.67728450319136,
+      112.74701277146498,
+      81.90180562044334,
+      9.053851237027379,
+      1.392702309605152
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      30.38265559341827,
+      58.466058108398286,
+      40.58349563109285,
+      -92.404287549514,
+      -147.30484417663467,
+      35.83160534185635,
+      -21.74770682461094,
+      28.257194289875816
+    ],
+    "intercept": 1058.5993375115781,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2026",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ]
+  },
+  "SENS-HM25-26_LOYO_outer_2026_Y-W1M": {
+    "columns": [
+      "induction_temperature_metric",
+      "induction_water_balance_mm",
+      "flowering_precipitation_hours",
+      "fruit_gdd",
+      "fruit_heat_days",
+      "flowering_radiation_mean"
+    ],
+    "alpha": 1000.0,
+    "mean": [
+      52.90909090909091,
+      191.4618181818182,
+      210.63636363636363,
+      1078.4272727272728,
+      7.454545454545454,
+      13.413833906633908
+    ],
+    "scale": [
+      10.748822730078146,
+      81.06495250086158,
+      113.53355349232685,
+      82.96395812102654,
+      8.958121113509101,
+      1.003845433182799
+    ],
+    "categories": [
+      "bannei",
+      "hongming",
+      "luhong"
+    ],
+    "coefficient": [
+      0.00016223875467584334,
+      2.2654549284210193,
+      1.2333011987610722,
+      -0.7309294905675712,
+      -3.216795950574761,
+      0.09812029406851601,
+      -0.9062756528727726,
+      0.6457170333671902
+    ],
+    "intercept": 1011.2665667707292,
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "hongming_2025",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  }
+}

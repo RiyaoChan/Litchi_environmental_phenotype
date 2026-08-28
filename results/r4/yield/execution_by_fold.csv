@@ -1,0 +1,139 @@
+﻿cohort,validation,model_id,holdout_year,status,reason
+MAIN,LOYO,Y-B0,2022,executed,complete_partition_features
+MAIN,LOYO,Y-B0,2023,executed,complete_partition_features
+MAIN,LOYO,Y-B0,2024,executed,complete_partition_features
+MAIN,LOYO,Y-B0,2025,executed,complete_partition_features
+MAIN,LOYO,Y-B0,2026,executed,complete_partition_features
+MAIN,LOYO,Y-W1C,2022,executed,complete_partition_features
+MAIN,LOYO,Y-W1C,2023,executed,complete_partition_features
+MAIN,LOYO,Y-W1C,2024,executed,complete_partition_features
+MAIN,LOYO,Y-W1C,2025,executed,complete_partition_features
+MAIN,LOYO,Y-W1C,2026,executed,complete_partition_features
+MAIN,LOYO,Y-W1M,2022,executed,complete_partition_features
+MAIN,LOYO,Y-W1M,2023,executed,complete_partition_features
+MAIN,LOYO,Y-W1M,2024,executed,complete_partition_features
+MAIN,LOYO,Y-W1M,2025,executed,complete_partition_features
+MAIN,LOYO,Y-W1M,2026,executed,complete_partition_features
+MAIN,LOYO,Y-W2O,2022,executed,complete_partition_features
+MAIN,LOYO,Y-W2O,2023,executed,complete_partition_features
+MAIN,LOYO,Y-W2O,2024,executed,complete_partition_features
+MAIN,LOYO,Y-W2O,2025,executed,complete_partition_features
+MAIN,LOYO,Y-W2O,2026,executed,complete_partition_features
+MAIN,LOYO,Y-W3P,2022,blocked,Incomplete windows in MAIN_LOYO_outer_2022_inner_2025
+MAIN,LOYO,Y-W3P,2023,executed,complete_partition_features
+MAIN,LOYO,Y-W3P,2024,executed,complete_partition_features
+MAIN,LOYO,Y-W3P,2025,blocked,Incomplete windows in MAIN_LOYO_outer_2025_inner_2022
+MAIN,LOYO,Y-W3P,2026,executed,complete_partition_features
+MAIN,LOYO,Y-W3P+PHENO,2022,blocked,Incomplete windows in MAIN_LOYO_outer_2022_inner_2025
+MAIN,LOYO,Y-W3P+PHENO,2023,executed,complete_partition_features
+MAIN,LOYO,Y-W3P+PHENO,2024,executed,complete_partition_features
+MAIN,LOYO,Y-W3P+PHENO,2025,blocked,Incomplete windows in MAIN_LOYO_outer_2025_inner_2022
+MAIN,LOYO,Y-W3P+PHENO,2026,executed,complete_partition_features
+MAIN,rolling,Y-B0,2024,executed,complete_partition_features
+MAIN,rolling,Y-B0,2025,executed,complete_partition_features
+MAIN,rolling,Y-B0,2026,executed,complete_partition_features
+MAIN,rolling,Y-W1C,2024,executed,complete_partition_features
+MAIN,rolling,Y-W1C,2025,executed,complete_partition_features
+MAIN,rolling,Y-W1C,2026,executed,complete_partition_features
+MAIN,rolling,Y-W1M,2024,executed,complete_partition_features
+MAIN,rolling,Y-W1M,2025,executed,complete_partition_features
+MAIN,rolling,Y-W1M,2026,executed,complete_partition_features
+MAIN,rolling,Y-W2O,2024,executed,complete_partition_features
+MAIN,rolling,Y-W2O,2025,executed,complete_partition_features
+MAIN,rolling,Y-W2O,2026,executed,complete_partition_features
+MAIN,rolling,Y-W3P,2024,blocked,Incomplete windows in MAIN_rolling_outer_2024_inner_2022
+MAIN,rolling,Y-W3P,2025,executed,complete_partition_features
+MAIN,rolling,Y-W3P,2026,executed,complete_partition_features
+MAIN,rolling,Y-W3P+PHENO,2024,blocked,Incomplete windows in MAIN_rolling_outer_2024_inner_2022
+MAIN,rolling,Y-W3P+PHENO,2025,executed,complete_partition_features
+MAIN,rolling,Y-W3P+PHENO,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-B0,2022,executed,complete_partition_features
+SENS-HM25,LOYO,Y-B0,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-B0,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-B0,2025,executed,complete_partition_features
+SENS-HM25,LOYO,Y-B0,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1C,2022,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1C,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1C,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1C,2025,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1C,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1M,2022,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1M,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1M,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1M,2025,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W1M,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W2O,2022,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W2O,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W2O,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W2O,2025,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W2O,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P,2022,blocked,Incomplete windows in SENS-HM25_LOYO_outer_2022_inner_2025
+SENS-HM25,LOYO,Y-W3P,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P,2025,blocked,Incomplete windows in SENS-HM25_LOYO_outer_2025_inner_2022
+SENS-HM25,LOYO,Y-W3P,2026,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P+PHENO,2022,blocked,Incomplete windows in SENS-HM25_LOYO_outer_2022_inner_2025
+SENS-HM25,LOYO,Y-W3P+PHENO,2023,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P+PHENO,2024,executed,complete_partition_features
+SENS-HM25,LOYO,Y-W3P+PHENO,2025,blocked,Incomplete windows in SENS-HM25_LOYO_outer_2025_inner_2022
+SENS-HM25,LOYO,Y-W3P+PHENO,2026,executed,complete_partition_features
+SENS-HM26,LOYO,Y-B0,2022,executed,complete_partition_features
+SENS-HM26,LOYO,Y-B0,2023,executed,complete_partition_features
+SENS-HM26,LOYO,Y-B0,2024,executed,complete_partition_features
+SENS-HM26,LOYO,Y-B0,2025,executed,complete_partition_features
+SENS-HM26,LOYO,Y-B0,2026,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1C,2022,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1C,2023,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1C,2024,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1C,2025,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1C,2026,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1M,2022,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1M,2023,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1M,2024,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1M,2025,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W1M,2026,executed,complete_partition_features
+SENS-HM26,LOYO,Y-W2O,2022,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2022
+SENS-HM26,LOYO,Y-W2O,2023,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2023
+SENS-HM26,LOYO,Y-W2O,2024,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2024
+SENS-HM26,LOYO,Y-W2O,2025,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2025
+SENS-HM26,LOYO,Y-W2O,2026,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2026
+SENS-HM26,LOYO,Y-W3P,2022,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2022
+SENS-HM26,LOYO,Y-W3P,2023,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2023
+SENS-HM26,LOYO,Y-W3P,2024,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2024
+SENS-HM26,LOYO,Y-W3P,2025,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2025
+SENS-HM26,LOYO,Y-W3P,2026,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2026
+SENS-HM26,LOYO,Y-W3P+PHENO,2022,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2022
+SENS-HM26,LOYO,Y-W3P+PHENO,2023,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2023
+SENS-HM26,LOYO,Y-W3P+PHENO,2024,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2024
+SENS-HM26,LOYO,Y-W3P+PHENO,2025,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2025
+SENS-HM26,LOYO,Y-W3P+PHENO,2026,blocked,Incomplete windows in SENS-HM26_LOYO_outer_2026
+SENS-HM25-26,LOYO,Y-B0,2022,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-B0,2023,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-B0,2024,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-B0,2025,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-B0,2026,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1C,2022,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1C,2023,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1C,2024,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1C,2025,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1C,2026,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1M,2022,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1M,2023,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1M,2024,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1M,2025,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W1M,2026,executed,complete_partition_features
+SENS-HM25-26,LOYO,Y-W2O,2022,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2022
+SENS-HM25-26,LOYO,Y-W2O,2023,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2023
+SENS-HM25-26,LOYO,Y-W2O,2024,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2024
+SENS-HM25-26,LOYO,Y-W2O,2025,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2025
+SENS-HM25-26,LOYO,Y-W2O,2026,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2026
+SENS-HM25-26,LOYO,Y-W3P,2022,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2022
+SENS-HM25-26,LOYO,Y-W3P,2023,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2023
+SENS-HM25-26,LOYO,Y-W3P,2024,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2024
+SENS-HM25-26,LOYO,Y-W3P,2025,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2025
+SENS-HM25-26,LOYO,Y-W3P,2026,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2026
+SENS-HM25-26,LOYO,Y-W3P+PHENO,2022,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2022
+SENS-HM25-26,LOYO,Y-W3P+PHENO,2023,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2023
+SENS-HM25-26,LOYO,Y-W3P+PHENO,2024,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2024
+SENS-HM25-26,LOYO,Y-W3P+PHENO,2025,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2025
+SENS-HM25-26,LOYO,Y-W3P+PHENO,2026,blocked,Incomplete windows in SENS-HM25-26_LOYO_outer_2026

@@ -1,0 +1,4 @@
+﻿target,normal_n_nonmissing,normal_n_total,status
+mean_yield_per_tree_kg,12,12,descriptive_only_no_additional_model_search
+mean_single_fruit_weight_g,12,12,descriptive_only_no_additional_model_search
+fruit_number_proxy,12,12,descriptive_only_no_additional_model_search

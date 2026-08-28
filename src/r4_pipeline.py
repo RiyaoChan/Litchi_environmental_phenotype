@@ -28,5 +28,12 @@ def run_r4(root,cfg,stage):
     from .r4_stage_features import run_windows
     builder,features,window_gate=run_windows(root,cfg,master,engine)
     if stage=='r4-windows': return 0 if window_gate['status']=='pass' else 2
+    from .yield_cv import run_yield
+    yield_predictions,yield_comparison,yield_gate=run_yield(root,cfg,master,builder)
+    if stage=='r4-yield': return 0 if yield_gate['formal_yield_comparison_complete'] else 2
+    from .scenario_simulation import run_scenarios,typhoon_reference
+    scenario_status,scenario_summary=run_scenarios(root,cfg,master,engine,yield_gate)
+    typhoon_reference(root,cfg,master,builder,yield_gate)
+    if stage=='r4-scenarios': return 0
     if stage=='r4-all': return 2
-    raise NotImplementedError('Later phases pending implementation after sequential phenology validation')
+    raise ValueError('Unknown R4 stage: '+stage)

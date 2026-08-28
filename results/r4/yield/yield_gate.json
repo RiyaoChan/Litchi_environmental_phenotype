@@ -1,0 +1,12 @@
+{
+  "formal_yield_comparison_complete": false,
+  "Y_W3P_success": false,
+  "checks": {},
+  "reasons": [
+    "one_or_more_required_models_lack_complete_nested_partitions"
+  ],
+  "forecast_scope": "conditional_on_realized_reanalysis_weather; not operational forecast",
+  "normal_eligible_seasons": 12,
+  "normal_eligible_years": 5,
+  "sample_gate_pass": true
+}
