@@ -1,0 +1,471 @@
+{
+  "downloaded_at_utc": "2026-08-28T03:16:39+00:00",
+  "source": {
+    "provider": "Open-Meteo Historical Weather API",
+    "dataset": "ERA5 reanalysis",
+    "model": "era5",
+    "timezone": "Asia/Shanghai",
+    "start_date": "2021-08-01",
+    "end_date": "2026-06-30",
+    "api_base": "https://archive-api.open-meteo.com/v1/archive",
+    "license": "CC BY 4.0",
+    "cell_selection": "land",
+    "daily_variables": [
+      "temperature_2m_mean",
+      "temperature_2m_max",
+      "temperature_2m_min",
+      "dew_point_2m_mean",
+      "dew_point_2m_max",
+      "dew_point_2m_min",
+      "relative_humidity_2m_mean",
+      "relative_humidity_2m_max",
+      "relative_humidity_2m_min",
+      "precipitation_sum",
+      "rain_sum",
+      "precipitation_hours",
+      "sunshine_duration",
+      "shortwave_radiation_sum",
+      "cloud_cover_mean",
+      "wind_speed_10m_mean",
+      "wind_speed_10m_max",
+      "wind_speed_10m_min",
+      "wind_direction_10m_dominant",
+      "et0_fao_evapotranspiration",
+      "vapour_pressure_deficit_max",
+      "soil_moisture_0_to_7cm_mean",
+      "soil_moisture_7_to_28cm_mean",
+      "soil_moisture_28_to_100cm_mean",
+      "soil_moisture_0_to_100cm_mean",
+      "soil_temperature_0_to_7cm_mean",
+      "soil_temperature_7_to_28cm_mean",
+      "soil_temperature_28_to_100cm_mean",
+      "soil_temperature_0_to_100cm_mean"
+    ],
+    "hourly_variables": [
+      "temperature_2m",
+      "relative_humidity_2m",
+      "dew_point_2m",
+      "vapour_pressure_deficit",
+      "precipitation",
+      "rain",
+      "cloud_cover",
+      "sunshine_duration",
+      "shortwave_radiation",
+      "wind_speed_10m",
+      "wind_direction_10m",
+      "et0_fao_evapotranspiration",
+      "soil_temperature_0_to_7cm",
+      "soil_temperature_7_to_28cm",
+      "soil_moisture_0_to_7cm",
+      "soil_moisture_7_to_28cm",
+      "soil_moisture_28_to_100cm"
+    ]
+  },
+  "request_strategy": "one combined daily+hourly request per orchard per calendar-year chunk",
+  "date_chunks": [
+    {
+      "start": "2021-08-01",
+      "end": "2021-12-31"
+    },
+    {
+      "start": "2022-01-01",
+      "end": "2022-12-31"
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2023-12-31"
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-06-30"
+    }
+  ],
+  "points": {
+    "bannei": {
+      "orchard_id": "bannei",
+      "point_id": "bannei_orchard_era5",
+      "latitude_dms": "N 19° 53' 57.63\"",
+      "longitude_dms": "E 110° 29' 58.18\"",
+      "requested_latitude": 19.899341667,
+      "requested_longitude": 110.499494444,
+      "returned_grid_latitude": 20.0,
+      "returned_grid_longitude": 110.5,
+      "elevation_m": 27.0,
+      "coordinate_basis": "exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries",
+      "coordinate_source_files": [
+        "示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc",
+        "示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc"
+      ],
+      "coordinate_source_sha256": [
+        "6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71",
+        "205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9"
+      ],
+      "raw_chunks": [
+        {
+          "start_date": "2021-08-01",
+          "end_date": "2021-12-31",
+          "raw_json_gz_sha256": "cd18f4527ccbcbb2707ee85c053dca95804ae6932bd3c4291b56e7dd723b7342",
+          "raw_payload_sha256": "d90042b32e912cf4f8a60215582207c2b361a9fc422128dbcea8a477d69b9071",
+          "n_daily": 153,
+          "n_hourly": 3672
+        },
+        {
+          "start_date": "2022-01-01",
+          "end_date": "2022-12-31",
+          "raw_json_gz_sha256": "fe6ff9b8b1a96192e867e083c507c24b761ed6031840c4914a8d657d47a39df9",
+          "raw_payload_sha256": "6b0a988dc935e0fc0ba277e2721c8aa535776b593585378385050c1c47bc68f4",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2023-01-01",
+          "end_date": "2023-12-31",
+          "raw_json_gz_sha256": "e916297491d8f74b35a40334c8ff88a3fcec42cc6eb627c68e5d44e915d95d7d",
+          "raw_payload_sha256": "df19ea409fe077d5de989212ba8bbee7f88eac2c1d7dd323f5861336165de298",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31",
+          "raw_json_gz_sha256": "758c71369a26b57fd413c4e62eef4dc28d8d62b63524a43ee28baf1985b3811a",
+          "raw_payload_sha256": "205f0a90f8750e4967e1798b6d7433f093c3549481bc99951e3c9dadec3473c4",
+          "n_daily": 366,
+          "n_hourly": 8784
+        },
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "raw_json_gz_sha256": "434ab7cfe833e815a37c55b47d59fcd1458eb5974f7158ec6a1cce2ea700fb86",
+          "raw_payload_sha256": "6c822079b0090df7269a4601de60c0dd022181573e0c748fbfb26c6ae1f8c314",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2026-01-01",
+          "end_date": "2026-06-30",
+          "raw_json_gz_sha256": "24048370de9b0edc92683421c5c8001a1a66337a8e235826a4f0b8d0f247b8ae",
+          "raw_payload_sha256": "29479491ad378937ee657ef11bbb8d01eb8c85ca8245efc1d8d98ae439368ee5",
+          "n_daily": 181,
+          "n_hourly": 4344
+        }
+      ],
+      "n_daily": 1795,
+      "n_hourly": 43080,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "dew_point_2m_mean": "°C",
+        "dew_point_2m_max": "°C",
+        "dew_point_2m_min": "°C",
+        "relative_humidity_2m_mean": "%",
+        "relative_humidity_2m_max": "%",
+        "relative_humidity_2m_min": "%",
+        "precipitation_sum": "mm",
+        "rain_sum": "mm",
+        "precipitation_hours": "h",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "cloud_cover_mean": "%",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "wind_speed_10m_min": "m/s",
+        "wind_direction_10m_dominant": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "vapour_pressure_deficit_max": "kPa",
+        "soil_moisture_0_to_7cm_mean": "m³/m³",
+        "soil_moisture_7_to_28cm_mean": "m³/m³",
+        "soil_moisture_28_to_100cm_mean": "m³/m³",
+        "soil_moisture_0_to_100cm_mean": "m³/m³",
+        "soil_temperature_0_to_7cm_mean": "°C",
+        "soil_temperature_7_to_28cm_mean": "°C",
+        "soil_temperature_28_to_100cm_mean": "°C",
+        "soil_temperature_0_to_100cm_mean": "°C"
+      },
+      "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "dew_point_2m": "°C",
+        "vapour_pressure_deficit": "kPa",
+        "precipitation": "mm",
+        "rain": "mm",
+        "cloud_cover": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation": "W/m²",
+        "wind_speed_10m": "m/s",
+        "wind_direction_10m": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "soil_temperature_0_to_7cm": "°C",
+        "soil_temperature_7_to_28cm": "°C",
+        "soil_moisture_0_to_7cm": "m³/m³",
+        "soil_moisture_7_to_28cm": "m³/m³",
+        "soil_moisture_28_to_100cm": "m³/m³"
+      }
+    },
+    "hongming": {
+      "orchard_id": "hongming",
+      "point_id": "hongming_orchard_era5",
+      "latitude_dms": "N 19° 41' 54.98\"",
+      "longitude_dms": "E 110° 34' 49.95\"",
+      "requested_latitude": 19.698605556,
+      "requested_longitude": 110.580541667,
+      "returned_grid_latitude": 19.75,
+      "returned_grid_longitude": 110.5,
+      "elevation_m": 78.0,
+      "coordinate_basis": "exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries",
+      "coordinate_source_files": [
+        "示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc",
+        "示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc"
+      ],
+      "coordinate_source_sha256": [
+        "6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71",
+        "205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9"
+      ],
+      "raw_chunks": [
+        {
+          "start_date": "2021-08-01",
+          "end_date": "2021-12-31",
+          "raw_json_gz_sha256": "0fab3d82f255f79e30b21d45e02a0ef6a0987caa03b4fb8fdc2cac4bf8bb38d4",
+          "raw_payload_sha256": "0d56ef222a2b91cf99d7861c6808fafa18b5b0afa81c5ee56accbd7e1d3faed1",
+          "n_daily": 153,
+          "n_hourly": 3672
+        },
+        {
+          "start_date": "2022-01-01",
+          "end_date": "2022-12-31",
+          "raw_json_gz_sha256": "ffe05befe46eba4df81380edd3429119e7b78370342ea341aac08f11f79bb859",
+          "raw_payload_sha256": "508daac98cd7d5972260d88dd1ad0a380076139deb2f29169460ab5115268a17",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2023-01-01",
+          "end_date": "2023-12-31",
+          "raw_json_gz_sha256": "a2b954887a0249091441ed19b61a768b232175ccb6a5cfb3b42f85d506cd04dc",
+          "raw_payload_sha256": "c8dd52cd385f83a98d45634394cca854b54495f5f440c82ce02a1645e50fd43e",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31",
+          "raw_json_gz_sha256": "e56de1089994c7867286961bbcdc762732767fa65f38283af75f88a9ef9a07d4",
+          "raw_payload_sha256": "771d0014e7a70d110880ef3184d71efc240192824ca09ec2478469447e95c19f",
+          "n_daily": 366,
+          "n_hourly": 8784
+        },
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "raw_json_gz_sha256": "e1e38ed964853b54347da3c6b8035808cfdfeb10483bcac12bea43eda70c6176",
+          "raw_payload_sha256": "254bb06df17a992d36cdc99c451ce92725ed07cb4282f93b7020d9af73859526",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2026-01-01",
+          "end_date": "2026-06-30",
+          "raw_json_gz_sha256": "7159d6cbe987c18b391bc5c6fc2b097a92b7c88280d58d29d6203436e6c421e8",
+          "raw_payload_sha256": "faf07fce82d66143fabe94fb2bfd27bbe9565cc85aab92f5b5660b6216684f38",
+          "n_daily": 181,
+          "n_hourly": 4344
+        }
+      ],
+      "n_daily": 1795,
+      "n_hourly": 43080,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "dew_point_2m_mean": "°C",
+        "dew_point_2m_max": "°C",
+        "dew_point_2m_min": "°C",
+        "relative_humidity_2m_mean": "%",
+        "relative_humidity_2m_max": "%",
+        "relative_humidity_2m_min": "%",
+        "precipitation_sum": "mm",
+        "rain_sum": "mm",
+        "precipitation_hours": "h",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "cloud_cover_mean": "%",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "wind_speed_10m_min": "m/s",
+        "wind_direction_10m_dominant": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "vapour_pressure_deficit_max": "kPa",
+        "soil_moisture_0_to_7cm_mean": "m³/m³",
+        "soil_moisture_7_to_28cm_mean": "m³/m³",
+        "soil_moisture_28_to_100cm_mean": "m³/m³",
+        "soil_moisture_0_to_100cm_mean": "m³/m³",
+        "soil_temperature_0_to_7cm_mean": "°C",
+        "soil_temperature_7_to_28cm_mean": "°C",
+        "soil_temperature_28_to_100cm_mean": "°C",
+        "soil_temperature_0_to_100cm_mean": "°C"
+      },
+      "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "dew_point_2m": "°C",
+        "vapour_pressure_deficit": "kPa",
+        "precipitation": "mm",
+        "rain": "mm",
+        "cloud_cover": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation": "W/m²",
+        "wind_speed_10m": "m/s",
+        "wind_direction_10m": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "soil_temperature_0_to_7cm": "°C",
+        "soil_temperature_7_to_28cm": "°C",
+        "soil_moisture_0_to_7cm": "m³/m³",
+        "soil_moisture_7_to_28cm": "m³/m³",
+        "soil_moisture_28_to_100cm": "m³/m³"
+      }
+    },
+    "luhong": {
+      "orchard_id": "luhong",
+      "point_id": "luhong_orchard_era5",
+      "latitude_dms": "N 18° 36' 34.77\"",
+      "longitude_dms": "E 109° 56' 32.26\"",
+      "requested_latitude": 18.609658333,
+      "requested_longitude": 109.942294444,
+      "returned_grid_latitude": 18.5,
+      "returned_grid_longitude": 110.0,
+      "elevation_m": 42.0,
+      "coordinate_basis": "exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries",
+      "coordinate_source_files": [
+        "示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc",
+        "示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc"
+      ],
+      "coordinate_source_sha256": [
+        "6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71",
+        "205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9"
+      ],
+      "raw_chunks": [
+        {
+          "start_date": "2021-08-01",
+          "end_date": "2021-12-31",
+          "raw_json_gz_sha256": "9d85ce516b6d696196ae833d727a56bd9fe80384cb0dbebfaea312c5d7cfe7d1",
+          "raw_payload_sha256": "d07460fcd580394070c752ef3808e87bf833e7b8860a37b9508da7bcabe36db9",
+          "n_daily": 153,
+          "n_hourly": 3672
+        },
+        {
+          "start_date": "2022-01-01",
+          "end_date": "2022-12-31",
+          "raw_json_gz_sha256": "46842c670d5751952b544140b1e3a3f5dccdcb5c686caa065f820a4e486d8668",
+          "raw_payload_sha256": "6e9efee41a4a34df0efcb2f04bfebf3d9a53d2d95a26ae54aed46b681be7cc4b",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2023-01-01",
+          "end_date": "2023-12-31",
+          "raw_json_gz_sha256": "5785b1c490e60a2951124b08b2ddde37006b795b6bdff4d882eb204527498b06",
+          "raw_payload_sha256": "4d6765e73c83fec0a33ca77c91a507728f4921f89b972a46331ab6eb60be4ff8",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31",
+          "raw_json_gz_sha256": "919825bbb59a3778b8c5f64e8419392bdcb605f37414933df4ec6fd0c488f800",
+          "raw_payload_sha256": "b2a1e1cbf9632313d9fa6eed2c990f7f123edacdc4742ed322ccda70db199608",
+          "n_daily": 366,
+          "n_hourly": 8784
+        },
+        {
+          "start_date": "2025-01-01",
+          "end_date": "2025-12-31",
+          "raw_json_gz_sha256": "b3aa623fe988cff4be8ab3d54354693401ff1fff6ee3be547464bfdfc9a962cd",
+          "raw_payload_sha256": "13a5be0ba3724c122d973fadba6741a1e2b0fc3bae8b5f3ca5a3286eb0c4b860",
+          "n_daily": 365,
+          "n_hourly": 8760
+        },
+        {
+          "start_date": "2026-01-01",
+          "end_date": "2026-06-30",
+          "raw_json_gz_sha256": "920f7ffc4bd1245ff4c11b5665dd12d1334c615d841acae2e749dee30796f154",
+          "raw_payload_sha256": "e8db58a607b0317dd684028cfee9bf335137f01615922ed69892e30b0c926e03",
+          "n_daily": 181,
+          "n_hourly": 4344
+        }
+      ],
+      "n_daily": 1795,
+      "n_hourly": 43080,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "dew_point_2m_mean": "°C",
+        "dew_point_2m_max": "°C",
+        "dew_point_2m_min": "°C",
+        "relative_humidity_2m_mean": "%",
+        "relative_humidity_2m_max": "%",
+        "relative_humidity_2m_min": "%",
+        "precipitation_sum": "mm",
+        "rain_sum": "mm",
+        "precipitation_hours": "h",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "cloud_cover_mean": "%",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "wind_speed_10m_min": "m/s",
+        "wind_direction_10m_dominant": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "vapour_pressure_deficit_max": "kPa",
+        "soil_moisture_0_to_7cm_mean": "m³/m³",
+        "soil_moisture_7_to_28cm_mean": "m³/m³",
+        "soil_moisture_28_to_100cm_mean": "m³/m³",
+        "soil_moisture_0_to_100cm_mean": "m³/m³",
+        "soil_temperature_0_to_7cm_mean": "°C",
+        "soil_temperature_7_to_28cm_mean": "°C",
+        "soil_temperature_28_to_100cm_mean": "°C",
+        "soil_temperature_0_to_100cm_mean": "°C"
+      },
+      "hourly_units": {
+        "time": "iso8601",
+        "temperature_2m": "°C",
+        "relative_humidity_2m": "%",
+        "dew_point_2m": "°C",
+        "vapour_pressure_deficit": "kPa",
+        "precipitation": "mm",
+        "rain": "mm",
+        "cloud_cover": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation": "W/m²",
+        "wind_speed_10m": "m/s",
+        "wind_direction_10m": "°",
+        "et0_fao_evapotranspiration": "mm",
+        "soil_temperature_0_to_7cm": "°C",
+        "soil_temperature_7_to_28cm": "°C",
+        "soil_moisture_0_to_7cm": "m³/m³",
+        "soil_moisture_7_to_28cm": "m³/m³",
+        "soil_moisture_28_to_100cm": "m³/m³"
+      }
+    }
+  },
+  "expected_days_per_point": 1795,
+  "expected_hours_per_point": 43080,
+  "total_daily_rows": 5385,
+  "total_hourly_rows": 129240,
+  "daily_csv_sha256": "b72f230a02545c74d3b580dca35163d2aeef17de0002ed45887f04f6a3e15ae3",
+  "hourly_csv_gz_sha256": "b14d7abeff6ec99d5e3d9f6f1fc121897cbb30c252669111444048cae74570f0"
+}

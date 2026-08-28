@@ -1,0 +1,4 @@
+﻿orchard_a,orchard_b,requested_distance_km,grid_distance_km,same_returned_grid,same_returned_elevation,tmean_identical_all_days,precip_identical_all_days,tmean_mean_abs_difference_c,precip_mean_abs_difference_mm
+bannei,hongming,23.877184446216702,27.798770058383226,False,False,False,False,0.5411699164345405,2.271699164345404
+bannei,luhong,154.87588878463947,174.85611039356795,False,False,False,False,0.812757660167131,3.7784958217270197
+hongming,luhong,138.40528772621323,148.5881021946902,False,False,False,False,0.9840111420612815,4.176100278551532
