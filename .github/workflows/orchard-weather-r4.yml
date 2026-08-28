@@ -1,0 +1,105 @@
+name: Exact orchard weather R4
+
+on:
+  push:
+    branches:
+      - codex/litchi-orchard-weather-r4
+    paths:
+      - '.github/workflows/orchard-weather-r4.yml'
+      - 'configs/orchard_weather_exact.yaml'
+      - 'scripts/download_orchard_weather_exact.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download-validate-persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/litchi-orchard-weather-r4
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pandas numpy requests pyyaml scipy tabulate
+
+      - name: Download exact orchard daily and hourly ERA5 data
+        run: python scripts/download_orchard_weather_exact.py --config configs/orchard_weather_exact.yaml
+
+      - name: Verify coverage and coordinate contract
+        run: |
+          python - <<'PY'
+          import json
+          import pandas as pd
+          from pathlib import Path
+
+          daily_path = Path('data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv')
+          hourly_path = Path('data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz')
+          meta_path = Path('data/external/open_meteo_era5_orchards/download_metadata.json')
+          daily = pd.read_csv(daily_path)
+          hourly = pd.read_csv(hourly_path)
+          meta = json.loads(meta_path.read_text(encoding='utf-8'))
+
+          assert len(daily) == 5385, len(daily)
+          assert len(hourly) == 129240, len(hourly)
+          assert set(daily['orchard_id']) == {'bannei', 'hongming', 'luhong'}
+          assert daily.groupby('orchard_id')['date'].nunique().eq(1795).all()
+          assert hourly.groupby('orchard_id')['time'].nunique().eq(43080).all()
+          assert not daily.isna().any().any()
+          assert not hourly.isna().any().any()
+
+          expected = {
+              'bannei': (19.899341667, 110.499494444),
+              'hongming': (19.698605556, 110.580541667),
+              'luhong': (18.609658333, 109.942294444),
+          }
+          for orchard_id, (lat, lon) in expected.items():
+              row = daily[daily['orchard_id'] == orchard_id].iloc[0]
+              assert abs(row['requested_latitude'] - lat) < 1e-9
+              assert abs(row['requested_longitude'] - lon) < 1e-9
+              assert meta['points'][orchard_id]['n_daily'] == 1795
+              assert meta['points'][orchard_id]['n_hourly'] == 43080
+
+          print(daily.groupby('orchard_id')['date'].agg(['min', 'max', 'count']))
+          print(hourly.groupby('orchard_id')['time'].agg(['min', 'max', 'count']))
+          PY
+
+      - name: Persist generated orchard weather package to branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv \
+            data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz \
+            data/external/open_meteo_era5_orchards/download_metadata.json \
+            data/external/open_meteo_era5_orchards/variable_dictionary.csv \
+            results/qc/orchard_era5_overlap_validation.csv \
+            results/qc/orchard_era5_grid_distinction.csv \
+            reports/07_ORCHARD_EXACT_WEATHER_REPORT.md
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'Add exact-orchard ERA5 daily and hourly weather data'
+            git push origin HEAD:codex/litchi-orchard-weather-r4
+          fi
+
+      - name: Upload full raw and processed package
+        uses: actions/upload-artifact@v4
+        with:
+          name: exact-orchard-weather-r4
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            data/external/open_meteo_era5_orchards/
+            results/qc/orchard_era5_overlap_validation.csv
+            results/qc/orchard_era5_grid_distinction.csv
+            reports/07_ORCHARD_EXACT_WEATHER_REPORT.md
