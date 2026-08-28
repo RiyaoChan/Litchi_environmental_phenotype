@@ -1,0 +1,99 @@
+{
+  "downloaded_at_utc": "2026-08-28T03:13:55+00:00",
+  "source": {
+    "provider": "Open-Meteo Historical Weather API",
+    "dataset": "ERA5 reanalysis",
+    "model": "era5",
+    "timezone": "Asia/Shanghai",
+    "start_date": "2021-08-01",
+    "end_date": "2026-06-30",
+    "api_base": "https://archive-api.open-meteo.com/v1/archive",
+    "license": "CC BY 4.0",
+    "variables": [
+      "temperature_2m_mean",
+      "temperature_2m_max",
+      "temperature_2m_min",
+      "precipitation_sum",
+      "relative_humidity_2m_mean",
+      "sunshine_duration",
+      "shortwave_radiation_sum",
+      "wind_speed_10m_mean",
+      "wind_speed_10m_max",
+      "et0_fao_evapotranspiration"
+    ]
+  },
+  "points": {
+    "bannei": {
+      "requested_latitude": 19.899341667,
+      "requested_longitude": 110.499494444,
+      "returned_grid_latitude": 20.0,
+      "returned_grid_longitude": 110.5,
+      "elevation_m": 27.0,
+      "coordinate_basis": "exact Bannei orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 19°53'57.63\", E 110°29'58.18\"",
+      "raw_json_sha256": "953fa6063ecf6f4cec5fd594ba174296d7abe47d7f856f081f3a5c88b6be031a",
+      "n_days": 1795,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm",
+        "relative_humidity_2m_mean": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "et0_fao_evapotranspiration": "mm"
+      }
+    },
+    "hongming": {
+      "requested_latitude": 19.698605556,
+      "requested_longitude": 110.580541667,
+      "returned_grid_latitude": 19.75,
+      "returned_grid_longitude": 110.5,
+      "elevation_m": 78.0,
+      "coordinate_basis": "exact Hongming orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 19°41'54.98\", E 110°34'49.95\"",
+      "raw_json_sha256": "22bd406cb79b7af9168e59c93f467471f52051b47e9570e1ada49af894cf7667",
+      "n_days": 1795,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm",
+        "relative_humidity_2m_mean": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "et0_fao_evapotranspiration": "mm"
+      }
+    },
+    "luhong": {
+      "requested_latitude": 18.609658333,
+      "requested_longitude": 109.942294444,
+      "returned_grid_latitude": 18.5,
+      "returned_grid_longitude": 110.0,
+      "elevation_m": 42.0,
+      "coordinate_basis": "exact Luhong orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 18°36'34.77\", E 109°56'32.26\"",
+      "raw_json_sha256": "4e7df28222a74fdfa22ee4aa2b4949ca5f533f960cd1b026dd246d364373f9ff",
+      "n_days": 1795,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm",
+        "relative_humidity_2m_mean": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "et0_fao_evapotranspiration": "mm"
+      }
+    }
+  },
+  "complete_csv_sha256": "4ed49283266a91438dbd7d58e3da0b95cbd6ef6637a53a4c8ebfe32c83b0f3ce",
+  "expected_days_per_point": 1795,
+  "total_rows": 5385
+}
