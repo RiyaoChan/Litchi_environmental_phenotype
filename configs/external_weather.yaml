@@ -1,0 +1,40 @@
+source:
+  provider: Open-Meteo Historical Weather API
+  dataset: ERA5 reanalysis
+  model: era5
+  timezone: Asia/Shanghai
+  start_date: '2021-08-01'
+  end_date: '2026-06-30'
+  api_base: https://archive-api.open-meteo.com/v1/archive
+  license: CC BY 4.0
+  variables:
+    - temperature_2m_mean
+    - temperature_2m_max
+    - temperature_2m_min
+    - precipitation_sum
+    - relative_humidity_2m_mean
+    - sunshine_duration
+    - shortwave_radiation_sum
+    - wind_speed_10m_mean
+    - wind_speed_10m_max
+    - et0_fao_evapotranspiration
+points:
+  haikou_region_proxy:
+    latitude: 19.75
+    longitude: 110.55
+    region_id: haikou
+    coordinate_basis: regional proxy for the Yunlong/Bannei and Sanmenpo/Hongming production area; not an exact orchard coordinate
+  lingshui_region_proxy:
+    latitude: 18.55
+    longitude: 110.00
+    region_id: lingshui
+    coordinate_basis: regional proxy near Timeng Township, Lingshui; not an exact orchard coordinate
+outputs:
+  raw_dir: data/external/open_meteo_era5/raw
+  complete_csv: data/external/open_meteo_era5/weather_daily_era5.csv
+  metadata_json: data/external/open_meteo_era5/download_metadata.json
+  overlap_metrics_csv: results/qc/era5_overlap_validation.csv
+  overlap_report_md: reports/06_ERA5_GAPFILL_REPORT.md
+  bias_coefficients_csv: results/qc/era5_bias_coefficients.csv
+  hybrid_raw_csv: data/processed/weather_daily_hybrid_raw.csv
+  hybrid_adjusted_csv: data/processed/weather_daily_hybrid_bias_adjusted.csv
