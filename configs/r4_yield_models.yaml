@@ -1,0 +1,18 @@
+target: final_yield_kg_per_mu
+models: [Y-B0, Y-W1C, Y-W1M, Y-W2O, Y-W3P, Y-W3P+PHENO]
+algorithm: ridge
+alpha_candidates: [0.1, 1, 10, 100, 1000]
+scaling: training_only_population_mean_and_std
+orchard_encoding: fixed_one_hot
+max_continuous_features: 6
+outer_split: leave_entire_harvest_year_out
+inner_split: leave_entire_training_harvest_year_out
+training_dynamic_features: cross_fit_inside_each_outer_and_inner_training_partition
+prediction_context: conditional_on_realized_reanalysis_weather_not_operational_weather_forecast
+main_exclusions: [bannei_2025, hongming_2025, hongming_2026]
+sensitivities:
+  SENS-HM25: [hongming_2025]
+  SENS-HM26: [hongming_2026]
+  SENS-HM25-26: [hongming_2025, hongming_2026]
+secondary_targets: [mean_yield_per_tree_kg, mean_single_fruit_weight_g, fruit_number_proxy]
+secondary_status: descriptive_missingness_only_no_automatic_extra_model_search

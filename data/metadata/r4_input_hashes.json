@@ -1,0 +1,42 @@
+[
+  {
+    "path": "data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv",
+    "sha256": "061bc3a0765c834bfcfc5d19713c7be00fe1693581603800939d17acaf646ff6",
+    "bytes": 1932208
+  },
+  {
+    "path": "data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz",
+    "sha256": "b14d7abeff6ec99d5e3d9f6f1fc121897cbb30c252669111444048cae74570f0",
+    "bytes": 2982174
+  },
+  {
+    "path": "data/external/open_meteo_era5_orchards/download_metadata.json",
+    "sha256": "cb5a077f98a5bde6eecda1e5ee9b2e26e972fc96d32d848fa1358bae5ef160e7",
+    "bytes": 18407
+  },
+  {
+    "path": "data/external/open_meteo_era5_orchards/variable_dictionary.csv",
+    "sha256": "4000d8172828275a3f4286bda4e4955d79b1eb158de405f5847cb2a44f47fa00",
+    "bytes": 3155
+  },
+  {
+    "path": "data/processed/phenology_event_long.csv",
+    "sha256": "c8926e1e74bda39e58ed036a58b83cf0ca5028d9e4529975609fcef813fd121c",
+    "bytes": 50270
+  },
+  {
+    "path": "data/processed/orchard_season_master.csv",
+    "sha256": "153fffa092af774829e56ea487d524cf6521561d68e0df676e12d0312e2f57c8",
+    "bytes": 5323
+  },
+  {
+    "path": "experiments_guide/LITCHI_R4_PHENOLOGY_YIELD_EXPERIMENT_PLAN_FOR_CODEX_V3.md",
+    "sha256": "949415a6e5812276a8b0126f540a102367e5ff7c4d71bb0827b8b42d437078e1",
+    "bytes": 37630
+  },
+  {
+    "path": "data/external/open_meteo_era5/weather_daily_era5.csv",
+    "sha256": "4a89bdda8d711ddc6d952bc6945365b9a94a4f5f5c63bb98a5871cf34deac79f",
+    "bytes": 1380328
+  }
+]

@@ -1,0 +1,50 @@
+# Locked before any V3 held-out model result is inspected.
+split: leave_entire_harvest_year_out
+inner_split: leave_entire_training_harvest_year_out
+rolling_test_years: [2024, 2025, 2026]
+min_orchard_training_samples: 1
+threshold_estimator: training_orchard_median_with_pooled_fallback
+baseline_rounding: half_up
+event_day_convention: start_00_to_observed_event_day_23_inclusive
+prediction_horizon: '{Y}-06-30'
+min_duration_days: 1
+unreached_score_penalty_days: 365
+zero_accumulation_epsilon: 0.000000001
+tie_break: first_preregistered_candidate
+P1:
+  models: [P1-B0, P1-B1, P1-D1, P1-D2, P1-H1, P1-H2, P1-H3]
+  cold_count_thresholds_c: [22, 20, 18, 15]
+  cold_count_daily_variables: [tmean_c, tmin_c]
+  cold_degree_bases_c: [18, 20, 22]
+  nonlinear:
+    kind: triangular
+    fixed_lower_c: 5
+    optimum_candidates_c: [12, 15]
+    upper_candidates_c: [20, 22, 25]
+    note: bounded candidate shapes, not independently established physiological cardinal temperatures
+P2:
+  models: [P2-B0, P2-M1]
+  gdd_bases_c: [5, 8, 10, 12, 15]
+P3:
+  models: [P3-B0, P3-M1]
+  gdd_bases_c: [5, 8, 10, 12, 15]
+extensions:
+  enabled_only_if_primary_beats_baseline: true
+  coefficient_candidates: [-0.25, 0, 0.25]
+  P1-W1: [water_balance, dry_day, vpd, root_zone_moisture]
+  P2-M2: [radiation]
+  P3-M2: [heat_day, heat_hour_fraction, radiation, water_balance]
+  response_multiplier_bounds: [0.5, 1.5]
+  # Fixed physical scales avoid fitting to validation weather statistics.
+  scales: {water_balance: 10, dry_day: 1, vpd: 2, root_zone_moisture: 0.3, radiation: 20, heat_day: 1, heat_hour_fraction: 1}
+stability:
+  min_nonworse_loyo_years: 3
+  must_survive_removing_best_improvement_year: true
+  must_not_worsen_rolling_mae: true
+  max_h3_distinct_shapes_for_identifiable_claim: 3
+  clustered_bootstrap_repetitions: 2000
+chain:
+  selection: train_only_inner_cv_over_preregistered_primary_candidates_and_baselines
+  less_than_two_training_years: B0
+  extensions_in_chain: false
+  note: no globally selected winner or outer-test label enters any chain fit

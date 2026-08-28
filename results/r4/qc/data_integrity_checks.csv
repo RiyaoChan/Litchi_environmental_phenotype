@@ -1,0 +1,46 @@
+﻿check,pass,detail
+daily_row_count,True,5385
+hourly_row_count,True,129240
+orchard_sets,True,"['bannei', 'hongming', 'luhong']"
+daily_unique,True,orchard-date
+hourly_unique,True,orchard-time
+metadata_source,True,era5
+bannei_daily_continuity,True,1795
+bannei_hourly_continuity,True,43080
+bannei_daily_coordinates,True,"[19.899341667, 110.499494444]"
+bannei_daily_timezone,True,Asia/Shanghai
+bannei_hourly_coordinates,True,"[19.899341667, 110.499494444]"
+bannei_hourly_timezone,True,Asia/Shanghai
+bannei_daily_metadata_grid,True,"returned API grid, not orchard coordinate"
+bannei_hourly_metadata_grid,True,"returned API grid, not orchard coordinate"
+hongming_daily_continuity,True,1795
+hongming_hourly_continuity,True,43080
+hongming_daily_coordinates,True,"[19.698605556, 110.580541667]"
+hongming_daily_timezone,True,Asia/Shanghai
+hongming_hourly_coordinates,True,"[19.698605556, 110.580541667]"
+hongming_hourly_timezone,True,Asia/Shanghai
+hongming_daily_metadata_grid,True,"returned API grid, not orchard coordinate"
+hongming_hourly_metadata_grid,True,"returned API grid, not orchard coordinate"
+luhong_daily_continuity,True,1795
+luhong_hourly_continuity,True,43080
+luhong_daily_coordinates,True,"[18.609658333, 109.942294444]"
+luhong_daily_timezone,True,Asia/Shanghai
+luhong_hourly_coordinates,True,"[18.609658333, 109.942294444]"
+luhong_hourly_timezone,True,Asia/Shanghai
+luhong_daily_metadata_grid,True,"returned API grid, not orchard coordinate"
+luhong_hourly_metadata_grid,True,"returned API grid, not orchard coordinate"
+daily_main_variables_finite,True,0
+daily_humidity_range,True,0..100%
+daily_soil_moisture_range,True,0..1 m3/m3
+daily_nonnegative,True,"precipitation, rain, ET0"
+daily_vpd_range,True,VPD >= 0
+hourly_main_variables_finite,True,0
+hourly_humidity_range,True,0..100%
+hourly_soil_moisture_range,True,0..1 m3/m3
+hourly_nonnegative,True,"precipitation, rain, ET0"
+hourly_vpd_range,True,VPD >= 0
+temperature_order,True,tmin <= tmean <= tmax
+daily_hourly_local_date_alignment,True,API rounded daily vs 24 local hourly values; tolerance 0.1 C
+master_unique,True,15
+a39_preserved_2026,True,latest confirmed source authority remains 2026
+bannei_disaster_excluded,True,zero yield retained

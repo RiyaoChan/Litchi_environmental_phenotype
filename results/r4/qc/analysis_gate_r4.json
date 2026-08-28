@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "weather_role": "orchard_specific_era5_main",
+  "daily_rows": 5385,
+  "hourly_rows": 129240,
+  "orchards": 3,
+  "daily_days_per_orchard": 1795,
+  "hourly_times_per_orchard": 43080,
+  "timezone": "Asia/Shanghai",
+  "main_phenology_samples": {
+    "P1": 12,
+    "P2": 12,
+    "P3": 12,
+    "P1A": 12,
+    "P1B": 12
+  },
+  "normal_yield_candidates": 12,
+  "normal_yield_years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "independent_environment_unit": "orchard x harvest_year; not daily/hourly rows",
+  "failed_checks": [],
+  "raw_sources_mutated": false,
+  "yield_gate": "pending_nested_feature_completeness",
+  "source_manifest_files": 8,
+  "distinct_returned_grids": 3
+}

@@ -1,0 +1,27 @@
+interval: closed_both
+calendar:
+  induction: ['{Y-1}-09-01', '{Y}-01-31']
+  flowering: ['{Y}-01-01', '{Y}-03-31']
+  fruit_development: ['{Y}-03-01', '{Y}-05-31']
+events:
+  induction: [autumn_flush_mature, inflorescence_emergence]
+  flowering: [inflorescence_emergence, full_bloom]
+  fruit_development: [full_bloom, maturity]
+median_boundary_scale: days_from_harvest_Jan01
+gdd_reference_base_c: 10
+heat_threshold_c: 32
+dry_threshold_mm: 0.1
+continuous_features:
+  - induction_temperature_metric
+  - induction_water_balance_mm
+  - flowering_precipitation_hours
+  - fruit_gdd
+  - fruit_heat_days
+  - flowering_radiation_mean
+pheno_extension_base_features:
+  - induction_temperature_metric
+  - flowering_precipitation_hours
+  - fruit_gdd
+  - fruit_heat_days
+pheno_extension_features: [predicted_inflorescence_date_offset, predicted_full_bloom_date_offset]
+note: identical metrics across window types within each training context; no test-target boundaries in W1-M or W3

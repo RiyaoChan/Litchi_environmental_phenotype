@@ -1,0 +1,36 @@
+project: litchi_r4_phenology_yield_v3
+seed: 20260828
+protocol: experiments_guide/LITCHI_R4_PHENOLOGY_YIELD_EXPERIMENT_PLAN_FOR_CODEX_V3.md
+baseline_commit: c0c019061623f16af0fc9f786540ef410cd0750b
+weather_main_daily: data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv
+weather_main_hourly: data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz
+weather_metadata: data/external/open_meteo_era5_orchards/download_metadata.json
+weather_dictionary: data/external/open_meteo_era5_orchards/variable_dictionary.csv
+weather_role: orchard_specific_era5_main
+regional_sensitivity_daily: data/external/open_meteo_era5/weather_daily_era5.csv
+phenology_source: data/processed/phenology_event_long.csv
+yield_source: data/processed/orchard_season_master.csv
+legacy_config: configs/base.yaml
+phenology_config: configs/r4_phenology_models.yaml
+windows_config: configs/r4_weather_windows.yaml
+yield_config: configs/r4_yield_models.yaml
+scenario_config: configs/r4_scenarios.yaml
+outputs: results/r4
+reports: reports/r4
+timezone: Asia/Shanghai
+start_date: '2021-08-01'
+end_date: '2026-06-30'
+daily_rows: 5385
+hourly_rows: 129240
+days_per_orchard: 1795
+hours_per_orchard: 43080
+orchards:
+  bannei: [19.899341667, 110.499494444]
+  hongming: [19.698605556, 110.580541667]
+  luhong: [18.609658333, 109.942294444]
+main_daily_variables: [tmean_c, tmin_c, tmax_c, precip_mm, precipitation_hours, sunshine_h, shortwave_radiation_mj_m2, et0_mm]
+main_hourly_variables: [temperature_c, relative_humidity_pct, vpd_kpa, precip_mm, soil_moisture_7_28cm_m3_m3, soil_moisture_28_100cm_m3_m3]
+daily_hourly_tmean_rounding_tolerance_c: 0.1
+coordinate_tolerance: 0.00000001
+yield_min_seasons: 10
+yield_min_years: 4

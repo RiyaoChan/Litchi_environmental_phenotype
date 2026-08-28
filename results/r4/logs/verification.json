@@ -1,0 +1,11 @@
+{
+  "stage": "r4-qc",
+  "pipeline_exit_code": 0,
+  "pytest_passed": 44,
+  "pytest_skipped": 2,
+  "pytest_failed": 0,
+  "pytest_exit_code": 0,
+  "reproducible": true,
+  "compared_files": 6,
+  "source_hashes_verified": true
+}

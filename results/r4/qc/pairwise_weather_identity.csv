@@ -1,0 +1,7 @@
+﻿orchard_a,orchard_b,variable,exactly_identical,mean_absolute_difference,pearson_r
+bannei,hongming,tmean_c,False,0.5411699164,0.985765898
+bannei,hongming,precip_mm,False,2.271699164,0.9086742434
+bannei,luhong,tmean_c,False,0.8127576602,0.9828838488
+bannei,luhong,precip_mm,False,3.778495822,0.5322034901
+hongming,luhong,tmean_c,False,0.9840111421,0.972529007
+hongming,luhong,precip_mm,False,4.176100279,0.5315007891

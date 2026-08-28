@@ -1,0 +1,11 @@
+no_refit: true
+only_stably_validated_weather_models: true
+S1_temperature_offsets_c: [0.5, 1, 1.5, 2]
+S2_flush_delay_days: [7, 14, 21]
+S3_joint: [[1, 7], [1, 14], [2, 7], [2, 14]]
+S4_temperature_offsets_c: [1, 2]
+S5:
+  status: conditional_exploratory
+  flowering_precipitation_factors: [0.8, 1.2]
+  fruit_temperature_offset_c: 1
+  heat_event_days_equivalent: 5
