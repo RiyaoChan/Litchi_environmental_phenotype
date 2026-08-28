@@ -1,0 +1,73 @@
+name: Exact orchard daily weather R4
+
+on:
+  push:
+    branches:
+      - codex/litchi-orchard-weather-r4
+    paths:
+      - '.github/workflows/orchard-weather-daily-r4.yml'
+      - 'configs/orchard_weather_exact.yaml'
+      - 'scripts/download_orchard_weather_daily.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download-validate-persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/litchi-orchard-weather-r4
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pandas requests pyyaml
+
+      - name: Download exact-orchard daily ERA5 data
+        run: python scripts/download_orchard_weather_daily.py --config configs/orchard_weather_exact.yaml
+
+      - name: Verify exact-orchard daily package
+        run: |
+          python - <<'PY'
+          import json
+          import pandas as pd
+          from pathlib import Path
+          root = Path('data/external/open_meteo_era5_orchards_daily')
+          data = pd.read_csv(root / 'weather_daily_era5_exact_orchards.csv')
+          meta = json.loads((root / 'download_metadata.json').read_text(encoding='utf-8'))
+          assert len(data) == 5385
+          assert set(data.orchard_id) == {'bannei', 'hongming', 'luhong'}
+          assert data.groupby('orchard_id').date.nunique().eq(1795).all()
+          assert meta['total_rows'] == 5385
+          print(data.groupby('orchard_id').date.agg(['min','max','count']))
+          print(data[['orchard_id','grid_latitude','grid_longitude','elevation_m']].drop_duplicates())
+          PY
+
+      - name: Persist exact-orchard daily package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/external/open_meteo_era5_orchards_daily/
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'Add exact-orchard daily ERA5 weather dataset'
+            git push origin HEAD:codex/litchi-orchard-weather-r4
+          fi
+
+      - name: Upload exact-orchard daily package
+        uses: actions/upload-artifact@v4
+        with:
+          name: exact-orchard-daily-weather-r4
+          if-no-files-found: error
+          retention-days: 30
+          path: data/external/open_meteo_era5_orchards_daily/
