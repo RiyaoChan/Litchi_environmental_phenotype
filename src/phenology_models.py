@@ -59,7 +59,7 @@ class WeatherStore:
         key=(orchard,spec_key(spec),float(temperature_shift))
         if key in self._increments: return self._increments[key]
         d=self.daily[orchard]
-        h=self.hourly[orchard]
+        h=self.hourly.get(orchard,pd.DataFrame())
         kind=spec['kind']
         if kind=='cold_count_day':
             value=(d[spec['variable']].to_numpy()+temperature_shift<spec['temperature']).astype(float)

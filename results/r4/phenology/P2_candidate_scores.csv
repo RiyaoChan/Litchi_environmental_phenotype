@@ -1,0 +1,73 @@
+﻿fit_id,holdout_year,validation,model_id,candidate_index,spec,inner_MAE_days,training_years
+main_P2_P2-B0_LOYO_2022,2022,LOYO,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",8.888888889,2023;2024;2025;2026
+main_P2_P2-M1_LOYO_2022,2022,LOYO,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",7,2023;2024;2025;2026
+main_P2_P2-M1_LOYO_2022,2022,LOYO,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",7.111111111,2023;2024;2025;2026
+main_P2_P2-M1_LOYO_2022,2022,LOYO,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",6.777777778,2023;2024;2025;2026
+main_P2_P2-M1_LOYO_2022,2022,LOYO,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",6.666666667,2023;2024;2025;2026
+main_P2_P2-M1_LOYO_2022,2022,LOYO,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",6.666666667,2023;2024;2025;2026
+main_P2_P2-B0_LOYO_2023,2023,LOYO,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",9.333333333,2022;2024;2025;2026
+main_P2_P2-M1_LOYO_2023,2023,LOYO,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",8,2022;2024;2025;2026
+main_P2_P2-M1_LOYO_2023,2023,LOYO,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",7.555555556,2022;2024;2025;2026
+main_P2_P2-M1_LOYO_2023,2023,LOYO,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",7.666666667,2022;2024;2025;2026
+main_P2_P2-M1_LOYO_2023,2023,LOYO,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",7.222222222,2022;2024;2025;2026
+main_P2_P2-M1_LOYO_2023,2023,LOYO,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",8.222222222,2022;2024;2025;2026
+main_P2_P2-B0_LOYO_2024,2024,LOYO,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",3,2022;2023;2025;2026
+main_P2_P2-M1_LOYO_2024,2024,LOYO,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",2.888888889,2022;2023;2025;2026
+main_P2_P2-M1_LOYO_2024,2024,LOYO,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",3,2022;2023;2025;2026
+main_P2_P2-M1_LOYO_2024,2024,LOYO,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",3.222222222,2022;2023;2025;2026
+main_P2_P2-M1_LOYO_2024,2024,LOYO,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",3.111111111,2022;2023;2025;2026
+main_P2_P2-M1_LOYO_2024,2024,LOYO,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",3.666666667,2022;2023;2025;2026
+main_P2_P2-B0_LOYO_2025,2025,LOYO,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",4.545454545,2022;2023;2024;2026
+main_P2_P2-M1_LOYO_2025,2025,LOYO,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",2.818181818,2022;2023;2024;2026
+main_P2_P2-M1_LOYO_2025,2025,LOYO,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",2.818181818,2022;2023;2024;2026
+main_P2_P2-M1_LOYO_2025,2025,LOYO,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",2.818181818,2022;2023;2024;2026
+main_P2_P2-M1_LOYO_2025,2025,LOYO,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",2.454545455,2022;2023;2024;2026
+main_P2_P2-M1_LOYO_2025,2025,LOYO,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",2.818181818,2022;2023;2024;2026
+main_P2_P2-B0_LOYO_2026,2026,LOYO,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",7.9,2022;2023;2024;2025
+main_P2_P2-M1_LOYO_2026,2026,LOYO,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",6.2,2022;2023;2024;2025
+main_P2_P2-M1_LOYO_2026,2026,LOYO,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",6.4,2022;2023;2024;2025
+main_P2_P2-M1_LOYO_2026,2026,LOYO,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",6.2,2022;2023;2024;2025
+main_P2_P2-M1_LOYO_2026,2026,LOYO,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",6.4,2022;2023;2024;2025
+main_P2_P2-M1_LOYO_2026,2026,LOYO,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",7.4,2022;2023;2024;2025
+main_P2_P2-B0_rolling_2024,2024,rolling,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",0.6666666667,2022;2023
+main_P2_P2-M1_rolling_2024,2024,rolling,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",1.166666667,2022;2023
+main_P2_P2-M1_rolling_2024,2024,rolling,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",1.5,2022;2023
+main_P2_P2-M1_rolling_2024,2024,rolling,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",2.166666667,2022;2023
+main_P2_P2-M1_rolling_2024,2024,rolling,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",2.333333333,2022;2023
+main_P2_P2-M1_rolling_2024,2024,rolling,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",3.333333333,2022;2023
+main_P2_P2-B0_rolling_2025,2025,rolling,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",5.777777778,2022;2023;2024
+main_P2_P2-M1_rolling_2025,2025,rolling,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",4,2022;2023;2024
+main_P2_P2-M1_rolling_2025,2025,rolling,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",4.111111111,2022;2023;2024
+main_P2_P2-M1_rolling_2025,2025,rolling,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",3.888888889,2022;2023;2024
+main_P2_P2-M1_rolling_2025,2025,rolling,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",4.222222222,2022;2023;2024
+main_P2_P2-M1_rolling_2025,2025,rolling,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",5.111111111,2022;2023;2024
+main_P2_P2-B0_rolling_2026,2026,rolling,P2-B0,0,"{""kind"": ""duration"", ""model_id"": ""P2-B0""}",7.9,2022;2023;2024;2025
+main_P2_P2-M1_rolling_2026,2026,rolling,P2-M1,0,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 5}",6.2,2022;2023;2024;2025
+main_P2_P2-M1_rolling_2026,2026,rolling,P2-M1,1,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 8}",6.4,2022;2023;2024;2025
+main_P2_P2-M1_rolling_2026,2026,rolling,P2-M1,2,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 10}",6.2,2022;2023;2024;2025
+main_P2_P2-M1_rolling_2026,2026,rolling,P2-M1,3,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 12}",6.4,2022;2023;2024;2025
+main_P2_P2-M1_rolling_2026,2026,rolling,P2-M1,4,"{""kind"": ""gdd"", ""model_id"": ""P2-M1"", ""temperature"": 15}",7.4,2022;2023;2024;2025
+main_P2_P2-M2_LOYO_2022,2022,LOYO,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",6.888888889,2023;2024;2025;2026
+main_P2_P2-M2_LOYO_2022,2022,LOYO,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",6.666666667,2023;2024;2025;2026
+main_P2_P2-M2_LOYO_2022,2022,LOYO,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",6.444444444,2023;2024;2025;2026
+main_P2_P2-M2_LOYO_2023,2023,LOYO,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",7.666666667,2022;2024;2025;2026
+main_P2_P2-M2_LOYO_2023,2023,LOYO,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",7.222222222,2022;2024;2025;2026
+main_P2_P2-M2_LOYO_2023,2023,LOYO,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",7.666666667,2022;2024;2025;2026
+main_P2_P2-M2_LOYO_2024,2024,LOYO,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",3.222222222,2022;2023;2025;2026
+main_P2_P2-M2_LOYO_2024,2024,LOYO,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",2.888888889,2022;2023;2025;2026
+main_P2_P2-M2_LOYO_2024,2024,LOYO,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",3.555555556,2022;2023;2025;2026
+main_P2_P2-M2_LOYO_2025,2025,LOYO,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",2.545454545,2022;2023;2024;2026
+main_P2_P2-M2_LOYO_2025,2025,LOYO,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",2.454545455,2022;2023;2024;2026
+main_P2_P2-M2_LOYO_2025,2025,LOYO,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 12}",2.909090909,2022;2023;2024;2026
+main_P2_P2-M2_LOYO_2026,2026,LOYO,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.8,2022;2023;2024;2025
+main_P2_P2-M2_LOYO_2026,2026,LOYO,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.2,2022;2023;2024;2025
+main_P2_P2-M2_LOYO_2026,2026,LOYO,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.2,2022;2023;2024;2025
+main_P2_P2-M2_rolling_2024,2024,rolling,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",2.166666667,2022;2023
+main_P2_P2-M2_rolling_2024,2024,rolling,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",1.166666667,2022;2023
+main_P2_P2-M2_rolling_2024,2024,rolling,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",2.166666667,2022;2023
+main_P2_P2-M2_rolling_2025,2025,rolling,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 10}",4.333333333,2022;2023;2024
+main_P2_P2-M2_rolling_2025,2025,rolling,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 10}",3.888888889,2022;2023;2024
+main_P2_P2-M2_rolling_2025,2025,rolling,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 10}",4,2022;2023;2024
+main_P2_P2-M2_rolling_2026,2026,rolling,P2-M2,0,"{""coefficient"": -0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.8,2022;2023;2024;2025
+main_P2_P2-M2_rolling_2026,2026,rolling,P2-M2,1,"{""coefficient"": 0, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.2,2022;2023;2024;2025
+main_P2_P2-M2_rolling_2026,2026,rolling,P2-M2,2,"{""coefficient"": 0.25, ""kind"": ""gdd"", ""model_id"": ""P2-M2"", ""modifier"": ""radiation"", ""temperature"": 5}",6.2,2022;2023;2024;2025

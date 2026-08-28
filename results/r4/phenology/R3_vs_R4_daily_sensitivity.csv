@@ -1,0 +1,7 @@
+﻿validation,model_id,n,R3_proxy_MAE_days,R4_orchard_MAE_days,role
+LOYO,P1-B0,12,4.833333333,4.833333333,auxiliary_only_R4_remains_primary
+LOYO,P1-D1,12,5.916666667,6.25,auxiliary_only_R4_remains_primary
+LOYO,P1-D2,12,72.5,72.41666667,auxiliary_only_R4_remains_primary
+rolling,P1-B0,6,7.333333333,7.333333333,auxiliary_only_R4_remains_primary
+rolling,P1-D1,6,6.5,13.83333333,auxiliary_only_R4_remains_primary
+rolling,P1-D2,6,131.3333333,131.3333333,auxiliary_only_R4_remains_primary

@@ -1,0 +1,10 @@
+{
+  "task": "P3",
+  "primary_models": [
+    "P3-B0",
+    "P3-M1"
+  ],
+  "extension": "P3-M2",
+  "extension_executed": true,
+  "stable_weather_models": []
+}

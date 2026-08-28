@@ -1,0 +1,4193 @@
+{
+  "main_P3_P3-B0_LOYO_2022": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 67.0,
+      "hongming": 66.0,
+      "luhong": 79.5
+    },
+    "pooled_parameter": 73.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 67.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 84.0
+      }
+    ],
+    "inner_mae_days": 5.111111111111111,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 5.111111111111111
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_LOYO_2022": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1351.2000000000335,
+      "hongming": 1440.3999999999987,
+      "luhong": 1588.749999999999
+    },
+    "pooled_parameter": 1483.8000000000102,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1351.2000000000335
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1483.8000000000102
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1691.699999999997
+      }
+    ],
+    "inner_mae_days": 5.0,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 5.111111111111111
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 5.444444444444445
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 6.222222222222222
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_LOYO_2023": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 67.0,
+      "hongming": 66.0,
+      "luhong": 79.5
+    },
+    "pooled_parameter": 69.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 67.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 84.0
+      }
+    ],
+    "inner_mae_days": 6.0,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 6.0
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_LOYO_2023": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1351.2000000000335,
+      "hongming": 1386.3499999999974,
+      "luhong": 1563.7500000000036
+    },
+    "pooled_parameter": 1381.5000000000027,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1351.2000000000335
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1483.8000000000102
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1691.699999999997
+      }
+    ],
+    "inner_mae_days": 6.333333333333333,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 6.666666666666667
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 7.0
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 7.555555555555555
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 9.555555555555555
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_LOYO_2024": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 71.0,
+      "hongming": 69.0,
+      "luhong": 79.0
+    },
+    "pooled_parameter": 71.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 67.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 84.0
+      }
+    ],
+    "inner_mae_days": 2.7777777777777777,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 2.7777777777777777
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_LOYO_2024": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1381.5000000000027,
+      "hongming": 1401.2499999999998,
+      "luhong": 1508.8000000000056
+    },
+    "pooled_parameter": 1455.300000000001,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1351.2000000000335
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1483.8000000000102
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1691.699999999997
+      }
+    ],
+    "inner_mae_days": 5.555555555555555,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 6.222222222222222
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 6.888888888888889
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 8.11111111111111
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_LOYO_2025": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 69.0,
+      "hongming": 69.0,
+      "luhong": 79.5
+    },
+    "pooled_parameter": 69.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 67.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 84.0
+      }
+    ],
+    "inner_mae_days": 5.2727272727272725,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 5.2727272727272725
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_LOYO_2025": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1366.350000000018,
+      "hongming": 1425.4999999999964,
+      "luhong": 1588.749999999999
+    },
+    "pooled_parameter": 1425.4999999999964,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1351.2000000000335
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1691.699999999997
+      }
+    ],
+    "inner_mae_days": 5.181818181818182,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 5.363636363636363
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 5.363636363636363
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 5.909090909090909
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 7.2727272727272725
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_LOYO_2026": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 71.0,
+      "hongming": 69.0,
+      "luhong": 79.0
+    },
+    "pooled_parameter": 70.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 79.0
+      }
+    ],
+    "inner_mae_days": 5.3,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 5.3
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_LOYO_2026": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1381.5000000000027,
+      "hongming": 1425.4999999999964,
+      "luhong": 1508.8000000000056
+    },
+    "pooled_parameter": 1440.3999999999987,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1483.8000000000102
+      }
+    ],
+    "inner_mae_days": 4.9,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 5.2
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 5.5
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 6.2
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 6.9
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_rolling_2024": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 72.0,
+      "hongming": 69.0,
+      "luhong": 74.0
+    },
+    "pooled_parameter": 70.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      }
+    ],
+    "inner_mae_days": 4.0,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 4.0
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_rolling_2024": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1448.1500000000065,
+      "hongming": 1401.2499999999998,
+      "luhong": 1408.0000000000005
+    },
+    "pooled_parameter": 1418.400000000002,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      }
+    ],
+    "inner_mae_days": 7.5,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 7.5
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 7.833333333333333
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 8.666666666666666
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 9.166666666666666
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 10.666666666666666
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_rolling_2025": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 71.0,
+      "hongming": 69.0,
+      "luhong": 79.0
+    },
+    "pooled_parameter": 69.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      }
+    ],
+    "inner_mae_days": 7.0,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 7.0
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_rolling_2025": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1381.5000000000027,
+      "hongming": 1425.4999999999964,
+      "luhong": 1533.800000000001
+    },
+    "pooled_parameter": 1425.4999999999964,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      }
+    ],
+    "inner_mae_days": 5.888888888888889,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 6.111111111111111
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 6.444444444444445
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 7.0
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 7.666666666666667
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-B0_rolling_2026": {
+    "spec": {
+      "model_id": "P3-B0",
+      "kind": "duration"
+    },
+    "parameters": {
+      "bannei": 71.0,
+      "hongming": 69.0,
+      "luhong": 79.0
+    },
+    "pooled_parameter": 70.0,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 71.0
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 73.0
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 57.0
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 63.0
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 69.0
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 79.0
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 80.0
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 79.0
+      }
+    ],
+    "inner_mae_days": 5.3,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-B0",
+          "kind": "duration"
+        },
+        "inner_mae_days": 5.3
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M1_rolling_2026": {
+    "spec": {
+      "model_id": "P3-M1",
+      "kind": "gdd",
+      "temperature": 5
+    },
+    "parameters": {
+      "bannei": 1381.5000000000027,
+      "hongming": 1425.4999999999964,
+      "luhong": 1508.8000000000056
+    },
+    "pooled_parameter": 1440.3999999999987,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1514.8000000000102
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1266.600000000013
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1347.1999999999985
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1455.300000000001
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1425.4999999999964
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1483.8000000000102
+      }
+    ],
+    "inner_mae_days": 4.9,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 5
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 8
+        },
+        "inner_mae_days": 5.2
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 10
+        },
+        "inner_mae_days": 5.5
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 12
+        },
+        "inner_mae_days": 6.2
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M1",
+          "kind": "gdd",
+          "temperature": 15
+        },
+        "inner_mae_days": 6.9
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_LOYO_2022": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "water_balance",
+      "coefficient": -0.25
+    },
+    "parameters": {
+      "bannei": 1475.3202999999994,
+      "hongming": 1517.145262500001,
+      "luhong": 1696.827900000002
+    },
+    "pooled_parameter": 1584.2845499999894,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1584.9352999999992
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1367.4824499999886
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1475.3202999999994
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1508.2369499999968
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1526.0535750000054
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1639.05007500001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1754.605724999994
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1584.2845499999894
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1816.1353750000053
+      }
+    ],
+    "inner_mae_days": 4.444444444444445,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.777777777777778
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.111111111111111
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 4.888888888888889
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.222222222222222
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 4.777777777777778
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 4.444444444444445
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.666666666666667
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_LOYO_2023": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "radiation",
+      "coefficient": -0.25
+    },
+    "parameters": {
+      "bannei": 996.2596875000017,
+      "hongming": 1039.0510374999988,
+      "luhong": 1188.874356250004
+    },
+    "pooled_parameter": 1041.407737499996,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2024",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2024",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1073.7242500000016
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 920.7991249999977
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 996.2596875000017
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1036.6943375000014
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1041.407737499996
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 998.8268125000013
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1246.195312500011
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1131.553399999997
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1269.5098874999785
+      }
+    ],
+    "inner_mae_days": 5.777777777777778,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 7.222222222222222
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.111111111111111
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.555555555555555
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.777777777777778
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.666666666666667
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 8.0
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.777777777777778
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_LOYO_2024": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "radiation",
+      "coefficient": -0.25
+    },
+    "parameters": {
+      "bannei": 1073.7242500000016,
+      "hongming": 1062.8604374999952,
+      "luhong": 1152.7247499999994
+    },
+    "pooled_parameter": 1089.026537499989,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2025",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2025,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2025",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1073.7242500000016
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1130.705237500002
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 996.2596875000017
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1036.6943375000014
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1089.026537499989
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 998.8268125000013
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1173.8961000000018
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1131.553399999997
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1269.5098874999785
+      }
+    ],
+    "inner_mae_days": 4.666666666666667,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 4.888888888888889
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.333333333333333
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.777777777777778
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 4.666666666666667
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.555555555555555
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.555555555555555
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.111111111111111
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_LOYO_2025": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "heat_hour_fraction",
+      "coefficient": -0.25
+    },
+    "parameters": {
+      "bannei": 1365.1265625000174,
+      "hongming": 1388.8458333333292,
+      "luhong": 1588.749999999999
+    },
+    "pooled_parameter": 1388.8458333333292,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024",
+        "bannei_2026"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2026"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2026
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "bannei_2026",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2026"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1381.5000000000027
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1508.906250000009
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1258.4114583333503
+      },
+      {
+        "season_id": "bannei_2026",
+        "orchard_id": "bannei",
+        "harvest_year": 2026,
+        "threshold": 1348.753125000032
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1340.3031249999972
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1434.043749999999
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1388.8458333333292
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1282.1999999999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1533.800000000001
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1643.699999999997
+      },
+      {
+        "season_id": "luhong_2026",
+        "orchard_id": "luhong",
+        "harvest_year": 2026,
+        "threshold": 1691.699999999997
+      }
+    ],
+    "inner_mae_days": 5.090909090909091,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.545454545454546
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.454545454545454
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.090909090909091
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.636363636363637
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.363636363636363
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.454545454545454
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.181818181818182
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.181818181818182
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_LOYO_2026": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "water_balance",
+      "coefficient": 0.25
+    },
+    "parameters": {
+      "bannei": 1365.1659000000009,
+      "hongming": 1330.0632500000002,
+      "luhong": 1405.9326874999906
+    },
+    "pooled_parameter": 1374.240674999996,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1365.1659000000009
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1444.6647000000048
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1165.7175499999903
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1330.0632500000002
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1402.3630499999927
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1324.9464249999946
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1225.8688499999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1428.5499249999903
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1532.7942750000038
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1383.315449999991
+      }
+    ],
+    "inner_mae_days": 4.8,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.7
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.1
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.9
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 4.8
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_rolling_2024": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "water_balance",
+      "coefficient": 0.25
+    },
+    "parameters": {
+      "bannei": 1404.9153000000028,
+      "hongming": 1366.2131499999964,
+      "luhong": 1327.209387499995
+    },
+    "pooled_parameter": 1383.7644749999968,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "hongming_2022",
+      "hongming_2023",
+      "luhong_2022",
+      "luhong_2023"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1365.1659000000009
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1444.6647000000048
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1330.0632500000002
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1402.3630499999927
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1225.8688499999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1428.5499249999903
+      }
+    ],
+    "inner_mae_days": 5.333333333333333,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.166666666666667
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 7.5
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 8.666666666666666
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 7.333333333333333
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 7.5
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 7.833333333333333
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.666666666666667
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 7.5
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 8.5
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 9.833333333333334
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 7.5
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.333333333333333
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_rolling_2025": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "water_balance",
+      "coefficient": 0.25
+    },
+    "parameters": {
+      "bannei": 1365.1659000000009,
+      "hongming": 1330.0632500000002,
+      "luhong": 1428.5499249999903
+    },
+    "pooled_parameter": 1365.1659000000009,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1365.1659000000009
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1444.6647000000048
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1165.7175499999903
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1330.0632500000002
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1402.3630499999927
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1324.9464249999946
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1225.8688499999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1428.5499249999903
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1532.7942750000038
+      }
+    ],
+    "inner_mae_days": 5.666666666666667,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 6.0
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.777777777777778
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.0
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 6.444444444444445
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 7.111111111111111
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 5.888888888888889
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.666666666666667
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  },
+  "main_P3_P3-M2_rolling_2026": {
+    "spec": {
+      "model_id": "P3-M2",
+      "kind": "gdd",
+      "temperature": 5,
+      "modifier": "water_balance",
+      "coefficient": 0.25
+    },
+    "parameters": {
+      "bannei": 1365.1659000000009,
+      "hongming": 1330.0632500000002,
+      "luhong": 1405.9326874999906
+    },
+    "pooled_parameter": 1374.240674999996,
+    "fit_scope": {
+      "bannei": "orchard",
+      "hongming": "orchard",
+      "luhong": "orchard"
+    },
+    "fit_season_ids": {
+      "bannei": [
+        "bannei_2022",
+        "bannei_2023",
+        "bannei_2024"
+      ],
+      "hongming": [
+        "hongming_2022",
+        "hongming_2023",
+        "hongming_2024"
+      ],
+      "luhong": [
+        "luhong_2022",
+        "luhong_2023",
+        "luhong_2024",
+        "luhong_2025"
+      ]
+    },
+    "training_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "training_season_ids": [
+      "bannei_2022",
+      "bannei_2023",
+      "bannei_2024",
+      "hongming_2022",
+      "hongming_2023",
+      "hongming_2024",
+      "luhong_2022",
+      "luhong_2023",
+      "luhong_2024",
+      "luhong_2025"
+    ],
+    "training_calibration": [
+      {
+        "season_id": "bannei_2022",
+        "orchard_id": "bannei",
+        "harvest_year": 2022,
+        "threshold": 1365.1659000000009
+      },
+      {
+        "season_id": "bannei_2023",
+        "orchard_id": "bannei",
+        "harvest_year": 2023,
+        "threshold": 1444.6647000000048
+      },
+      {
+        "season_id": "bannei_2024",
+        "orchard_id": "bannei",
+        "harvest_year": 2024,
+        "threshold": 1165.7175499999903
+      },
+      {
+        "season_id": "hongming_2022",
+        "orchard_id": "hongming",
+        "harvest_year": 2022,
+        "threshold": 1330.0632500000002
+      },
+      {
+        "season_id": "hongming_2023",
+        "orchard_id": "hongming",
+        "harvest_year": 2023,
+        "threshold": 1402.3630499999927
+      },
+      {
+        "season_id": "hongming_2024",
+        "orchard_id": "hongming",
+        "harvest_year": 2024,
+        "threshold": 1324.9464249999946
+      },
+      {
+        "season_id": "luhong_2022",
+        "orchard_id": "luhong",
+        "harvest_year": 2022,
+        "threshold": 1225.8688499999998
+      },
+      {
+        "season_id": "luhong_2023",
+        "orchard_id": "luhong",
+        "harvest_year": 2023,
+        "threshold": 1428.5499249999903
+      },
+      {
+        "season_id": "luhong_2024",
+        "orchard_id": "luhong",
+        "harvest_year": 2024,
+        "threshold": 1532.7942750000038
+      },
+      {
+        "season_id": "luhong_2025",
+        "orchard_id": "luhong",
+        "harvest_year": 2025,
+        "threshold": 1383.315449999991
+      }
+    ],
+    "inner_mae_days": 4.8,
+    "candidate_scores": [
+      {
+        "candidate_index": 0,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 1,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 2,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_day",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.7
+      },
+      {
+        "candidate_index": 3,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 4,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 5,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "heat_hour_fraction",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 6,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.0
+      },
+      {
+        "candidate_index": 7,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 8,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "radiation",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 5.1
+      },
+      {
+        "candidate_index": 9,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": -0.25
+        },
+        "inner_mae_days": 5.9
+      },
+      {
+        "candidate_index": 10,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0
+        },
+        "inner_mae_days": 4.9
+      },
+      {
+        "candidate_index": 11,
+        "spec": {
+          "model_id": "P3-M2",
+          "kind": "gdd",
+          "temperature": 5,
+          "modifier": "water_balance",
+          "coefficient": 0.25
+        },
+        "inner_mae_days": 4.8
+      }
+    ],
+    "selection_mode": "nested_training_year_cv"
+  }
+}

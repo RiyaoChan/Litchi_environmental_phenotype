@@ -103,3 +103,16 @@ def test_all_p1_models_use_same_test_seasons(pheno):
     rows=pd.read_csv(path); rows=rows[rows.validation=='LOYO']
     groups=[set(g.season_id) for _,g in rows.groupby('model_id')]
     assert all(s==groups[0] for s in groups) and len(groups[0])==12
+
+
+@pytest.mark.parametrize('task',['P2','P3'])
+def test_thermal_thresholds_only_use_training_years(pheno,task):
+    _,_,master,engine=pheno
+    frame=task_frame(master,task); train=frame[frame.harvest_year!=2024]
+    fit=engine.fit(train,task,task+'-M1')
+    assert 2024 not in fit['training_years']
+    assert fit['spec']['temperature'] in [5,8,10,12,15]
+    assert all(not s.endswith('_2024') for s in fit['training_season_ids'])
+    test=frame[frame.harvest_year==2024]
+    pd.testing.assert_frame_equal(predict_fit(fit,test,engine.weather),
+        predict_fit(fit,test.assign(end_date=pd.Timestamp('2040-01-01')),engine.weather))
