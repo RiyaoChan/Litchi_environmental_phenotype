@@ -1,7 +1,7 @@
 """R4 orchestration; never rewrites legacy analysis outputs."""
 from __future__ import annotations
 import json
-from .r4_weather_loader import audit
+from .r4_weather_loader import audit,settings
 
 
 def run_r4(root,cfg,stage):
@@ -9,4 +9,16 @@ def run_r4(root,cfg,stage):
     print(json.dumps(gate,ensure_ascii=False,indent=2),flush=True)
     if gate['status']!='pass': return 2
     if stage=='r4-qc': return 0
-    raise NotImplementedError('Downstream V3 phases follow committed Phase 0; no fabricated completion status')
+    from .phenology_models import WeatherStore,PhenologyEngine
+    from .r4_descriptive import describe
+    model_cfg=settings(root,cfg,'phenology')
+    weather=WeatherStore(daily,hourly,model_cfg)
+    describe(root,cfg,master,weather)
+    if stage=='r4-describe': return 0
+    from .phenology_cv import run_task
+    engine=PhenologyEngine(weather,model_cfg)
+    for task in ['P1','P2','P3']:
+        run_task(root,cfg,master,engine,task)
+        if stage=='r4-'+task.lower(): return 0
+    if stage=='r4-all': return 2
+    raise NotImplementedError('Later phases pending implementation after sequential phenology validation')

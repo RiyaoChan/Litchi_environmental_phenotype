@@ -1,0 +1,209 @@
+﻿fit_id,holdout_year,validation,model_id,candidate_index,spec,inner_MAE_days,training_years
+main_P1_P1-B0_LOYO_2022,2022,LOYO,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",7.888888889,2023;2024;2025;2026
+main_P1_P1-B1_LOYO_2022,2022,LOYO,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",12,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",50.88888889,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",139.6666667,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",53.22222222,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",249.5555556,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",5.444444444,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",52.33333333,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",55.66666667,2023;2024;2025;2026
+main_P1_P1-D1_LOYO_2022,2022,LOYO,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",169.8888889,2023;2024;2025;2026
+main_P1_P1-D2_LOYO_2022,2022,LOYO,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",49.11111111,2023;2024;2025;2026
+main_P1_P1-D2_LOYO_2022,2022,LOYO,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",87,2023;2024;2025;2026
+main_P1_P1-D2_LOYO_2022,2022,LOYO,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",19.66666667,2023;2024;2025;2026
+main_P1_P1-H1_LOYO_2022,2022,LOYO,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",10,2023;2024;2025;2026
+main_P1_P1-H1_LOYO_2022,2022,LOYO,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",23.88888889,2023;2024;2025;2026
+main_P1_P1-H1_LOYO_2022,2022,LOYO,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",88.88888889,2023;2024;2025;2026
+main_P1_P1-H1_LOYO_2022,2022,LOYO,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",169.7777778,2023;2024;2025;2026
+main_P1_P1-H2_LOYO_2022,2022,LOYO,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",85.77777778,2023;2024;2025;2026
+main_P1_P1-H2_LOYO_2022,2022,LOYO,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",88.55555556,2023;2024;2025;2026
+main_P1_P1-H2_LOYO_2022,2022,LOYO,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",16.44444444,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",88.55555556,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",16.44444444,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",8.555555556,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",90.55555556,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",17.66666667,2023;2024;2025;2026
+main_P1_P1-H3_LOYO_2022,2022,LOYO,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",9.333333333,2023;2024;2025;2026
+main_P1_P1-B0_LOYO_2023,2023,LOYO,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",7.888888889,2022;2024;2025;2026
+main_P1_P1-B1_LOYO_2023,2023,LOYO,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",14.22222222,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",11.88888889,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",16.44444444,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",103,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",293,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",7.111111111,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",12.11111111,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",16.33333333,2022;2024;2025;2026
+main_P1_P1-D1_LOYO_2023,2023,LOYO,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",256.3333333,2022;2024;2025;2026
+main_P1_P1-D2_LOYO_2023,2023,LOYO,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",145.3333333,2022;2024;2025;2026
+main_P1_P1-D2_LOYO_2023,2023,LOYO,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",25.44444444,2022;2024;2025;2026
+main_P1_P1-D2_LOYO_2023,2023,LOYO,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",10.22222222,2022;2024;2025;2026
+main_P1_P1-H1_LOYO_2023,2023,LOYO,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",8.888888889,2022;2024;2025;2026
+main_P1_P1-H1_LOYO_2023,2023,LOYO,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",8,2022;2024;2025;2026
+main_P1_P1-H1_LOYO_2023,2023,LOYO,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",67.22222222,2022;2024;2025;2026
+main_P1_P1-H1_LOYO_2023,2023,LOYO,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",256.3333333,2022;2024;2025;2026
+main_P1_P1-H2_LOYO_2023,2023,LOYO,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",71,2022;2024;2025;2026
+main_P1_P1-H2_LOYO_2023,2023,LOYO,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",21.55555556,2022;2024;2025;2026
+main_P1_P1-H2_LOYO_2023,2023,LOYO,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",7.888888889,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",21.55555556,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",7.888888889,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",6.888888889,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",18.11111111,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",7.333333333,2022;2024;2025;2026
+main_P1_P1-H3_LOYO_2023,2023,LOYO,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",6.444444444,2022;2024;2025;2026
+main_P1_P1-B0_LOYO_2024,2024,LOYO,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",3.111111111,2022;2023;2025;2026
+main_P1_P1-B1_LOYO_2024,2024,LOYO,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",6.111111111,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",9.111111111,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",99,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",143.4444444,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",329.5555556,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",7.555555556,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",10.44444444,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",97.55555556,2022;2023;2025;2026
+main_P1_P1-D1_LOYO_2024,2024,LOYO,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",180.6666667,2022;2023;2025;2026
+main_P1_P1-D2_LOYO_2024,2024,LOYO,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",142.5555556,2022;2023;2025;2026
+main_P1_P1-D2_LOYO_2024,2024,LOYO,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",72.55555556,2022;2023;2025;2026
+main_P1_P1-D2_LOYO_2024,2024,LOYO,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",24,2022;2023;2025;2026
+main_P1_P1-H1_LOYO_2024,2024,LOYO,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",8.444444444,2022;2023;2025;2026
+main_P1_P1-H1_LOYO_2024,2024,LOYO,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",22.55555556,2022;2023;2025;2026
+main_P1_P1-H1_LOYO_2024,2024,LOYO,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",65.44444444,2022;2023;2025;2026
+main_P1_P1-H1_LOYO_2024,2024,LOYO,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",180.3333333,2022;2023;2025;2026
+main_P1_P1-H2_LOYO_2024,2024,LOYO,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",68,2022;2023;2025;2026
+main_P1_P1-H2_LOYO_2024,2024,LOYO,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",65.11111111,2022;2023;2025;2026
+main_P1_P1-H2_LOYO_2024,2024,LOYO,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",21.66666667,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",65.11111111,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",21.66666667,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",9,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",65,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",21.44444444,2022;2023;2025;2026
+main_P1_P1-H3_LOYO_2024,2024,LOYO,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",8.888888889,2022;2023;2025;2026
+main_P1_P1-B0_LOYO_2025,2025,LOYO,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",4.545454545,2022;2023;2024;2026
+main_P1_P1-B1_LOYO_2025,2025,LOYO,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",6.090909091,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",9,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",20.27272727,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",119.0909091,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",273.0909091,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",5.909090909,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",12.90909091,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",17.09090909,2022;2023;2024;2026
+main_P1_P1-D1_LOYO_2025,2025,LOYO,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",242.1818182,2022;2023;2024;2026
+main_P1_P1-D2_LOYO_2025,2025,LOYO,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",120.6363636,2022;2023;2024;2026
+main_P1_P1-D2_LOYO_2025,2025,LOYO,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",54.36363636,2022;2023;2024;2026
+main_P1_P1-D2_LOYO_2025,2025,LOYO,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",11.27272727,2022;2023;2024;2026
+main_P1_P1-H1_LOYO_2025,2025,LOYO,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",8.181818182,2022;2023;2024;2026
+main_P1_P1-H1_LOYO_2025,2025,LOYO,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",13.09090909,2022;2023;2024;2026
+main_P1_P1-H1_LOYO_2025,2025,LOYO,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",85.36363636,2022;2023;2024;2026
+main_P1_P1-H1_LOYO_2025,2025,LOYO,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",242.7272727,2022;2023;2024;2026
+main_P1_P1-H2_LOYO_2025,2025,LOYO,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",89.54545455,2022;2023;2024;2026
+main_P1_P1-H2_LOYO_2025,2025,LOYO,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",21.54545455,2022;2023;2024;2026
+main_P1_P1-H2_LOYO_2025,2025,LOYO,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",8.363636364,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",21.54545455,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",8.363636364,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",5.636363636,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",20.45454545,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",7.818181818,2022;2023;2024;2026
+main_P1_P1-H3_LOYO_2025,2025,LOYO,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",5.909090909,2022;2023;2024;2026
+main_P1_P1-B0_LOYO_2026,2026,LOYO,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",6.4,2022;2023;2024;2025
+main_P1_P1-B1_LOYO_2026,2026,LOYO,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",10.6,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",41.2,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",92.8,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",22.9,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",195,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",5.2,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",46,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",52,2022;2023;2024;2025
+main_P1_P1-D1_LOYO_2026,2026,LOYO,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",130,2022;2023;2024;2025
+main_P1_P1-D2_LOYO_2026,2026,LOYO,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",22.8,2022;2023;2024;2025
+main_P1_P1-D2_LOYO_2026,2026,LOYO,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",17.4,2022;2023;2024;2025
+main_P1_P1-D2_LOYO_2026,2026,LOYO,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",20,2022;2023;2024;2025
+main_P1_P1-H1_LOYO_2026,2026,LOYO,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",6.6,2022;2023;2024;2025
+main_P1_P1-H1_LOYO_2026,2026,LOYO,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",56.6,2022;2023;2024;2025
+main_P1_P1-H1_LOYO_2026,2026,LOYO,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",17.9,2022;2023;2024;2025
+main_P1_P1-H1_LOYO_2026,2026,LOYO,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",130.9,2022;2023;2024;2025
+main_P1_P1-H2_LOYO_2026,2026,LOYO,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",18.8,2022;2023;2024;2025
+main_P1_P1-H2_LOYO_2026,2026,LOYO,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H2_LOYO_2026,2026,LOYO,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",17.3,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",17.3,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",6.7,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",17.7,2022;2023;2024;2025
+main_P1_P1-H3_LOYO_2026,2026,LOYO,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",6.7,2022;2023;2024;2025
+main_P1_P1-B0_rolling_2024,2024,rolling,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",0,2022;2023
+main_P1_P1-B1_rolling_2024,2024,rolling,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",3.333333333,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",4,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",81.16666667,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",93.5,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",311.8333333,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",7,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",9.333333333,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",81.33333333,2022;2023
+main_P1_P1-D1_rolling_2024,2024,rolling,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",148.3333333,2022;2023
+main_P1_P1-D2_rolling_2024,2024,rolling,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",91.5,2022;2023
+main_P1_P1-D2_rolling_2024,2024,rolling,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",33.83333333,2022;2023
+main_P1_P1-D2_rolling_2024,2024,rolling,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",25.5,2022;2023
+main_P1_P1-H1_rolling_2024,2024,rolling,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",4.5,2022;2023
+main_P1_P1-H1_rolling_2024,2024,rolling,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",25.16666667,2022;2023
+main_P1_P1-H1_rolling_2024,2024,rolling,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",32,2022;2023
+main_P1_P1-H1_rolling_2024,2024,rolling,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",147.8333333,2022;2023
+main_P1_P1-H2_rolling_2024,2024,rolling,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",34.83333333,2022;2023
+main_P1_P1-H2_rolling_2024,2024,rolling,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",29.66666667,2022;2023
+main_P1_P1-H2_rolling_2024,2024,rolling,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",23.66666667,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",29.66666667,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",23.66666667,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",7.833333333,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",29.66666667,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",23.33333333,2022;2023
+main_P1_P1-H3_rolling_2024,2024,rolling,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",7.666666667,2022;2023
+main_P1_P1-B0_rolling_2025,2025,rolling,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",6.111111111,2022;2023;2024
+main_P1_P1-B1_rolling_2025,2025,rolling,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",9,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",8.888888889,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",61.44444444,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",24.33333333,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",176.1111111,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",4.555555556,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",12.88888889,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",18.77777778,2022;2023;2024
+main_P1_P1-D1_rolling_2025,2025,rolling,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",103.8888889,2022;2023;2024
+main_P1_P1-D2_rolling_2025,2025,rolling,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",23.77777778,2022;2023;2024
+main_P1_P1-D2_rolling_2025,2025,rolling,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",21.88888889,2022;2023;2024
+main_P1_P1-D2_rolling_2025,2025,rolling,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",16.11111111,2022;2023;2024
+main_P1_P1-H1_rolling_2025,2025,rolling,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",5.777777778,2022;2023;2024
+main_P1_P1-H1_rolling_2025,2025,rolling,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",54.77777778,2022;2023;2024
+main_P1_P1-H1_rolling_2025,2025,rolling,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",22.11111111,2022;2023;2024
+main_P1_P1-H1_rolling_2025,2025,rolling,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",104.8888889,2022;2023;2024
+main_P1_P1-H2_rolling_2025,2025,rolling,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",22.22222222,2022;2023;2024
+main_P1_P1-H2_rolling_2025,2025,rolling,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",19.22222222,2022;2023;2024
+main_P1_P1-H2_rolling_2025,2025,rolling,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",13.22222222,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",19.22222222,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",13.22222222,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",5.222222222,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",19.22222222,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",13.66666667,2022;2023;2024
+main_P1_P1-H3_rolling_2025,2025,rolling,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",5.222222222,2022;2023;2024
+main_P1_P1-B0_rolling_2026,2026,rolling,P1-B0,0,"{""kind"": ""duration"", ""model_id"": ""P1-B0""}",6.4,2022;2023;2024;2025
+main_P1_P1-B1_rolling_2026,2026,rolling,P1-B1,0,"{""kind"": ""calendar"", ""model_id"": ""P1-B1""}",10.6,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,0,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmean_c""}",41.2,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,1,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmean_c""}",92.8,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,2,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmean_c""}",22.9,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,3,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmean_c""}",195,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,4,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 22, ""variable"": ""tmin_c""}",5.2,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,5,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 20, ""variable"": ""tmin_c""}",46,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,6,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 18, ""variable"": ""tmin_c""}",52,2022;2023;2024;2025
+main_P1_P1-D1_rolling_2026,2026,rolling,P1-D1,7,"{""kind"": ""cold_count_day"", ""model_id"": ""P1-D1"", ""temperature"": 15, ""variable"": ""tmin_c""}",130,2022;2023;2024;2025
+main_P1_P1-D2_rolling_2026,2026,rolling,P1-D2,0,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 18}",22.8,2022;2023;2024;2025
+main_P1_P1-D2_rolling_2026,2026,rolling,P1-D2,1,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 20}",17.4,2022;2023;2024;2025
+main_P1_P1-D2_rolling_2026,2026,rolling,P1-D2,2,"{""kind"": ""cold_degree_day"", ""model_id"": ""P1-D2"", ""temperature"": 22}",20,2022;2023;2024;2025
+main_P1_P1-H1_rolling_2026,2026,rolling,P1-H1,0,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 22}",6.6,2022;2023;2024;2025
+main_P1_P1-H1_rolling_2026,2026,rolling,P1-H1,1,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 20}",56.6,2022;2023;2024;2025
+main_P1_P1-H1_rolling_2026,2026,rolling,P1-H1,2,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 18}",17.9,2022;2023;2024;2025
+main_P1_P1-H1_rolling_2026,2026,rolling,P1-H1,3,"{""kind"": ""cold_count_hour"", ""model_id"": ""P1-H1"", ""temperature"": 15}",130.9,2022;2023;2024;2025
+main_P1_P1-H2_rolling_2026,2026,rolling,P1-H2,0,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 18}",18.8,2022;2023;2024;2025
+main_P1_P1-H2_rolling_2026,2026,rolling,P1-H2,1,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H2_rolling_2026,2026,rolling,P1-H2,2,"{""kind"": ""cold_degree_hour"", ""model_id"": ""P1-H2"", ""temperature"": 22}",17.3,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,0,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,1,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 22}",17.3,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,2,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 12, ""upper"": 25}",6.7,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,3,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 20}",18.2,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,4,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 22}",17.7,2022;2023;2024;2025
+main_P1_P1-H3_rolling_2026,2026,rolling,P1-H3,5,"{""kind"": ""triangular_hour"", ""lower"": 5, ""model_id"": ""P1-H3"", ""optimum"": 15, ""upper"": 25}",6.7,2022;2023;2024;2025

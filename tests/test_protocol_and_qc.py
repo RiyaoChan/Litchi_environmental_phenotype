@@ -114,7 +114,7 @@ def test_baseline_fit_uses_training_only_and_ignores_test_target(model_id):
     assert fallback.iloc[0].predicted_event_date==prediction.iloc[0].predicted_event_date
 
 
-@pytest.mark.skip(reason='Weather gate: no fitted weather-driven phenology model or W3 windows exist.')
+@pytest.mark.skip(reason='Legacy R2 only: its weather gate prevented W3; R4 has separate implementation/tests.')
 def test_cross_fitted_windows():
     pass
 
@@ -154,7 +154,7 @@ def test_weighted_aggregation():
     assert weighted_average([10,np.nan],[1,0])==10
 
 
-@pytest.mark.skip(reason='Weather gate: no validated weather model or scenario implementation; not a verified scenario.')
+@pytest.mark.skip(reason='Legacy R2 only: no scenarios; R4 scenario implementation has separate tests.')
 def test_scenario_does_not_refit_model():
     pass
 
