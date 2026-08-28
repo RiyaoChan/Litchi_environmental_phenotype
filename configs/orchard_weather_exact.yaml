@@ -1,0 +1,119 @@
+source:
+  provider: Open-Meteo Historical Weather API
+  dataset: ERA5 reanalysis
+  model: era5
+  timezone: Asia/Shanghai
+  start_date: '2021-08-01'
+  end_date: '2026-06-30'
+  api_base: https://archive-api.open-meteo.com/v1/archive
+  license: CC BY 4.0
+  cell_selection: land
+  daily_variables:
+    - temperature_2m_mean
+    - temperature_2m_max
+    - temperature_2m_min
+    - dew_point_2m_mean
+    - dew_point_2m_max
+    - dew_point_2m_min
+    - relative_humidity_2m_mean
+    - relative_humidity_2m_max
+    - relative_humidity_2m_min
+    - precipitation_sum
+    - rain_sum
+    - precipitation_hours
+    - sunshine_duration
+    - shortwave_radiation_sum
+    - cloud_cover_mean
+    - wind_speed_10m_mean
+    - wind_speed_10m_max
+    - wind_speed_10m_min
+    - wind_direction_10m_dominant
+    - et0_fao_evapotranspiration
+    - vapour_pressure_deficit_max
+    - soil_moisture_0_to_7cm_mean
+    - soil_moisture_7_to_28cm_mean
+    - soil_moisture_28_to_100cm_mean
+    - soil_moisture_0_to_100cm_mean
+    - soil_temperature_0_to_7cm_mean
+    - soil_temperature_7_to_28cm_mean
+    - soil_temperature_28_to_100cm_mean
+    - soil_temperature_0_to_100cm_mean
+  hourly_variables:
+    - temperature_2m
+    - relative_humidity_2m
+    - dew_point_2m
+    - vapour_pressure_deficit
+    - precipitation
+    - rain
+    - cloud_cover
+    - sunshine_duration
+    - shortwave_radiation
+    - wind_speed_10m
+    - wind_direction_10m
+    - et0_fao_evapotranspiration
+    - soil_temperature_0_to_7cm
+    - soil_temperature_7_to_28cm
+    - soil_moisture_0_to_7cm
+    - soil_moisture_7_to_28cm
+    - soil_moisture_28_to_100cm
+points:
+  bannei:
+    orchard_id: bannei
+    point_id: bannei_orchard_era5
+    region_id: haikou
+    observed_station_id: haikou_region_proxy
+    cultivar: 妃子笑
+    latitude: 19.899341667
+    longitude: 110.499494444
+    latitude_dms: "N 19° 53' 57.63\""
+    longitude_dms: "E 110° 29' 58.18\""
+    coordinate_basis: exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries
+    coordinate_source_files:
+      - 示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc
+      - 示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc
+    coordinate_source_sha256:
+      - 6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71
+      - 205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9
+  hongming:
+    orchard_id: hongming
+    point_id: hongming_orchard_era5
+    region_id: haikou
+    observed_station_id: haikou_region_proxy
+    cultivar: 白糖罂
+    latitude: 19.698605556
+    longitude: 110.580541667
+    latitude_dms: "N 19° 41' 54.98\""
+    longitude_dms: "E 110° 34' 49.95\""
+    coordinate_basis: exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries
+    coordinate_source_files:
+      - 示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc
+      - 示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc
+    coordinate_source_sha256:
+      - 6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71
+      - 205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9
+  luhong:
+    orchard_id: luhong
+    point_id: luhong_orchard_era5
+    region_id: lingshui
+    observed_station_id: lingshui_region_proxy
+    cultivar: 妃子笑
+    latitude: 18.609658333
+    longitude: 109.942294444
+    latitude_dms: "N 18° 36' 34.77\""
+    longitude_dms: "E 109° 56' 32.26\""
+    coordinate_basis: exact orchard coordinate reported consistently in the 2024-2025 and 2025-2026 annual work summaries
+    coordinate_source_files:
+      - 示范园/2025年荔枝龙眼产业技术体系示范园-海口站（20250827）.doc
+      - 示范园/2026年荔枝龙眼产业技术体系示范园-海口站（20260825）.doc
+    coordinate_source_sha256:
+      - 6dddefc305a650462d0c869c13ba00fd665b019d0776ff5508668f471b51aa71
+      - 205754a4e79796b5b4853c889268d20f195dcf2982af465610458a9ecdde2fb9
+outputs:
+  raw_dir: data/external/open_meteo_era5_orchards/raw
+  daily_csv: data/external/open_meteo_era5_orchards/weather_daily_era5_orchards.csv
+  hourly_csv_gz: data/external/open_meteo_era5_orchards/weather_hourly_era5_orchards.csv.gz
+  metadata_json: data/external/open_meteo_era5_orchards/download_metadata.json
+  variable_dictionary_csv: data/external/open_meteo_era5_orchards/variable_dictionary.csv
+  overlap_metrics_csv: results/qc/orchard_era5_overlap_validation.csv
+  grid_distinction_csv: results/qc/orchard_era5_grid_distinction.csv
+  report_md: reports/07_ORCHARD_EXACT_WEATHER_REPORT.md
