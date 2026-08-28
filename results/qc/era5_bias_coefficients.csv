@@ -1,0 +1,13 @@
+﻿station_id,variable,method,coefficient,raw_coefficient,n_pairs,scope
+haikou_region_proxy,tmean_c,additive_mean_offset,-0.26682926829268294,-0.26682926829268294,615,all_valid_overlap_days; sensitivity_only
+haikou_region_proxy,tmin_c,additive_mean_offset,-0.29040650406504065,-0.29040650406504065,615,all_valid_overlap_days; sensitivity_only
+haikou_region_proxy,tmax_c,additive_mean_offset,0.5710569105691056,0.5710569105691056,615,all_valid_overlap_days; sensitivity_only
+haikou_region_proxy,precip_mm,multiplicative_total_ratio,1.9204390956241504,1.9204390956241504,615,all_valid_overlap_days; sensitivity_only
+haikou_region_proxy,relative_humidity_pct,additive_mean_offset,2.4713821138211385,2.4713821138211385,615,all_valid_overlap_days; sensitivity_only
+haikou_region_proxy,sunshine_h,additive_mean_offset,-4.494593422906603,-4.494593422906603,552,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,tmean_c,additive_mean_offset,-0.9727272727272726,-0.9727272727272726,583,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,tmin_c,additive_mean_offset,-2.5166380789022296,-2.5166380789022296,583,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,tmax_c,additive_mean_offset,2.380960548885077,2.380960548885077,583,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,precip_mm,multiplicative_total_ratio,1.4288254684247053,1.4288254684247053,612,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,relative_humidity_pct,additive_mean_offset,-1.320684039087948,-1.320684039087948,614,all_valid_overlap_days; sensitivity_only
+lingshui_region_proxy,sunshine_h,additive_mean_offset,-3.8011789500509687,-3.8011789500509687,545,all_valid_overlap_days; sensitivity_only

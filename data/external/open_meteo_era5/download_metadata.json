@@ -1,0 +1,76 @@
+{
+  "downloaded_at_utc": "2026-08-28T01:59:41+00:00",
+  "source": {
+    "provider": "Open-Meteo Historical Weather API",
+    "dataset": "ERA5 reanalysis",
+    "model": "era5",
+    "timezone": "Asia/Shanghai",
+    "start_date": "2021-08-01",
+    "end_date": "2026-06-30",
+    "api_base": "https://archive-api.open-meteo.com/v1/archive",
+    "license": "CC BY 4.0",
+    "variables": [
+      "temperature_2m_mean",
+      "temperature_2m_max",
+      "temperature_2m_min",
+      "precipitation_sum",
+      "relative_humidity_2m_mean",
+      "sunshine_duration",
+      "shortwave_radiation_sum",
+      "wind_speed_10m_mean",
+      "wind_speed_10m_max",
+      "et0_fao_evapotranspiration"
+    ]
+  },
+  "points": {
+    "haikou_region_proxy": {
+      "requested_latitude": 19.75,
+      "requested_longitude": 110.55,
+      "returned_grid_latitude": 19.75,
+      "returned_grid_longitude": 110.5,
+      "elevation_m": 82.0,
+      "coordinate_basis": "regional proxy for the Yunlong/Bannei and Sanmenpo/Hongming production area; not an exact orchard coordinate",
+      "raw_json_sha256": "6c413123ef609d50fb1b2280fa8f24159761877018c32c96078c6ed2b740e6d9",
+      "n_days": 1795,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm",
+        "relative_humidity_2m_mean": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "et0_fao_evapotranspiration": "mm"
+      }
+    },
+    "lingshui_region_proxy": {
+      "requested_latitude": 18.55,
+      "requested_longitude": 110.0,
+      "returned_grid_latitude": 18.5,
+      "returned_grid_longitude": 110.0,
+      "elevation_m": 25.0,
+      "coordinate_basis": "regional proxy near Timeng Township, Lingshui; not an exact orchard coordinate",
+      "raw_json_sha256": "b0f9d14340458e02d66e3823dacc461fd7d58cd204f3f970194c945ab5d049a4",
+      "n_days": 1795,
+      "daily_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm",
+        "relative_humidity_2m_mean": "%",
+        "sunshine_duration": "s",
+        "shortwave_radiation_sum": "MJ/m²",
+        "wind_speed_10m_mean": "m/s",
+        "wind_speed_10m_max": "m/s",
+        "et0_fao_evapotranspiration": "mm"
+      }
+    }
+  },
+  "complete_csv_sha256": "ffbc0d7d137f71fb14fc03aff82cd585d385544b876c4d711c88d98922d207ea",
+  "expected_days_per_point": 1795,
+  "total_rows": 3590
+}
