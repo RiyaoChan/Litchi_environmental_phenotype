@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "evaluation_completeness": [
+    {
+      "window_type": "W1-CALENDAR",
+      "n_test_seasons": 12,
+      "n_complete": 12
+    },
+    {
+      "window_type": "W1-MEDIAN",
+      "n_test_seasons": 12,
+      "n_complete": 12
+    },
+    {
+      "window_type": "W2-OBS",
+      "n_test_seasons": 12,
+      "n_complete": 12
+    },
+    {
+      "window_type": "W3-PRED",
+      "n_test_seasons": 12,
+      "n_complete": 12
+    }
+  ],
+  "incomplete_training_rows": 0,
+  "P1_chain_status": "limited_primary_P1_weather_not_stably_validated",
+  "W3_policy": "family_and_parameters_selected_only_within_current_calibration_years; recursive_predicted_starts",
+  "yield_gate": "must_recheck_inner_partitions_too"
+}
