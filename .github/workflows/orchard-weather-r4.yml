@@ -90,10 +90,12 @@ jobs:
             echo 'No generated changes to commit.'
           else
             git commit -m 'Add exact-orchard ERA5 daily and hourly weather data'
+            git pull --rebase origin codex/litchi-orchard-weather-r4
             git push origin HEAD:codex/litchi-orchard-weather-r4
           fi
 
       - name: Upload full raw and processed package
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: exact-orchard-weather-r4
