@@ -1,0 +1,45 @@
+source:
+  provider: Open-Meteo Historical Weather API
+  dataset: ERA5 reanalysis
+  model: era5
+  timezone: Asia/Shanghai
+  start_date: '2021-08-01'
+  end_date: '2026-06-30'
+  api_base: https://archive-api.open-meteo.com/v1/archive
+  license: CC BY 4.0
+  variables:
+    - temperature_2m_mean
+    - temperature_2m_max
+    - temperature_2m_min
+    - precipitation_sum
+    - relative_humidity_2m_mean
+    - sunshine_duration
+    - shortwave_radiation_sum
+    - wind_speed_10m_mean
+    - wind_speed_10m_max
+    - et0_fao_evapotranspiration
+points:
+  bannei:
+    latitude: 19.899341667
+    longitude: 110.499494444
+    region_id: haikou
+    coordinate_basis: "exact Bannei orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 19°53'57.63\", E 110°29'58.18\""
+  hongming:
+    latitude: 19.698605556
+    longitude: 110.580541667
+    region_id: haikou
+    coordinate_basis: "exact Hongming orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 19°41'54.98\", E 110°34'49.95\""
+  luhong:
+    latitude: 18.609658333
+    longitude: 109.942294444
+    region_id: lingshui
+    coordinate_basis: "exact Luhong orchard coordinate from 2024-2025 and 2025-2026 annual work summaries; N 18°36'34.77\", E 109°56'32.26\""
+outputs:
+  raw_dir: data/external/open_meteo_era5_exact_core/raw
+  complete_csv: data/external/open_meteo_era5_exact_core/weather_daily_era5_exact_core.csv
+  metadata_json: data/external/open_meteo_era5_exact_core/download_metadata.json
+  overlap_metrics_csv: results/qc/unused_exact_core_overlap.csv
+  overlap_report_md: reports/unused_exact_core_report.md
+  bias_coefficients_csv: results/qc/unused_exact_core_bias.csv
+  hybrid_raw_csv: data/processed/unused_exact_core_hybrid_raw.csv
+  hybrid_adjusted_csv: data/processed/unused_exact_core_hybrid_adjusted.csv
